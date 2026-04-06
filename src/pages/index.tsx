@@ -83,8 +83,7 @@ export default function Home() {
               recognized as valuable, and whose are discounted? In science, she examines how
               knowledge claims and their reception are gendered. In cultural markets, she
               investigates how canonization processes embed gender biases. Expanding to global
-              knowledge systems, she examines how national and linguistic hierarchies shape whose
-              scholarship circulates internationally. Across these contexts, her work reveals a
+              Across these contexts, her work reveals a
               consistent pattern: evaluation practices that appear meritocratic embed biases that
               disadvantage women and lower-status actors. Her research has been published in
               the{' '}
