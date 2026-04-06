@@ -43,22 +43,38 @@ export default function Research() {
               <ul className="pub-list" aria-label={`Publications for ${program.title}`}>
                 {program.publications.map((pub, i) => (
                   <li key={i} className="pub-item">
-                    <p className="pub-item__citation">
-                      {pub.citation}
-                      {pub.status && pub.status !== 'Published' && (
+                    {pub.status && pub.status !== 'Published' && (
+                      <div className="pub-badge-row">
                         <span
-                          className={`pub-item__status ${
+                          className={`badge ${
                             pub.status === 'Conditionally Accepted'
-                              ? 'pub-item__status--forthcoming'
-                              : pub.status === 'Under Review'
-                              ? 'pub-item__status--under-review'
-                              : 'pub-item__status--in-progress'
+                              ? 'badge-accepted'
+                              : 'badge-review'
                           }`}
                         >
                           {pub.status}
                         </span>
+                        {pub.journal && (
+                          <span className="pub-item__venue">{pub.journal}</span>
+                        )}
+                      </div>
+                    )}
+                    <p className="pub-item__citation">
+                      {pub.citation}
+                      {pub.doi && (
+                        <a
+                          href={`https://doi.org/${pub.doi}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="pub-item__doi"
+                        >
+                          DOI ↗
+                        </a>
                       )}
                     </p>
+                    {pub.note && (
+                      <p className="pub-item__note">{pub.note}</p>
+                    )}
                   </li>
                 ))}
               </ul>

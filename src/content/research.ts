@@ -9,6 +9,9 @@ export interface ResearchProgram {
 export interface ResearchPublication {
   citation: string
   status?: string
+  journal?: string  // venue shown next to badge for non-published papers
+  note?: string     // secondary line, e.g. "Manuscript available on request."
+  doi?: string      // DOI for published papers
 }
 
 export const researchIntro = {
@@ -29,18 +32,21 @@ export const researchPrograms: ResearchProgram[] = [
     publications: [
       {
         citation:
-          'Lee, Jina. "The Gender of Scientific Authority: Novelty Claims and Gender Gaps in Scientific Impact Across Disciplines." Gender & Society (conditionally accepted).',
+          'Lee, Jina. "The Gender of Scientific Authority: Novelty Claims and Gender Gaps in Scientific Impact Across Disciplines."',
         status: 'Conditionally Accepted',
+        journal: 'Gender & Society',
       },
       {
         citation:
-          'Lee, Jina. "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty." Manuscript available.',
+          'Lee, Jina. "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty."',
         status: 'Under Review',
+        note: 'Manuscript available on request.',
       },
       {
         citation:
-          'Leahey, Erin, Jina Lee, Russell J. Funk. (2023). What Types of Novelty Are Most Disruptive? American Sociological Review, 88(3): 562-597.',
+          'Leahey, Erin, Jina Lee, Russell J. Funk. (2023). What Types of Novelty Are Most Disruptive? American Sociological Review, 88(3): 562–597.',
         status: 'Published',
+        doi: '10.1177/00031224231168074',
       },
     ],
   },
@@ -58,6 +64,7 @@ export const researchPrograms: ResearchProgram[] = [
         citation:
           'Lee, Jina. (2025). Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon. Poetics, 112.',
         status: 'Published',
+        doi: '10.1016/j.poetic.2025.102024',
       },
     ],
   },
