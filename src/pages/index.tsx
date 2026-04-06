@@ -33,7 +33,7 @@ export default function Home() {
                 </h1>
                 <p className="hero__title">{bio.title}</p>
                 <p className="hero__affiliation">{bio.affiliation}</p>
-                {bio.positioningStatement && <p className="hero__statement">{bio.positioningStatement}</p>}
+                <p className="hero__statement">{bio.positioningStatement}</p>
                 <div className="hero__links">
                   <LinkButton href={site.cvUrl} external filled>
                     CV
