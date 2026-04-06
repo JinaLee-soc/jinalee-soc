@@ -1,5 +1,5 @@
 // basePath must match next.config.js — change to '' when using a custom domain
-export const basePath = '/jinalee-soc'
+export const basePath = ''
 
 export const site = {
   name: 'Jina Lee',
