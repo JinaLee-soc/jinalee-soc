@@ -38,7 +38,7 @@ export default function Research() {
               <p className="research-program__overview">{program.overview}</p>
 
               <p className="research-program__pubs-label">
-                Representative publications
+                Related works
               </p>
               <ul className="pub-list" aria-label={`Publications for ${program.title}`}>
                 {program.publications.map((pub, i) => (
