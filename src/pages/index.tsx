@@ -88,9 +88,9 @@ export default function Home() {
               consistent pattern: evaluation practices that appear meritocratic embed biases that
               disadvantage women and lower-status actors. Her research has been published in
               the{' '}
-              <a href="https://doi.org/10.1177/0003122423116807" target="_blank" rel="noopener noreferrer"><em>American Sociological Review</em></a>,{' '}
+              <a href="https://doi.org/10.1177/00031224231168074" target="_blank" rel="noopener noreferrer"><em>American Sociological Review</em></a>,{' '}
               <a href="https://doi.org/10.1016/j.poetic.2025.102024" target="_blank" rel="noopener noreferrer"><em>Poetics</em></a>,{' '}
-              <a href="https://doi.org/10.1177/2378023122108242" target="_blank" rel="noopener noreferrer"><em>Socius</em></a>,{' '}
+              <a href="https://doi.org/10.1177/23780231221082422" target="_blank" rel="noopener noreferrer"><em>Socius</em></a>,{' '}
               and{' '}
               <a href="https://doi.org/10.1080/19420676.2021.2004206" target="_blank" rel="noopener noreferrer"><em>Journal of Social Entrepreneurship</em></a>.
             </p>
