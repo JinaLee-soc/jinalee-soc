@@ -469,8 +469,9 @@ button.footer__link {
   vertical-align: middle;
 }
 
-.badge-accepted { background: #fef3e2; color: #9a6000; border: 1px solid #f0d8a0; }
-.badge-review   { background: #eef4f0; color: #3a6e50; border: 1px solid #b8d8c4; }
+.badge-accepted     { background: #fef3e2; color: #9a6000; border: 1px solid #f0d8a0; }
+.badge-review       { background: #eef4f0; color: #3a6e50; border: 1px solid #b8d8c4; }
+.badge-in-progress  { background: #f3f0ec; color: #6b6058; border: 1px solid #e0dbd5; }
 
 .pub-item__doi {
   font-size: .82rem;

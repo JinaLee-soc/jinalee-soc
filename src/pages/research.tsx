@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 import PublicationItem from '../components/PublicationItem'
-import { researchIntro, researchPrograms, worksInProgress } from '../content/research'
+import { researchIntro, researchPrograms } from '../content/research'
 
 function boldMyName(text: string) {
   const parts = text.split(/(Lee,\s*Jina|Jina\s+Lee)/)
@@ -56,7 +56,9 @@ export default function Research() {
                           className={`badge ${
                             pub.status === 'Conditionally Accepted'
                               ? 'badge-accepted'
-                              : 'badge-review'
+                              : pub.status === 'Under Review'
+                              ? 'badge-review'
+                              : 'badge-in-progress'
                           }`}
                         >
                           {pub.status}
@@ -88,24 +90,7 @@ export default function Research() {
             </section>
           ))}
 
-          {/* Works in Progress */}
-          <section
-            aria-labelledby="wip-heading"
-            style={{ paddingTop: 'var(--space-12)', borderTop: '1px solid var(--color-border-light)' }}
-          >
-            <h2 className="section__title" id="wip-heading" style={{ marginBottom: 'var(--space-6)' }}>
-              Works in Progress
-            </h2>
-            <ul className="pub-list" aria-label="Works in progress">
-              {worksInProgress.map((citation, i) => (
-                <li key={i} className="pub-item">
-                  <p className="pub-item__citation">{boldMyName(citation)}</p>
-                </li>
-              ))}
-            </ul>
-          </section>
-
-        </div>
+</div>
       </div>
     </Layout>
   )

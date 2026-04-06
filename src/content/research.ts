@@ -44,6 +44,11 @@ export const researchPrograms: ResearchProgram[] = [
       },
       {
         citation:
+          'Lee, Jina. "Who Faces More Doubt in Crisis? Gendered Patterns of Uncertainty in Reception of High-Stakes Science."',
+        status: 'In Progress',
+      },
+      {
+        citation:
           'Leahey, Erin, Jina Lee, Russell J. Funk. (2023). What Types of Novelty Are Most Disruptive? American Sociological Review, 88(3): 562–597.',
         status: 'Published',
         doi: '10.1177/00031224231168074',
@@ -52,7 +57,7 @@ export const researchPrograms: ResearchProgram[] = [
   },
   {
     id: 'cultural-evaluation',
-    title: 'Gender and Cultural Evaluation',
+    title: 'Gender, Culture, and Markets',
     overview: `Literary canons are socially constructed. My work in this area examines how canonization processes in Korean literature embed gender biases and how those biases persist even when evaluation criteria appear gender-neutral.`,
     keyQuestions: [
       'How do canonization processes in literature and culture embed and reproduce gender hierarchies?',
@@ -68,10 +73,26 @@ export const researchPrograms: ResearchProgram[] = [
       },
     ],
   },
-]
-
-export const worksInProgress = [
-  'Paik, Eugene T., Jina Lee, Erin Leahey, Russell Funk. "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation." Manuscript available.',
-  'Lee, Jina. "Who Faces More Doubt in Crisis? Gendered Patterns of Uncertainty in Reception of High-Stakes Science." In progress.',
-  'Bratt, Sarah, Erin Leahey, Yea-Eun Kwon, Charles Lassiter, Jina Lee, Charles Gomez. "Do Journal Data Sharing Requirements Promote Humility in Scientific Articles?" In progress.',
+  {
+    id: 'science-and-academia',
+    title: 'Science and Academia',
+    overview: `Scientific knowledge is shaped not only by what researchers study but by how scientific communities are organized. This line of work examines how structural features of academic fields—audience segmentation, publication norms, and data practices—influence the production, reach, and epistemic character of scientific knowledge.`,
+    keyQuestions: [
+      'How does audience structure shape the impact of domain-spanning innovation?',
+      'How do editorial and data sharing requirements shape the epistemic character of scientific articles?',
+    ],
+    publications: [
+      {
+        citation:
+          'Paik, Eugene T., Jina Lee, Erin Leahey, Russell Funk. "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation."',
+        status: 'Working Paper',
+        note: 'Manuscript available on request.',
+      },
+      {
+        citation:
+          'Bratt, Sarah, Erin Leahey, Yea-Eun Kwon, Charles Lassiter, Jina Lee, Charles Gomez. "Do Journal Data Sharing Requirements Promote Humility in Scientific Articles?"',
+        status: 'In Progress',
+      },
+    ],
+  },
 ]
