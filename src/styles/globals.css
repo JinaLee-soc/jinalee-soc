@@ -292,6 +292,17 @@ a:focus-visible {
 }
 
 /* ===== Link Buttons ===== */
+/* Allow button elements to use link-btn and footer__link styles */
+button.link-btn,
+button.footer__link {
+  background: none;
+  border-style: solid;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .link-btn {
   display: inline-flex;
   align-items: center;
