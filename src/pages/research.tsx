@@ -2,6 +2,13 @@ import Layout from '../components/Layout'
 import PublicationItem from '../components/PublicationItem'
 import { researchIntro, researchPrograms, worksInProgress } from '../content/research'
 
+function boldMyName(text: string) {
+  const parts = text.split(/(Lee,\s*Jina|Jina\s+Lee)/)
+  return parts.map((part, i) =>
+    /^(Lee,\s*Jina|Jina\s+Lee)$/.test(part) ? <strong key={i}>{part}</strong> : part
+  )
+}
+
 export default function Research() {
   return (
     <Layout
@@ -60,7 +67,7 @@ export default function Research() {
                       </div>
                     )}
                     <p className="pub-item__citation">
-                      {pub.citation}
+                      {boldMyName(pub.citation)}
                       {pub.doi && (
                         <a
                           href={`https://doi.org/${pub.doi}`}
@@ -92,7 +99,7 @@ export default function Research() {
             <ul className="pub-list" aria-label="Works in progress">
               {worksInProgress.map((citation, i) => (
                 <li key={i} className="pub-item">
-                  <p className="pub-item__citation">{citation}</p>
+                  <p className="pub-item__citation">{boldMyName(citation)}</p>
                 </li>
               ))}
             </ul>

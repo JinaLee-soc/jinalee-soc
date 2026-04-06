@@ -1,5 +1,12 @@
 import { Publication, PublicationStatus } from '../content/publications'
 
+function boldMyName(text: string) {
+  const parts = text.split(/(Lee,\s*Jina|Jina\s+Lee)/)
+  return parts.map((part, i) =>
+    /^(Lee,\s*Jina|Jina\s+Lee)$/.test(part) ? <strong key={i}>{part}</strong> : part
+  )
+}
+
 interface PublicationItemProps {
   pub: Publication
   showStatus?: boolean
@@ -28,7 +35,7 @@ export default function PublicationItem({
   return (
     <li className="pub-item">
       <p className="pub-item__citation">
-        <span>{pub.authors} </span>
+        <span>{boldMyName(pub.authors)} </span>
         {pub.year && <span>{pub.year}. </span>}
         {pub.doi ? (
           <a
