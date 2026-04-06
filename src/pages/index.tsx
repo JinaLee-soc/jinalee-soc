@@ -82,8 +82,7 @@ export default function Home() {
               analysis, and experimental methods, her research asks: whose contributions are
               recognized as valuable, and whose are discounted? In science, she examines how
               knowledge claims and their reception are gendered. In cultural markets, she
-              investigates how canonization processes embed gender biases. Expanding to global
-              Across these contexts, her work reveals a
+              investigates how canonization processes embed gender biases. Across these contexts, her work reveals a
               consistent pattern: evaluation practices that appear meritocratic embed biases that
               disadvantage women and lower-status actors. Her research has been published in
               the{' '}
