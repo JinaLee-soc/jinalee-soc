@@ -104,7 +104,7 @@ export const researchPrograms: ResearchProgram[] = [
   {
     id: 'other-work',
     title: 'Other Work',
-    overview: ``,
+    overview: `Not all evaluation concerns recognition or prestige. This work examines how social categorization and framing shape judgments of who deserves protection and resources.`,
     keyQuestions: [],
     publications: [
       {
