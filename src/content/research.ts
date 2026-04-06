@@ -1,0 +1,70 @@
+export interface ResearchProgram {
+  id: string
+  title: string
+  overview: string
+  keyQuestions: string[]
+  publications: ResearchPublication[]
+}
+
+export interface ResearchPublication {
+  citation: string
+  status?: string
+}
+
+export const researchIntro = {
+  summary: `My research examines how evaluation systems that appear objective reproduce gender hierarchies across scientific and cultural fields. I ask: whose contributions are recognized as valuable, and whose are discounted? Across two lines of work, I trace how gender bias operates through everyday evaluation practices and accumulates into durable inequalities.`,
+  methods: `My methods include computational text analysis, bibliometric analysis, and survey experiments.`,
+}
+
+export const researchPrograms: ResearchProgram[] = [
+  {
+    id: 'scientific-evaluation',
+    title: 'Gender and Scientific Evaluation',
+    overview: `Scientific recognition is rarely neutral. My work in this area investigates how gender shapes which knowledge claims are treated as authoritative, how novelty is attributed and rewarded, and how uncertainty is managed differently depending on who makes a claim.`,
+    keyQuestions: [
+      'How do gendered dynamics shape which scientific contributions get recognized, cited, and treated as authoritative?',
+      'How is novelty attributed and rewarded differently across gender lines?',
+      'How is uncertainty managed differently depending on who makes a scientific claim?',
+    ],
+    publications: [
+      {
+        citation:
+          'Lee, Jina. "The Gender of Scientific Authority: Novelty Claims and Gender Gaps in Scientific Impact Across Disciplines." Gender & Society (conditionally accepted).',
+        status: 'Conditionally Accepted',
+      },
+      {
+        citation:
+          'Lee, Jina. "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty." Manuscript available.',
+        status: 'Under Review',
+      },
+      {
+        citation:
+          'Leahey, Erin, Jina Lee, Russell J. Funk. (2023). What Types of Novelty Are Most Disruptive? American Sociological Review, 88(3): 562-597.',
+        status: 'Published',
+      },
+    ],
+  },
+  {
+    id: 'cultural-evaluation',
+    title: 'Gender and Cultural Evaluation',
+    overview: `Literary canons are constructed, not discovered. My work in this area examines how canonization processes in Korean literature embed gender biases and how those biases persist even when formal evaluation criteria appear gender-neutral. My study of 267 elite Korean novelists finds that critical recognition by literary gatekeepers benefits men's long-term canonical standing more than women's. Moreover, men's personal, autobiographical writing is coded as universally significant, while comparable work by women is labeled as specifically feminine: a pattern that naturalizes gender hierarchy within seemingly merit-based judgments.`,
+    keyQuestions: [
+      'How do canonization processes in literature and culture embed and reproduce gender hierarchies?',
+      'How does critical recognition operate differently for men and women writers?',
+      'How are merit-based judgments shaped by gendered assumptions about universality and particularity?',
+    ],
+    publications: [
+      {
+        citation:
+          'Lee, Jina. (2025). Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon. Poetics, 112.',
+        status: 'Published',
+      },
+    ],
+  },
+]
+
+export const worksInProgress = [
+  'Paik, Eugene T., Jina Lee, Erin Leahey, Russell Funk. "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation." Manuscript available.',
+  'Lee, Jina. "Who Faces More Doubt in Crisis? Gendered Patterns of Uncertainty in Reception of High-Stakes Science." In progress.',
+  'Bratt, Sarah, Erin Leahey, Yea-Eun Kwon, Charles Lassiter, Jina Lee, Charles Gomez. "Do Journal Data Sharing Requirements Promote Humility in Scientific Articles?" In progress.',
+]
