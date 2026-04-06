@@ -47,7 +47,7 @@ export const researchPrograms: ResearchProgram[] = [
   {
     id: 'cultural-evaluation',
     title: 'Gender and Cultural Evaluation',
-    overview: `Literary canons are constructed, not discovered. My work in this area examines how canonization processes in Korean literature embed gender biases and how those biases persist even when formal evaluation criteria appear gender-neutral. My study of 267 elite Korean novelists finds that critical recognition by literary gatekeepers benefits men's long-term canonical standing more than women's. Moreover, men's personal, autobiographical writing is coded as universally significant, while comparable work by women is labeled as specifically feminine: a pattern that naturalizes gender hierarchy within seemingly merit-based judgments.`,
+    overview: `Literary canons are socially constructed. My work in this area examines how canonization processes in Korean literature embed gender biases and how those biases persist even when evaluation criteria appear gender-neutral.`,
     keyQuestions: [
       'How do canonization processes in literature and culture embed and reproduce gender hierarchies?',
       'How does critical recognition operate differently for men and women writers?',
