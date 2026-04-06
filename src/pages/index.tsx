@@ -76,7 +76,24 @@ export default function Home() {
             <p className="section__heading" id="about-heading" aria-label="About">
               About
             </p>
-            <p>{bio.about}</p>
+            <p>
+              Jina Lee is a sociologist who studies how seemingly objective evaluation systems
+              reproduce social hierarchies. Using computational text analysis, bibliometric
+              analysis, and experimental methods, her research asks: whose contributions are
+              recognized as valuable, and whose are discounted? In science, she examines how
+              knowledge claims and their reception are gendered. In cultural markets, she
+              investigates how canonization processes embed gender biases. Expanding to global
+              knowledge systems, she examines how national and linguistic hierarchies shape whose
+              scholarship circulates internationally. Across these contexts, her work reveals a
+              consistent pattern: evaluation practices that appear meritocratic embed biases that
+              disadvantage women and lower-status actors. Her research has been published in
+              the{' '}
+              <a href="https://doi.org/10.1177/0003122423116807" target="_blank" rel="noopener noreferrer"><em>American Sociological Review</em></a>,{' '}
+              <a href="https://doi.org/10.1016/j.poetic.2025.102024" target="_blank" rel="noopener noreferrer"><em>Poetics</em></a>,{' '}
+              <a href="https://doi.org/10.1177/2378023122108242" target="_blank" rel="noopener noreferrer"><em>Socius</em></a>,{' '}
+              and{' '}
+              <a href="https://doi.org/10.1080/19420676.2021.2004206" target="_blank" rel="noopener noreferrer"><em>Journal of Social Entrepreneurship</em></a>.
+            </p>
           </div>
         </section>
 
