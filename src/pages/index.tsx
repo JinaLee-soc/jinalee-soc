@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import LinkButton from '../components/LinkButton'
+import { useState } from 'react'
 import ResearchCard from '../components/ResearchCard'
 import PublicationItem from '../components/PublicationItem'
 import { bio } from '../content/bio'
@@ -17,6 +18,15 @@ const researchCardSummaries: Record<string, string> = {
 }
 
 export default function Home() {
+  const [emailCopied, setEmailCopied] = useState(false)
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText(site.email).then(() => {
+      setEmailCopied(true)
+      setTimeout(() => setEmailCopied(false), 2000)
+    })
+  }
+
   return (
     <Layout
       title={undefined}
@@ -44,9 +54,9 @@ export default function Home() {
                   <LinkButton href={site.orcid} external>
                     ORCID
                   </LinkButton>
-                  <LinkButton href={`mailto:${site.email}`}>
-                    Email
-                  </LinkButton>
+                  <button onClick={copyEmail} className="link-btn" type="button">
+                    {emailCopied ? 'Copied!' : 'Email'}
+                  </button>
                 </div>
               </div>
               <img
