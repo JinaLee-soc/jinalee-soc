@@ -71,6 +71,12 @@ export const researchPrograms: ResearchProgram[] = [
         status: 'Published',
         doi: '10.1016/j.poetic.2025.102024',
       },
+      {
+        citation:
+          'Zhao, Yi, Jina Lee, Cheryl Ellenwood. (2021). The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing. Journal of Social Entrepreneurship, 15(3): 811–832.',
+        status: 'Published',
+        doi: '10.1080/19420676.2021.2004206',
+      },
     ],
   },
   {
@@ -92,6 +98,20 @@ export const researchPrograms: ResearchProgram[] = [
         citation:
           'Bratt, Sarah, Erin Leahey, Yea-Eun Kwon, Charles Lassiter, Jina Lee, Charles Gomez. "Do Journal Data Sharing Requirements Promote Humility in Scientific Articles?"',
         status: 'In Progress',
+      },
+    ],
+  },
+  {
+    id: 'other-work',
+    title: 'Other Work',
+    overview: `Published work outside my main research programs.`,
+    keyQuestions: [],
+    publications: [
+      {
+        citation:
+          'Lee, Jina, Minjae Seo, Erin Leahey. (2022). Who Deserves Protection? How Naming Potential Beneficiaries Influences COVID-19 Vaccine Intentions. Socius, 8.',
+        status: 'Published',
+        doi: '10.1177/23780231221082422',
       },
     ],
   },
