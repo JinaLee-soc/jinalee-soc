@@ -104,7 +104,7 @@ export const researchPrograms: ResearchProgram[] = [
   {
     id: 'other-work',
     title: 'Other Work',
-    overview: `Published work outside my main research programs.`,
+    overview: ``,
     keyQuestions: [],
     publications: [
       {

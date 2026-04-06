@@ -42,7 +42,9 @@ export default function Research() {
               >
                 {program.title}
               </h2>
-              <p className="research-program__overview">{program.overview}</p>
+              {program.overview && (
+                <p className="research-program__overview">{program.overview}</p>
+              )}
 
               <p className="research-program__pubs-label">
                 Related works
