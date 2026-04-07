@@ -82,7 +82,7 @@ export const researchPrograms: ResearchProgram[] = [
   {
     id: 'science-and-academia',
     title: 'Science and Academia',
-    overview: `Scientific knowledge is shaped not only by what researchers study but by how scientific communities are organized. This line of work examines how structural features of academic fields—audience segmentation, publication norms, and data practices—influence the production, reach, and epistemic character of scientific knowledge.`,
+    overview: `Scientific knowledge is shaped not only by what researchers study but by how scientific communities are organized. This line of work examines how structural features of academic fields, such as audience subsets, publication norms, and data practices, influence the production, reception, and epistemic character of scientific knowledge.`,
     keyQuestions: [
       'How does audience structure shape the impact of domain-spanning innovation?',
       'How do editorial and data sharing requirements shape the epistemic character of scientific articles?',
