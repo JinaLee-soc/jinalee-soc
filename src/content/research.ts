@@ -15,7 +15,7 @@ export interface ResearchPublication {
 }
 
 export const researchIntro = {
-  summary: `My research examines how evaluation systems that appear objective reproduce gender hierarchies across scientific and cultural fields. I ask: whose contributions are recognized as valuable, and whose are discounted? Across two lines of work, I trace how gender bias operates through everyday evaluation practices and accumulates into durable inequalities.`,
+  summary: `My research examines how evaluation systems that appear objective reproduce gender hierarchies across scientific and cultural fields. I ask: whose contributions are recognized as valuable, and whose are discounted? Across these programs, I trace how gender bias operates through everyday evaluation practices and accumulates into durable inequalities.`,
   methods: `My methods include computational text analysis, bibliometric analysis, and survey experiments.`,
 }
 
@@ -58,7 +58,7 @@ export const researchPrograms: ResearchProgram[] = [
   {
     id: 'cultural-evaluation',
     title: 'Gender, Culture, and Markets',
-    overview: `My work in this area examines how gender biases persist even when evaluation seems neutral and merit-based.`,
+    overview: `Evaluation does not operate the same way for everyone. My work in this area examines how cultural fields and markets (from literary canons to entrepreneurial financing) embed gender biases that persist even when criteria appear neutral and merit-based.`,
     keyQuestions: [
       'How do canonization processes in literature and culture embed and reproduce gender hierarchies?',
       'How does critical recognition operate differently for men and women writers?',
@@ -82,7 +82,7 @@ export const researchPrograms: ResearchProgram[] = [
   {
     id: 'science-and-academia',
     title: 'Science and Academia',
-    overview: `Scientific knowledge is shaped not only by what researchers study but by how scientific communities are organized. This line of work examines how structural features of academic fields, such as audience subsets, publication norms, and data practices, influence the production, reception, and epistemic character of scientific knowledge.`,
+    overview: `Scientific knowledge is shaped not only by what researchers study but by how scientific communities are organized. This line of work examines how structural features of academic fields, such as how audiences are structured, publication norms, and data practices, influence the production, reception, and epistemic character of scientific knowledge.`,
     keyQuestions: [
       'How does audience structure shape the impact of domain-spanning innovation?',
       'How do editorial and data sharing requirements shape the epistemic character of scientific articles?',
