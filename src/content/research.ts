@@ -10,7 +10,7 @@ export interface ResearchPublication {
   citation: string
   status?: string
   journal?: string  // venue shown next to badge for non-published papers
-  note?: string     // secondary line, e.g. "Manuscript available on request."
+  note?: string     // secondary line, e.g. "Manuscript available."
   doi?: string      // DOI for published papers
 }
 
@@ -40,7 +40,7 @@ export const researchPrograms: ResearchProgram[] = [
         citation:
           'Lee, Jina. "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty."',
         status: 'Under Review',
-        note: 'Manuscript available on request.',
+        note: 'Manuscript available.',
       },
       {
         citation:
@@ -92,7 +92,7 @@ export const researchPrograms: ResearchProgram[] = [
         citation:
           'Paik, Eugene T., Jina Lee, Erin Leahey, Russell Funk. "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation."',
         status: 'Working Paper',
-        note: 'Manuscript available on request.',
+        note: 'Manuscript available.',
       },
       {
         citation:
