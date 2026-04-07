@@ -58,7 +58,7 @@ export const researchPrograms: ResearchProgram[] = [
   {
     id: 'cultural-evaluation',
     title: 'Gender, Culture, and Markets',
-    overview: `Literary canons are socially constructed. My work in this area examines how canonization processes in Korean literature embed gender biases and how those biases persist even when evaluation criteria appear gender-neutral.`,
+    overview: `My work in this area examines how gender biases persist even when evaluation seems neutral and merit-based.`,
     keyQuestions: [
       'How do canonization processes in literature and culture embed and reproduce gender hierarchies?',
       'How does critical recognition operate differently for men and women writers?',
