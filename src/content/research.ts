@@ -33,7 +33,7 @@ export const researchPrograms: ResearchProgram[] = [
       {
         citation:
           'Lee, Jina. "The Gender of Scientific Authority: Novelty Claims and Gender Gaps in Scientific Impact Across Disciplines."',
-        status: 'Conditionally Accepted',
+        status: 'Forthcoming',
         journal: 'Gender & Society',
       },
       {

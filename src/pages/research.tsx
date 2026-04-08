@@ -56,7 +56,7 @@ export default function Research() {
                       <div className="pub-badge-row">
                         <span
                           className={`badge ${
-                            pub.status === 'Conditionally Accepted'
+                            pub.status === 'Conditionally Accepted' || pub.status === 'Forthcoming'
                               ? 'badge-accepted'
                               : pub.status === 'Under Review'
                               ? 'badge-review'
@@ -65,13 +65,11 @@ export default function Research() {
                         >
                           {pub.status}
                         </span>
-                        {pub.journal && (
-                          <span className="pub-item__venue">{pub.journal}</span>
-                        )}
                       </div>
                     )}
                     <p className="pub-item__citation">
                       {boldMyName(pub.citation)}
+                      {pub.journal && <em className="pub-item__venue"> {pub.journal}.</em>}
                       {pub.doi && (
                         <a
                           href={`https://doi.org/${pub.doi}`}
