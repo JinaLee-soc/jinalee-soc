@@ -1,5 +1,6 @@
 export type PublicationStatus =
   | 'Published'
+  | 'Forthcoming'
   | 'Conditionally Accepted'
   | 'Under Review'
   | 'Working Paper'
@@ -18,6 +19,14 @@ export interface Publication {
 }
 
 export const journalArticles: Publication[] = [
+  {
+    authors: 'Lee, Jina.',
+    year: 'Forthcoming',
+    title:
+      'The Gender of Scientific Authority: Novelty Claims and Gender Gaps in Scientific Impact Across Disciplines.',
+    venue: 'Gender & Society',
+    status: 'Forthcoming',
+  },
   {
     authors: 'Lee, Jina.',
     year: '2025',

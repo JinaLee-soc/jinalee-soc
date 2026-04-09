@@ -14,6 +14,7 @@ interface PublicationItemProps {
 
 const statusLabels: Record<PublicationStatus, string> = {
   Published: 'Published',
+  Forthcoming: 'Forthcoming',
   'Conditionally Accepted': 'Conditionally Accepted',
   'Under Review': 'Under Review',
   'Working Paper': 'Working Paper',
@@ -22,6 +23,7 @@ const statusLabels: Record<PublicationStatus, string> = {
 
 const statusClass: Record<PublicationStatus, string> = {
   Published: 'pub-item__status--published',
+  Forthcoming: 'pub-item__status--forthcoming',
   'Conditionally Accepted': 'pub-item__status--forthcoming',
   'Under Review': 'pub-item__status--under-review',
   'Working Paper': 'pub-item__status--in-progress',
