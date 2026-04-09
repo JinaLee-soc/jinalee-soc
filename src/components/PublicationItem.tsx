@@ -52,9 +52,11 @@ export default function PublicationItem({
           <em className="pub-item__title">{pub.title}</em>
         )}{' '}
         {pub.venue && <em className="pub-item__venue">{pub.venue}</em>}
-        {pub.volumeIssuePages && (
+        {pub.volumeIssuePages ? (
           <span>, {pub.volumeIssuePages}</span>
-        )}
+        ) : pub.venue ? (
+          <span>.</span>
+        ) : null}
         {pub.doi && (
           <>
             {' '}
