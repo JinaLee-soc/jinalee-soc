@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "generate:cv": "python3 scripts/cv/parse_docx.py --input cv.docx --output src/generated/cv-data.json",
+    "dev": "npm run generate:cv && next dev",
+    "build": "npm run generate:cv && next build",
     "start": "next start"
   },
   "dependencies": {

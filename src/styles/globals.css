@@ -590,18 +590,16 @@ button.footer__link {
 }
 
 /* ===== CV Page ===== */
-.cv-page {
-  text-align: center;
-  padding: var(--space-20) 0;
-}
-
-.cv-page__download {
-  margin-bottom: var(--space-10);
+.cv-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
 }
 
 .cv-page__summary {
-  max-width: 54ch;
-  margin: 0 auto;
+  max-width: 68ch;
+  margin-bottom: var(--space-8);
   color: var(--color-text-secondary);
   text-align: left;
 }
@@ -610,6 +608,27 @@ button.footer__link {
   margin-top: var(--space-4);
   font-size: 0.9rem;
   color: var(--color-text-muted);
+}
+
+.cv-page__viewer-shell {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(26, 25, 23, 0.06);
+}
+
+.cv-page__viewer {
+  width: 100%;
+  height: 88vh;
+  min-height: 900px;
+  border: 0;
+  display: block;
+}
+
+.cv-page__fallback {
+  padding: var(--space-6);
+  color: var(--color-text-secondary);
 }
 
 /* ===== Contact ===== */
@@ -817,6 +836,11 @@ button.footer__link {
     padding: var(--space-5) var(--space-5);
   }
 
+  .cv-page__viewer {
+    height: 78vh;
+    min-height: 620px;
+  }
+
   .footer__inner {
     flex-direction: column;
     align-items: flex-start;
@@ -830,6 +854,16 @@ button.footer__link {
 
   .hero__name {
     font-size: 1.75rem;
+  }
+
+  .cv-page__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cv-page__viewer {
+    height: 70vh;
+    min-height: 480px;
   }
 }
 

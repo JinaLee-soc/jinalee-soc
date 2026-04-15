@@ -7,28 +7,26 @@ A clean, professional, static academic website built with Next.js.
 ```bash
 npm install
 npm run dev          # local development at http://localhost:3000
-npm run build:export # production build → /out folder
+npm run build        # production build/export → /out folder
 ```
 
-## Deployment (Vercel — recommended)
+## Deployment (GitHub Pages)
 
-1. Push this repo to GitHub
-2. Go to [vercel.com](https://vercel.com) → Import the repo
-3. Framework preset: **Next.js**
-4. Build command: `npm run build:export` (or leave as default — Vercel detects `output: 'export'`)
-5. Set custom domain `jinalee.org` in Vercel → Settings → Domains
+A GitHub Actions workflow in `.github/workflows/deploy.yml` builds and deploys the static export on pushes to `main`.
 
 ## Routine Content Updates
 
-All content lives in `src/content/`. No layout changes required for routine updates.
+`cv.docx` is the source of truth. On `npm run dev` and `npm run build`, the parser runs automatically:
+
+`cv.docx` -> `scripts/cv/parse_docx.py` -> `src/generated/cv-data.json`
 
 | What to update | File |
 |---|---|
-| Add a new publication | `src/content/publications.ts` |
-| Update research description | `src/content/research.ts` |
-| Add a course | `src/content/teaching.ts` |
-| Replace CV | `public/cv.pdf` |
-| Update bio / positioning | `src/content/bio.ts` |
+| Update master CV | `cv.docx` |
+| Parse CV manually | `npm run generate:cv` |
+| Replace downloadable PDF CV | `public/JinaLee_CV.pdf` |
+| Update research page narrative | `src/content/research.ts` |
+| Update teaching page activities/philosophy | `src/content/teaching.ts` |
 | Update links (Scholar, ORCID) | `src/content/site.ts` |
 
 ## Adding Your Headshot
@@ -61,9 +59,12 @@ orcid: 'https://orcid.org/YOUR-ACTUAL-ORCID',
 src/
   components/   Reusable UI components
   content/      All text content — edit here for routine updates
+  generated/    Auto-generated data from CV parser
   pages/        One file per page
   styles/       Global CSS with design tokens
+scripts/
+  cv/           CV parsing scripts
 public/
-  cv.pdf        Upload your CV here
+  JinaLee_CV.pdf  CV page source PDF
   headshot.jpg  Add your photo here
 ```

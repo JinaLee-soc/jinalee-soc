@@ -1,3 +1,5 @@
+import { generatedPublished, generatedWorkInProgress } from './cvGenerated'
+
 export type PublicationStatus =
   | 'Published'
   | 'Forthcoming'
@@ -18,7 +20,7 @@ export interface Publication {
   manuscriptAvailable?: boolean
 }
 
-export const journalArticles: Publication[] = [
+const fallbackJournalArticles: Publication[] = [
   {
     authors: 'Lee, Jina.',
     year: 'Forthcoming',
@@ -68,7 +70,7 @@ export const journalArticles: Publication[] = [
   },
 ]
 
-export const worksInProgress: Publication[] = [
+const fallbackWorksInProgress: Publication[] = [
   {
     authors: 'Lee, Jina.',
     title:
@@ -108,3 +110,87 @@ export const worksInProgress: Publication[] = [
     status: 'In Progress',
   },
 ]
+
+const publicationStatuses: PublicationStatus[] = [
+  'Published',
+  'Forthcoming',
+  'Conditionally Accepted',
+  'Under Review',
+  'Working Paper',
+  'In Progress',
+]
+
+function ensureTrailingPeriod(text: string) {
+  return text.endsWith('.') ? text : `${text}.`
+}
+
+function normalizeStatus(
+  value: string | undefined,
+  fallback: PublicationStatus
+): PublicationStatus {
+  if (!value) {
+    return fallback
+  }
+
+  const lowered = value.trim().toLowerCase()
+  const match = publicationStatuses.find(
+    (status) => status.toLowerCase() === lowered
+  )
+
+  if (match) {
+    return match
+  }
+
+  if (lowered.includes('under review')) {
+    return 'Under Review'
+  }
+  if (lowered.includes('in progress')) {
+    return 'In Progress'
+  }
+  if (lowered.includes('working paper')) {
+    return 'Working Paper'
+  }
+  if (lowered.includes('forthcoming')) {
+    return 'Forthcoming'
+  }
+  if (lowered.includes('conditionally accepted')) {
+    return 'Conditionally Accepted'
+  }
+
+  return fallback
+}
+
+const generatedJournalArticles: Publication[] = generatedPublished
+  .map((pub) => {
+    const fallbackStatus: PublicationStatus =
+      pub.year?.toLowerCase() === 'forthcoming' ? 'Forthcoming' : 'Published'
+
+    return {
+      authors: ensureTrailingPeriod(pub.authors),
+      year: pub.year,
+      title: ensureTrailingPeriod(pub.title),
+      venue: pub.venue ?? '',
+      volumeIssuePages: pub.volume_issue_pages,
+      doi: pub.doi,
+      status: normalizeStatus(pub.status, fallbackStatus),
+    }
+  })
+  .filter((pub) => pub.title && pub.authors)
+
+const generatedWip: Publication[] = generatedWorkInProgress
+  .map((pub) => ({
+    authors: ensureTrailingPeriod(pub.authors),
+    title: ensureTrailingPeriod(pub.title),
+    venue: pub.venue ?? '',
+    status: normalizeStatus(pub.status, 'Working Paper'),
+    manuscriptAvailable: pub.manuscript_available,
+  }))
+  .filter((pub) => pub.title && pub.authors)
+
+export const journalArticles: Publication[] =
+  generatedJournalArticles.length > 0
+    ? generatedJournalArticles
+    : fallbackJournalArticles
+
+export const worksInProgress: Publication[] =
+  generatedWip.length > 0 ? generatedWip : fallbackWorksInProgress

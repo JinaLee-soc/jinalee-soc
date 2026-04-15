@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "source": "cv.docx",
+    "generated_at": "2026-04-15T16:20:19.468290+00:00"
+  },
+  "contact": {
+    "email": "jina@illinois.edu",
+    "website": "https://www.jinalee.org"
+  },
+  "employment": [
+    {
+      "period": "2024 – Current",
+      "title": "Assistant Professor of Sociology",
+      "institution": "University of Illinois at Urbana-Champaign"
+    }
+  ],
+  "education": [
+    {
+      "year": "2024",
+      "degree": "Ph.D. in Sociology",
+      "institution": "The University of Arizona",
+      "dissertation": "Gender Dynamics and Novelty Claims in Science",
+      "details": [
+        "(Computational Social Science Certificate)"
+      ]
+    },
+    {
+      "year": "2016",
+      "degree": "M.A. in Sociology",
+      "institution": "Yonsei University"
+    },
+    {
+      "year": "2013",
+      "degree": "B.A. in Sociology and Political Science",
+      "institution": "Yonsei University"
+    }
+  ],
+  "research_areas": [
+    "Gender and Inequality",
+    "Sociology of Science and Technology",
+    "Sociology of Culture",
+    "Computational Social Science",
+    "Experimental Methods"
+  ],
+  "publications": {
+    "published": [
+      {
+        "year": "Forthcoming",
+        "status": "Forthcoming",
+        "authors": "Lee, Jina",
+        "title": "The Gender of Scientific Authority: Novelty Claims and Gender Gaps in Scientific Impact Across Disciplines",
+        "venue": "Gender & Society"
+      },
+      {
+        "year": "2025",
+        "status": "Published",
+        "authors": "Lee, Jina",
+        "title": "Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon",
+        "venue": "Poetics",
+        "doi": "https://doi.org/10.1016/j.poetic.2025.102024",
+        "volume_issue_pages": "112"
+      },
+      {
+        "year": "2023",
+        "status": "Published",
+        "authors": "Leahey, Erin, Jina Lee, and Russell Funk",
+        "title": "What Types of Novelty are Most Disruptive?",
+        "venue": "American Sociological Review",
+        "doi": "https://doi.org/10.1177/00031224231168074",
+        "volume_issue_pages": "88(3): 562-597"
+      },
+      {
+        "year": "2022",
+        "status": "Published",
+        "authors": "Lee, Jina, Minjae Seo, and Erin Leahey",
+        "title": "Who Deserves Protection? How Naming Potential Beneficiaries Influences the COVID-19 Vaccine Intentions",
+        "venue": "Socius",
+        "doi": "https://doi.org/10.1177/23780231221082422",
+        "volume_issue_pages": "8"
+      },
+      {
+        "year": "2021",
+        "status": "Published",
+        "authors": "Zhao, Yi, Jina Lee, and Cheryl Ellenwood",
+        "title": "The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing",
+        "venue": "Journal of Social Entrepreneurship",
+        "doi": "https://doi.org/10.1080/19420676.2021.2004206",
+        "volume_issue_pages": "15(3): 811-832"
+      }
+    ],
+    "work_in_progress": [
+      {
+        "status": "Under Review",
+        "authors": "Lee, Jina",
+        "title": "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty"
+      },
+      {
+        "status": "Working Paper",
+        "authors": "Paik, Eugene T., Jina Lee, Russell Funk, Erin Leahey",
+        "title": "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation",
+        "manuscript_available": true
+      },
+      {
+        "status": "In Progress",
+        "authors": "Lee, Jina",
+        "title": "Who Faces More Doubt in Crisis? Gendered Patterns of Uncertainty in Reception of High-Stakes Science"
+      },
+      {
+        "status": "In Progress",
+        "authors": "Lee, Jina, Zhuofan Li",
+        "title": "Conceptual Divergence Analysis for Reflective Auditing"
+      }
+    ]
+  },
+  "invited_talks": [
+    {
+      "period": "2025",
+      "text": "Lee, Jina. “Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon.” The Association for Korean Sociologists in America, University of Illinois at Chicago, Chicago, IL."
+    },
+    {
+      "period": "2025",
+      "text": "Lee, Jina. “Selective Recognition: Gendered Recognition of Different Types of Scientific Novelty.” The Center for Complex Networks and Systems, Indiana University, Bloomington, IN."
+    },
+    {
+      "period": "2025",
+      "text": "Lee, Jina. “Selective Recognition: Gendered Recognition of Different Types of Scientific Novelty.” The Center for Science of Science & Innovation, Northwestern University, Evanston, IL."
+    },
+    {
+      "period": "2024",
+      "text": "Lee, Jina. “Measuring the Abstract: Novelty and Uncertainty in Scientific Publications.” AI and Data for Social Good, Seoul, Republic of Korea."
+    },
+    {
+      "period": "2024",
+      "text": "Lee, Jina. “Are Women’s Work and Claims Received as More Uncertain?” Women in Data Science Worldwide, Tucson, AZ. [Virtual]"
+    },
+    {
+      "period": "2024",
+      "text": "Lee, Jina. “Are Women’s Work and Claims Received as More Uncertain?” Knowledge Lab at the University of Chicago. [Virtual]"
+    }
+  ],
+  "selected_conference_presentations": [
+    {
+      "period": "2025",
+      "text": "Lee, Jina. “Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon.” 2025 International Conference on the Sociology of Korea (I-CSK), Stanford University, Stanford, CA."
+    },
+    {
+      "period": "2025",
+      "text": "Lee, Jina. “Selective Recognition: Gendered Recognition of Different Types of Scientific Novelty.” 120th American Sociological Association Annual Meeting, Chicago, IL."
+    },
+    {
+      "period": "2025",
+      "text": "Paik, Eugene T., Jina Lee, Russell Funk, Erin Leahey. “Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation.” 120th American Sociological Association Annual Meeting, Chicago, IL."
+    },
+    {
+      "period": "2025",
+      "text": "Lee, Jina. “Selective Recognition: Gendered Recognition of Different Types of Scientific Novelty.” American Sociological Association Methodology Section Mid-year Meeting, Philadelphia, PA."
+    },
+    {
+      "period": "2023",
+      "text": "Lee, Jina. “Are Women’s Work and Claims Received as More Uncertain?” TADA 2023: New Directions in Analyzing Text as Data, Amherst, MA."
+    },
+    {
+      "period": "2023",
+      "text": "Lee, Jina. “Are Women’s Work and Claims Received as More Uncertain?” 118th American Sociological Association Annual Meeting, Philadelphia, PA."
+    },
+    {
+      "period": "2023",
+      "text": "Lee, Jina. “Are Women’s Work and Claims Received as More Uncertain?” Doctoral Consortium, International Society for Scientometrics and Informetrics 2023 Conference, Bloomington, IN."
+    },
+    {
+      "period": "2021",
+      "text": "Leahey, Erin, Jina Lee, and Russell Funk. “What Types of Novelty are Most Disruptive?” 81st Annual Meeting of Academy of Management. [Virtual]"
+    },
+    {
+      "period": "2017",
+      "text": "Lee, Jina. “Depreciated to be Appreciated: Gender Devaluation in the Cultural Consecration of Korean Writers, 1960–2000,” 112th American Sociological Association Annual Meeting, Montreal, Canada."
+    }
+  ],
+  "honors_and_grants": [
+    {
+      "period": "2023 – 2025",
+      "text": "Key Personnel. Sub-grant from Humility in Inquiry: Foundations and New Directions project funded by John Templeton Foundation Project: Developing a Text-based Measure of HI and Examining Contextual Effects (PI: Erin Leahey, Co-PI: Sarah Bratt, Co-PI: Charles Gomez)"
+    },
+    {
+      "period": "2022",
+      "text": "Social and Behavioral Sciences Summer Dissertation Fellowship, University of Arizona."
+    },
+    {
+      "period": "2022",
+      "text": "Social and Behavioral Sciences Research Institute Dissertation Research Grant, University of Arizona."
+    },
+    {
+      "period": "2022",
+      "text": "Raymond V. Bowers Best Student Paper Award, School of Sociology, University of Arizona"
+    },
+    {
+      "period": "2021",
+      "text": "Social and Behavioral Sciences Research Institute Pre-Doctoral Research Grant, University of Arizona"
+    },
+    {
+      "period": "2019",
+      "text": "Participant, 11th Medici Summer School in Management Studies, HEC Paris."
+    },
+    {
+      "period": "2017 – 2018",
+      "text": "Social and Behavioral Sciences Graduate Fellowship, University of Arizona"
+    },
+    {
+      "period": "2014 – 2015",
+      "text": "Brain Korea21 + Research Fellowship. Funded by National Research Foundation of Korea"
+    },
+    {
+      "period": "2014 Fall",
+      "text": "National Research Fellowship for Social Science and Humanities Graduates. Funded by Korea Student Aid Foundation"
+    }
+  ],
+  "teaching": {
+    "institutions": [
+      {
+        "institution": "University of Illinois at Urbana-Champaign",
+        "courses": [
+          {
+            "title": "Technology & Society",
+            "offering": "In-Person, Spring 2026"
+          },
+          {
+            "title": "Sociology of Gender",
+            "offering": "In-Person, Fall 2025"
+          },
+          {
+            "title": "Introduction to Social Statistics",
+            "offering": "In-Person, Fall 2024; Fall 2025"
+          },
+          {
+            "title": "Sociology of Culture",
+            "offering": "In-Person, Spring 2025; Spring 2026"
+          }
+        ]
+      },
+      {
+        "institution": "University of Arizona",
+        "courses": [
+          {
+            "title": "Why So Few? Women in the Professions",
+            "offering": "Online, Spring 2023"
+          },
+          {
+            "title": "God in the Movies",
+            "offering": "Online, Summer 2021; Winter 2021; Fall 2022"
+          },
+          {
+            "title": "Sociology of Popular Culture",
+            "offering": "Online, Summer 2020"
+          }
+        ]
+      }
+    ],
+    "workshops": [
+      {
+        "period": "2026",
+        "text": "“Setting up an Agentic AI as a Research Assistant.” Navigating GenAI for Higher Education Faculty (Invited Instructor), University of Tennessee, Knoxville."
+      }
+    ]
+  },
+  "review_and_editorial_service": [
+    {
+      "period": "2025 – Current",
+      "text": "Early Career Review Board Member, Social Science Research."
+    },
+    {
+      "period": "2023 – Current",
+      "text": "Ad Hoc Reviewer, reviewed manuscripts for the following journals: American Sociological Review, Gender & Society, Social Science Research, Proceedings of the National Academy of Sciences (PNAS), Poetics, Socius, International Sociology"
+    }
+  ],
+  "other_professional_service": [
+    {
+      "group": "Professional Association",
+      "items": [
+        {
+          "period": "2025 – 2026",
+          "text": "Mentorship Committee, Science, Knowledge, and Technology Section of the American Sociological Association."
+        },
+        {
+          "period": "2025",
+          "text": "Thompson Paper Award Committee, Organizations, Occupations and Work Section of the American Sociological Association."
+        },
+        {
+          "period": "2025",
+          "text": "Clifford Clogg Award Committee, Methodology Section of the American Sociological Association."
+        },
+        {
+          "period": "2022 – 2023",
+          "text": "Student Representative (elected), Executive Committee at the Association of Korean Sociologists in America (AKSA)."
+        },
+        {
+          "period": "2022",
+          "text": "Communication Committee, Science, Knowledge, and Technology Section of the American Sociological Association."
+        }
+      ]
+    },
+    {
+      "group": "Service to the University of Illinois at Urbana-Champaign",
+      "items": [
+        {
+          "period": "2025 – 2026",
+          "text": "Colloquium Committee in the Department of Sociology at the University of Illinois at Urbana-Champaign."
+        },
+        {
+          "period": "2024 – 2026",
+          "text": "Diversity Committee in the Department of Sociology at the University of Illinois at Urbana-Champaign."
+        },
+        {
+          "period": "2024 – 2025",
+          "text": "Graduate Studies Committee in the Department of Sociology at the University of Illinois at Urbana-Champaign."
+        }
+      ]
+    },
+    {
+      "group": "Service to the University of Arizona",
+      "items": [
+        {
+          "period": "2022 – 2023",
+          "text": "Student Representative, Recruitment Committee in the School of Sociology at the University of Arizona."
+        },
+        {
+          "period": "2021",
+          "text": "Climate Survey Initiative in the School of Sociology at the University of Arizona"
+        },
+        {
+          "period": "2019 – 2021",
+          "text": "Student Representative (elected), Graduate Studies Committee in the School of Sociology at the University of Arizona."
+        }
+      ]
+    }
+  ]
+}
