@@ -7,7 +7,7 @@ import PublicationItem from '../components/PublicationItem'
 import { bio } from '../content/bio'
 import { site, basePath } from '../content/site'
 import { researchPrograms } from '../content/research'
-import { journalArticles } from '../content/publications'
+import { journalArticles, worksInProgress } from '../content/publications'
 
 // Research card summaries (shorter than full overview)
 const researchCardSummaries: Record<string, string> = {
@@ -133,6 +133,16 @@ export default function Home() {
                 <PublicationItem key={i} pub={pub} showStatus={false} />
               ))}
             </ul>
+            {worksInProgress.length > 0 && (
+              <div className="pub-subsection">
+                <h3 className="pub-subsection__title">Work in Progress</h3>
+                <ul className="pub-list" aria-label="Work in progress">
+                  {worksInProgress.map((pub, i) => (
+                    <PublicationItem key={`wip-${i}`} pub={pub} />
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </section>
 
