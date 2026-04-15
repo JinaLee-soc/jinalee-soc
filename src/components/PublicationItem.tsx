@@ -80,17 +80,6 @@ export default function PublicationItem({
             {statusLabels[pub.status]}
           </span>
         )}
-        {pub.manuscriptAvailable && (
-          <span
-            style={{
-              fontSize: '0.8rem',
-              color: 'var(--color-text-muted)',
-              marginLeft: '0.5rem',
-            }}
-          >
-            · Manuscript available upon request
-          </span>
-        )}
       </p>
     </li>
   )
