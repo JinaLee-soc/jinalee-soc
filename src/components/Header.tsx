@@ -4,8 +4,7 @@ import { useState } from 'react'
 import { bio } from '../content/bio'
 
 const navItems = [
-  { href: '/', label: 'Home' },
-  { href: '/research', label: 'Research' },
+  { href: '/', label: 'Research' },
   { href: '/teaching', label: 'Teaching' },
   { href: '/cv', label: 'CV' },
 ]

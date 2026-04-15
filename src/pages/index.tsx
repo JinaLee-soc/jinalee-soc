@@ -2,20 +2,10 @@ import Link from 'next/link'
 import Layout from '../components/Layout'
 import LinkButton from '../components/LinkButton'
 import { useState } from 'react'
-import ResearchCard from '../components/ResearchCard'
 import PublicationItem from '../components/PublicationItem'
 import { bio } from '../content/bio'
 import { site, basePath } from '../content/site'
-import { researchPrograms } from '../content/research'
 import { journalArticles, worksInProgress } from '../content/publications'
-
-// Research card summaries (shorter than full overview)
-const researchCardSummaries: Record<string, string> = {
-  'scientific-evaluation':
-    'How do gendered dynamics shape which scientific contributions get recognized, cited, and treated as authoritative?',
-  'cultural-evaluation':
-    'How do canonization processes in literature and culture embed and reproduce gender hierarchies?',
-}
 
 export default function Home() {
   const [emailCopied, setEmailCopied] = useState(false)
@@ -92,29 +82,6 @@ export default function Home() {
               and{' '}
               <a href="https://doi.org/10.1080/19420676.2021.2004206" target="_blank" rel="noopener noreferrer"><em>Journal of Social Entrepreneurship</em></a>.
             </p>
-          </div>
-        </section>
-
-        {/* ===== Research Areas ===== */}
-        <section
-          className="section"
-          aria-labelledby="research-heading"
-          style={{ borderTop: '1px solid var(--color-border-light)', paddingTop: 'var(--space-16)' }}
-        >
-          <div className="container container--wide">
-            <p className="section__heading" id="research-heading">
-              Research Areas
-            </p>
-            <div className="research-grid">
-              {researchPrograms.map((program) => (
-                <ResearchCard
-                  key={program.id}
-                  id={program.id}
-                  title={program.title}
-                  description={researchCardSummaries[program.id] || program.overview.slice(0, 140) + '…'}
-                />
-              ))}
-            </div>
           </div>
         </section>
 
