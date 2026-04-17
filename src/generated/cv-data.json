@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-04-15T16:20:19.468290+00:00"
+    "generated_at": "2026-04-17T21:46:12.072962+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -109,6 +109,11 @@
         "status": "In Progress",
         "authors": "Lee, Jina, Zhuofan Li",
         "title": "Conceptual Divergence Analysis for Reflective Auditing"
+      },
+      {
+        "status": "In Progress",
+        "authors": "Lee, Jina, Charles Gomez, Sarah Bratt, Yea-Eun Kwon, Charles Lassiter, Erin Leahey",
+        "title": "Why Is Women’s Work More Disruptive?"
       }
     ]
   },
