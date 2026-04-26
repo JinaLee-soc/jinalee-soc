@@ -50,7 +50,7 @@ export default function Home() {
                 </div>
               </div>
               <img
-                src={`${basePath}/headshot.jpg`}
+                src={`${basePath}/headshot.png`}
                 alt={bio.headshotAlt}
                 className="hero__headshot"
                 width={180}
