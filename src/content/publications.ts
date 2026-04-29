@@ -111,6 +111,20 @@ const fallbackWorksInProgress: Publication[] = [
   },
 ]
 
+const fallbackBookChapters: Publication[] = [
+  {
+    authors:
+      'Lassiter, Charles, Sarah Bratt, Erin Leahey, Charlie Gomez, Jina Lee, and Yeaeun Kwon.',
+    year: 'Forthcoming',
+    title:
+      'Humble Reflections on the Intellectual Process of Developing a Text-based Measure of Humility in Inquiry.',
+    venue: 'in Humble Inquiry: New Perspectives on Intellectual Humility',
+    volumeIssuePages:
+      'edited by Nathan Ballantyne, Jared Celniker, and Norbert Schwartz. Cambridge University Press',
+    status: 'Forthcoming',
+  },
+]
+
 const publicationStatuses: PublicationStatus[] = [
   'Published',
   'Forthcoming',
@@ -122,6 +136,60 @@ const publicationStatuses: PublicationStatus[] = [
 
 function ensureTrailingPeriod(text: string) {
   return text.endsWith('.') ? text : `${text}.`
+}
+
+function cleanText(value: string | undefined) {
+  return value?.trim() ?? ''
+}
+
+function stripPublicationArtifacts(value: string | undefined) {
+  return cleanText(value).replace(/\.\s*Book Chapters\s*$/i, '')
+}
+
+function isGeneratedSectionLabel(pub: {
+  authors?: string
+  title?: string
+}) {
+  const authors = cleanText(pub.authors).toLowerCase()
+  const title = cleanText(pub.title)
+
+  return !title || authors === 'journal articles' || authors === 'book chapters'
+}
+
+function isBookChapterRecord(pub: {
+  authors?: string
+  title?: string
+  venue?: string
+}) {
+  const authors = cleanText(pub.authors).toLowerCase()
+  const title = cleanText(pub.title).toLowerCase()
+  const venue = cleanText(pub.venue).toLowerCase()
+
+  return (
+    authors.includes('charles lassiter') ||
+    title.startsWith(
+      'humble reflections on the intellectual process of developing a text-based measure of humility in inquiry'
+    ) ||
+    venue.startsWith('in humble inquiry:')
+  )
+}
+
+function splitBookChapterVenue(venue: string | undefined) {
+  const cleanedVenue = cleanText(venue)
+  const marker = ' edited by '
+  const markerIndex = cleanedVenue.toLowerCase().indexOf(marker)
+
+  if (markerIndex === -1) {
+    return {
+      venue: cleanedVenue,
+      volumeIssuePages: undefined,
+    }
+  }
+
+  return {
+    venue: cleanedVenue.slice(0, markerIndex),
+    volumeIssuePages: cleanedVenue.slice(markerIndex + 1),
+  }
 }
 
 function normalizeStatus(
@@ -161,6 +229,7 @@ function normalizeStatus(
 }
 
 const generatedJournalArticles: Publication[] = generatedPublished
+  .filter((pub) => !isGeneratedSectionLabel(pub) && !isBookChapterRecord(pub))
   .map((pub) => {
     const fallbackStatus: PublicationStatus =
       pub.year?.toLowerCase() === 'forthcoming' ? 'Forthcoming' : 'Published'
@@ -170,7 +239,26 @@ const generatedJournalArticles: Publication[] = generatedPublished
       year: pub.year,
       title: ensureTrailingPeriod(pub.title),
       venue: pub.venue ?? '',
-      volumeIssuePages: pub.volume_issue_pages,
+      volumeIssuePages: stripPublicationArtifacts(pub.volume_issue_pages) || undefined,
+      doi: pub.doi,
+      status: normalizeStatus(pub.status, fallbackStatus),
+    }
+  })
+  .filter((pub) => pub.title && pub.authors)
+
+const generatedBookChapters: Publication[] = generatedPublished
+  .filter((pub) => !isGeneratedSectionLabel(pub) && isBookChapterRecord(pub))
+  .map((pub) => {
+    const fallbackStatus: PublicationStatus =
+      pub.year?.toLowerCase() === 'forthcoming' ? 'Forthcoming' : 'Published'
+    const { venue, volumeIssuePages } = splitBookChapterVenue(pub.venue)
+
+    return {
+      authors: ensureTrailingPeriod(pub.authors),
+      year: pub.year,
+      title: ensureTrailingPeriod(pub.title),
+      venue,
+      volumeIssuePages,
       doi: pub.doi,
       status: normalizeStatus(pub.status, fallbackStatus),
     }
@@ -191,6 +279,11 @@ export const journalArticles: Publication[] =
   generatedJournalArticles.length > 0
     ? generatedJournalArticles
     : fallbackJournalArticles
+
+export const bookChapters: Publication[] =
+  generatedBookChapters.length > 0
+    ? generatedBookChapters
+    : fallbackBookChapters
 
 export const worksInProgress: Publication[] =
   generatedWip.length > 0 ? generatedWip : fallbackWorksInProgress

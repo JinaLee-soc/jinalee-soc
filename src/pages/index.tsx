@@ -5,7 +5,11 @@ import { useState } from 'react'
 import PublicationItem from '../components/PublicationItem'
 import { bio } from '../content/bio'
 import { site, basePath } from '../content/site'
-import { journalArticles, worksInProgress } from '../content/publications'
+import {
+  bookChapters,
+  journalArticles,
+  worksInProgress,
+} from '../content/publications'
 
 export default function Home() {
   const [emailCopied, setEmailCopied] = useState(false)
@@ -95,11 +99,26 @@ export default function Home() {
             <p className="section__heading" id="publications-heading">
               Publications
             </p>
-            <ul className="pub-list" aria-label="Published journal articles">
+            <p className="pub-category-label">
+              <em>Journal Articles</em>
+            </p>
+            <ul className="pub-list" aria-label="Journal articles">
               {journalArticles.map((pub, i) => (
                 <PublicationItem key={i} pub={pub} showStatus={false} />
               ))}
             </ul>
+            {bookChapters.length > 0 && (
+              <div className="pub-subsection">
+                <p className="pub-category-label">
+                  <em>Book Chapters</em>
+                </p>
+                <ul className="pub-list" aria-label="Book chapters">
+                  {bookChapters.map((pub, i) => (
+                    <PublicationItem key={`book-${i}`} pub={pub} showStatus={false} />
+                  ))}
+                </ul>
+              </div>
+            )}
             {worksInProgress.length > 0 && (
               <div className="pub-subsection">
                 <h3 className="pub-subsection__title">Work in Progress</h3>
