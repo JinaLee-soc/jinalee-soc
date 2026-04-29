@@ -84,7 +84,8 @@ export default function Home() {
               <a href="https://doi.org/10.1016/j.poetic.2025.102024" target="_blank" rel="noopener noreferrer"><em>Poetics</em></a>,{' '}
               <a href="https://doi.org/10.1177/23780231221082422" target="_blank" rel="noopener noreferrer"><em>Socius</em></a>,{' '}
               and{' '}
-              <a href="https://doi.org/10.1080/19420676.2021.2004206" target="_blank" rel="noopener noreferrer"><em>Journal of Social Entrepreneurship</em></a>.
+              <a href="https://doi.org/10.1080/19420676.2021.2004206" target="_blank" rel="noopener noreferrer"><em>Journal of Social Entrepreneurship</em></a>,
+              and is forthcoming in <em>Gender &amp; Society</em>.
             </p>
           </div>
         </section>
