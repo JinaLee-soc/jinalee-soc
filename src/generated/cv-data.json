@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-04-17T21:59:28.354315+00:00"
+    "generated_at": "2026-05-25T01:59:32.843577+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -45,10 +45,17 @@
   "publications": {
     "published": [
       {
+        "year": "",
+        "status": "Published",
+        "authors": "Journal Articles",
+        "title": "",
+        "venue": ""
+      },
+      {
         "year": "Forthcoming",
         "status": "Forthcoming",
         "authors": "Lee, Jina",
-        "title": "The Gender of Scientific Authority: Novelty Claims and Gender Gaps in Scientific Impact Across Disciplines",
+        "title": "Claiming Novelty, Claiming Authority: Gender Gaps in Scientific Impact Across Disciplines",
         "venue": "Gender & Society"
       },
       {
@@ -85,7 +92,14 @@
         "title": "The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing",
         "venue": "Journal of Social Entrepreneurship",
         "doi": "https://doi.org/10.1080/19420676.2021.2004206",
-        "volume_issue_pages": "15(3): 811-832"
+        "volume_issue_pages": "15(3): 811-832. Book Chapters"
+      },
+      {
+        "year": "Forthcoming",
+        "status": "Forthcoming",
+        "authors": "Lassiter, Charles, Sarah Bratt, Erin Leahey, Charlie Gomez, Jina Lee, and Yeaeun Kwon",
+        "title": "Humble Reflections on the Intellectual Process of Developing a Text-based Measure of Humility in Inquiry",
+        "venue": "In Humble Inquiry: New Perspectives on Intellectual Humility edited by Nathan Ballantyne, Jared Celniker, and Norbert Schwartz. Cambridge University Press"
       }
     ],
     "work_in_progress": [
@@ -93,6 +107,11 @@
         "status": "Under Review",
         "authors": "Lee, Jina",
         "title": "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty"
+      },
+      {
+        "status": "Under Review",
+        "authors": "Lee, Jina, Zhuofan Li",
+        "title": "Toward a Personalization Turn in AI-Assisted Research Infrastructure: Conceptual Divergence Analysis for Reflective Auditing"
       },
       {
         "status": "Working Paper",
@@ -103,22 +122,7 @@
       {
         "status": "In Progress",
         "authors": "Lee, Jina",
-        "title": "Who Faces More Doubt in Crisis? Gendered Patterns of Uncertainty in Reception of High-Stakes Science"
-      },
-      {
-        "status": "In Progress",
-        "authors": "Lee, Jina, Zhuofan Li",
-        "title": "Conceptual Divergence Analysis for Reflective Auditing"
-      },
-      {
-        "status": "In Progress",
-        "authors": "Lee, Jina",
-        "title": "When AI Holds a Mirror: Why Reflexivity Stayed Normative and What Changes When It Doesn’t Have To"
-      },
-      {
-        "status": "In Progress",
-        "authors": "Lee, Jina, Charles Gomez, Sarah Bratt, Yea-Eun Kwon, Charles Lassiter, Erin Leahey",
-        "title": "Why Is Women’s Work More Disruptive?"
+        "title": "Cited with Uncertainty: Gendered Credibility in High-Stakes Science"
       }
     ]
   },
@@ -189,7 +193,7 @@
   "honors_and_grants": [
     {
       "period": "2023 – 2025",
-      "text": "Key Personnel. Sub-grant from Humility in Inquiry: Foundations and New Directions project funded by John Templeton Foundation Project: Developing a Text-based Measure of HI and Examining Contextual Effects (PI: Erin Leahey, Co-PI: Sarah Bratt, Co-PI: Charles Gomez)"
+      "text": "Consultant. Sub-grant from Humility in Inquiry: Foundations and New Directions project funded by John Templeton Foundation Project: Developing a Text-based Measure of HI and Examining Contextual Effects (PI: Erin Leahey, Co-PI: Sarah Bratt, Co-PI: Charles Gomez)"
     },
     {
       "period": "2022",
@@ -268,7 +272,7 @@
     "workshops": [
       {
         "period": "2026",
-        "text": "“Setting up an Agentic AI as a Research Assistant.” Navigating GenAI for Higher Education Faculty (Invited Instructor), University of Tennessee, Knoxville."
+        "text": "“Setting up an AI Agent for Automated Literature Search.” Navigating GenAI for Higher Education Faculty (Invited Instructor), University of Tennessee, Knoxville."
       }
     ]
   },
@@ -313,15 +317,15 @@
       "items": [
         {
           "period": "2025 – 2026",
-          "text": "Colloquium Committee in the Department of Sociology at the University of Illinois at Urbana-Champaign."
+          "text": "Colloquium Committee in the Department of Sociology."
         },
         {
           "period": "2024 – 2026",
-          "text": "Diversity Committee in the Department of Sociology at the University of Illinois at Urbana-Champaign."
+          "text": "Diversity Committee in the Department of Sociology."
         },
         {
           "period": "2024 – 2025",
-          "text": "Graduate Studies Committee in the Department of Sociology at the University of Illinois at Urbana-Champaign."
+          "text": "Graduate Studies Committee in the Department of Sociology."
         }
       ]
     },
@@ -330,15 +334,15 @@
       "items": [
         {
           "period": "2022 – 2023",
-          "text": "Student Representative, Recruitment Committee in the School of Sociology at the University of Arizona."
+          "text": "Student Representative, Recruitment Committee in the School of Sociology."
         },
         {
           "period": "2021",
-          "text": "Climate Survey Initiative in the School of Sociology at the University of Arizona"
+          "text": "Climate Survey Initiative in the School of Sociology."
         },
         {
           "period": "2019 – 2021",
-          "text": "Student Representative (elected), Graduate Studies Committee in the School of Sociology at the University of Arizona."
+          "text": "Student Representative (elected), Graduate Studies Committee in the School of Sociology."
         }
       ]
     }
