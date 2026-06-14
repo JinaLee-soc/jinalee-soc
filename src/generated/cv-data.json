@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-06-10T12:38:21.156363+00:00"
+    "generated_at": "2026-06-14T04:47:32.597315+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -120,9 +120,10 @@
         "manuscript_available": true
       },
       {
-        "status": "In Progress",
+        "status": "Working Paper",
         "authors": "Lee, Jina",
-        "title": "Gendered Returns to Novelty Claims in Scientific Reception"
+        "title": "Stratified Fact-Making: How Gender and Novelty Claims Shape Stabilization of Scientific Claims",
+        "manuscript_available": true
       }
     ]
   },
