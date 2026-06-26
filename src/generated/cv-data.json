@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-06-23T18:24:34.282729+00:00"
+    "generated_at": "2026-06-26T23:30:07.033075+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -104,14 +104,14 @@
     ],
     "work_in_progress": [
       {
-        "status": "Under Review",
-        "authors": "Lee, Jina",
-        "title": "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty"
+        "status": "Working Paper",
+        "authors": "Lee, Jina, Zhuofan Li",
+        "title": "Toward a Personalization Turn in AI-Assisted Research Infrastructure: Conceptual Divergence Analysis for Reflective Auditing"
       },
       {
         "status": "Under Review",
-        "authors": "Lee, Jina, Zhuofan Li",
-        "title": "Toward a Personalization Turn in AI-Assisted Research Infrastructure: Conceptual Divergence Analysis for Reflective Auditing"
+        "authors": "Lee, Jina",
+        "title": "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty"
       },
       {
         "status": "Working Paper",
