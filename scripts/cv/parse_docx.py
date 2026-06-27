@@ -9,6 +9,7 @@ import zipfile
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
+# allow: SIZE_OK - build-time CV parser keeps docx extraction and section parsing together.
 W_NS = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 
 TOP_LEVEL_HEADINGS = {
@@ -31,6 +32,11 @@ YEAR_LINE_RE = re.compile(
 
 DOI_URL_RE = re.compile(r"https?://doi\.org/\S+", flags=re.IGNORECASE)
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Z0-9]+", flags=re.IGNORECASE)
+RR_STATUS_RE = re.compile(
+    r"\b(?:r\s*&\s*r|revise\s+(?:and|&)\s+resubmit)\b"
+    r"(?:\s+(?:at|with)\s+(?P<venue>.+))?",
+    flags=re.IGNORECASE,
+)
 
 
 def normalize_space(text: str) -> str:
@@ -359,19 +365,23 @@ def parse_publications(lines: list[str]) -> list[dict[str, str]]:
     return records
 
 
-def map_work_status(raw: str) -> tuple[str, bool]:
+def map_work_status(raw: str) -> tuple[str, bool, str | None]:
     lower = raw.lower().strip()
     manuscript_available = "manuscript available" in lower
 
+    rr_match = RR_STATUS_RE.search(raw.strip())
+    if rr_match:
+        venue = normalize_line(rr_match.group("venue") or "").rstrip(".") or None
+        return "Revise & Resubmit", manuscript_available, venue
     if "under review" in lower:
-        return "Under Review", manuscript_available
+        return "Under Review", manuscript_available, None
     if "in progress" in lower:
-        return "In Progress", manuscript_available
+        return "In Progress", manuscript_available, None
     if "conditionally accepted" in lower:
-        return "Conditionally Accepted", manuscript_available
+        return "Conditionally Accepted", manuscript_available, None
     if "working paper" in lower or manuscript_available:
-        return "Working Paper", manuscript_available
-    return "Working Paper", manuscript_available
+        return "Working Paper", manuscript_available, None
+    return "Working Paper", manuscript_available, None
 
 
 def parse_work_in_progress(lines: list[str]) -> list[dict[str, object]]:
@@ -396,14 +406,16 @@ def parse_work_in_progress(lines: list[str]) -> list[dict[str, object]]:
             item = item[: status_match.start()].strip().rstrip(".")
 
         core = parse_publication_core(item)
-        status, manuscript_available = map_work_status(status_text)
+        status, manuscript_available, status_venue = map_work_status(status_text)
 
         record: dict[str, object] = {
             "status": status,
             "authors": core.get("authors", ""),
             "title": core.get("title", ""),
         }
-        if core.get("venue"):
+        if status_venue:
+            record["venue"] = status_venue
+        elif core.get("venue"):
             record["venue"] = core["venue"]
         if manuscript_available:
             record["manuscript_available"] = True

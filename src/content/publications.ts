@@ -1,9 +1,11 @@
 import { generatedPublished, generatedWorkInProgress } from './cvGenerated'
 
+// allow: SIZE_OK - publication content combines generated CV normalization with fallback data.
 export type PublicationStatus =
   | 'Published'
   | 'Forthcoming'
   | 'Conditionally Accepted'
+  | 'Revise & Resubmit'
   | 'Under Review'
   | 'Working Paper'
   | 'In Progress'
@@ -129,6 +131,7 @@ const publicationStatuses: PublicationStatus[] = [
   'Published',
   'Forthcoming',
   'Conditionally Accepted',
+  'Revise & Resubmit',
   'Under Review',
   'Working Paper',
   'In Progress',
@@ -209,6 +212,13 @@ function normalizeStatus(
     return match
   }
 
+  if (
+    lowered.includes('r&r') ||
+    lowered.includes('revise and resubmit') ||
+    lowered.includes('revise & resubmit')
+  ) {
+    return 'Revise & Resubmit'
+  }
   if (lowered.includes('under review')) {
     return 'Under Review'
   }
