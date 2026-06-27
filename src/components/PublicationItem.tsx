@@ -36,6 +36,8 @@ export default function PublicationItem({
   pub,
   showStatus = true,
 }: PublicationItemProps) {
+  const displayVenue = pub.status === 'Revise & Resubmit' ? '' : pub.venue
+
   return (
     <li className="pub-item">
       <p className="pub-item__citation">
@@ -53,10 +55,10 @@ export default function PublicationItem({
         ) : (
           <em className="pub-item__title">{pub.title}</em>
         )}{' '}
-        {pub.venue && <em className="pub-item__venue">{pub.venue}</em>}
+        {displayVenue && <em className="pub-item__venue">{displayVenue}</em>}
         {pub.volumeIssuePages ? (
           <span>, {pub.volumeIssuePages}</span>
-        ) : pub.venue ? (
+        ) : displayVenue ? (
           <span>.</span>
         ) : null}
         {pub.doi && (
