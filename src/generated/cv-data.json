@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-06-26T23:49:32.269861+00:00"
+    "generated_at": "2026-06-27T07:35:59.150088+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -116,6 +116,12 @@
       },
       {
         "status": "Working Paper",
+        "authors": "Ryu, Dahyun, Jina Lee",
+        "title": "Stigma-Signification, Platformed Emotional Regimes, and the Selective Retention of Feminist Speech in South Korea",
+        "manuscript_available": true
+      },
+      {
+        "status": "Working Paper",
         "authors": "Paik, Eugene T., Jina Lee, Russell Funk, Erin Leahey",
         "title": "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation",
         "manuscript_available": true
@@ -186,10 +192,6 @@
     {
       "period": "2021",
       "text": "Leahey, Erin, Jina Lee, and Russell Funk. “What Types of Novelty are Most Disruptive?” 81st Annual Meeting of Academy of Management. [Virtual]"
-    },
-    {
-      "period": "2017",
-      "text": "Lee, Jina. “Depreciated to be Appreciated: Gender Devaluation in the Cultural Consecration of Korean Writers, 1960–2000,” 112th American Sociological Association Annual Meeting, Montreal, Canada."
     }
   ],
   "honors_and_grants": [
