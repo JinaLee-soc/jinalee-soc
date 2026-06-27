@@ -26,7 +26,7 @@ const statusClass: Record<PublicationStatus, string> = {
   Published: 'pub-item__status--published',
   Forthcoming: 'pub-item__status--forthcoming',
   'Conditionally Accepted': 'pub-item__status--forthcoming',
-  'Revise & Resubmit': 'pub-item__status--under-review',
+  'Revise & Resubmit': 'pub-item__status--under-review pub-item__status--rnr',
   'Under Review': 'pub-item__status--under-review',
   'Working Paper': 'pub-item__status--in-progress',
   'In Progress': 'pub-item__status--in-progress',

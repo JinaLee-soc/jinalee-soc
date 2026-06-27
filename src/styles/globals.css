@@ -444,6 +444,12 @@ button.footer__link {
   color: #7b5a1a;
 }
 
+.pub-item__status--rnr {
+  font-size: 0.76rem;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+}
+
 .pub-item__status--in-progress {
   background: #f3f0ec;
   color: #6b6058;
