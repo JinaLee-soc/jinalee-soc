@@ -1,9 +1,18 @@
 from __future__ import annotations
 
 import argparse
+import os
 from pathlib import Path
 
 from docx import Document
+
+from korean_auto_translation import (
+    DEFAULT_AUTO_TRANSLATIONS_PATH,
+    DEFAULT_TRANSLATION_MODEL,
+    load_auto_translations,
+    save_auto_translations,
+    translate_prose,
+)
 
 
 TRANSLATIONS: dict[str, str] = {
@@ -94,6 +103,24 @@ PRESERVED_TITLES = {
 }
 
 
+def should_preserve(text: str) -> bool:
+    return text in PRESERVED_TITLES or text.startswith((
+        "HOME ",
+        "RESEARCH INTRO",
+        "KEY QUESTIONS",
+        "PUBLICATIONS",
+        "TEACHING PHILOSOPHY",
+        "COURSE: ",
+        "ACTIVITIES: ",
+        "ITEM: ",
+    )) or text in {
+        "HOME ABOUT",
+        "HOME TEACHING",
+        "PUBLICATIONS",
+        "TEACHING PHILOSOPHY",
+    }
+
+
 def replace_paragraph_text(paragraph, replacement: str) -> None:
     if not paragraph.runs:
         paragraph.add_run(replacement)
@@ -104,43 +131,50 @@ def replace_paragraph_text(paragraph, replacement: str) -> None:
         run.text = ""
 
 
-def create_korean_document(input_path: Path, output_path: Path) -> None:
+def create_korean_document(
+    input_path: Path,
+    output_path: Path,
+    auto_translations_path: Path,
+    model: str,
+) -> None:
     document = Document(input_path)
+    auto_translations = load_auto_translations(auto_translations_path)
+    new_paragraphs: list[str] = []
+
+    for paragraph in document.paragraphs:
+        text = paragraph.text.strip()
+        if (
+            text
+            and text not in TRANSLATIONS
+            and text not in auto_translations
+            and not should_preserve(text)
+            and text not in new_paragraphs
+        ):
+            new_paragraphs.append(text)
+
+    if new_paragraphs:
+        generated = translate_prose(new_paragraphs, model)
+        auto_translations.update(generated)
+        save_auto_translations(auto_translations_path, auto_translations)
+        print(
+            f"Auto-translated {len(generated)} new paragraphs with {model}; "
+            f"review them in {auto_translations_path}."
+        )
+
     translated = 0
-    untranslated: list[str] = []
 
     for paragraph in document.paragraphs:
         text = paragraph.text.strip()
         if not text:
             continue
-        replacement = TRANSLATIONS.get(text)
+        replacement = TRANSLATIONS.get(text) or auto_translations.get(text)
         if replacement is not None:
             replace_paragraph_text(paragraph, replacement)
             translated += 1
-        elif text in PRESERVED_TITLES or text.startswith((
-            "HOME ",
-            "RESEARCH INTRO",
-            "KEY QUESTIONS",
-            "PUBLICATIONS",
-            "TEACHING PHILOSOPHY",
-            "COURSE: ",
-            "ACTIVITIES: ",
-            "ITEM: ",
-        )) or text in {
-            "HOME ABOUT",
-            "HOME TEACHING",
-            "PUBLICATIONS",
-            "TEACHING PHILOSOPHY",
-        }:
+        elif should_preserve(text):
             continue
         else:
-            untranslated.append(text)
-
-    if untranslated:
-        raise ValueError(
-            "Untranslated prose found; refusing to create a partial document:\n"
-            + "\n".join(f"- {line}" for line in untranslated)
-        )
+            raise RuntimeError(f"No Korean translation generated for: {text}")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     document.save(output_path)
@@ -151,12 +185,25 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Create Korean site-content.docx")
     parser.add_argument("--input", default="site-content.docx")
     parser.add_argument("--output", default="site-content-ko.docx")
+    parser.add_argument(
+        "--auto-translations",
+        default=str(DEFAULT_AUTO_TRANSLATIONS_PATH),
+    )
+    parser.add_argument(
+        "--model",
+        default=os.environ.get("OPENAI_TRANSLATION_MODEL", DEFAULT_TRANSLATION_MODEL),
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-    create_korean_document(Path(args.input), Path(args.output))
+    create_korean_document(
+        Path(args.input),
+        Path(args.output),
+        Path(args.auto_translations),
+        args.model,
+    )
 
 
 if __name__ == "__main__":

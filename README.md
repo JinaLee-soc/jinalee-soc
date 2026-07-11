@@ -38,17 +38,26 @@ The Research page lists publications by title under each program; each title is
 matched against the parsed CV, so statuses/DOIs update from `cv.docx` alone.
 Course offerings on the Teaching page also come from the CV.
 
-The Korean pages use the local `site-content-ko.docx` source for translated
-overviews and explanations. Publication titles, course names, activity names,
-and CV data remain in English. After reviewing the Korean Word source, refresh
-its generated payload separately:
+The Korean pages are generated from the English `site-content.docx` source.
+Existing reviewed translations in `scripts/cv/create_korean_site_content.py`
+are reused first. New or changed prose is translated automatically through the
+OpenAI Responses API and saved in
+`scripts/cv/site_content_ko_auto_translations.json` for later review and reuse.
+Publication titles, course names, activity names, and CV data remain in English.
+After updating the English Word source, refresh both language payloads together:
 
 ```bash
-npm run generate:content:ko
+npm run refresh:content
 ```
 
-The generated `src/generated/site-content-ko.json` is committed with the site;
-the Korean Word source remains local alongside the English source document.
+`npm run generate:content:ko` is also available when only the Korean payload
+needs refreshing. It regenerates the local `site-content-ko.docx` and the
+committed `src/generated/site-content-ko.json`. Set `OPENAI_API_KEY` in the
+environment before running it when the English source contains new prose. The
+default translation model is `gpt-5.4-mini`; set `OPENAI_TRANSLATION_MODEL` to
+override it. Review or edit newly generated translations directly in the JSON
+cache when desired. The Korean Word source remains local alongside the English
+source document.
 
 `site-content.docx` uses ALL-CAPS marker lines (`HOME ABOUT`, `HOME TEACHING`,
 `RESEARCH INTRO`, `PROGRAM:`, `KEY QUESTIONS`, `PUBLICATIONS`,
@@ -61,9 +70,8 @@ sections.
 |---|---|
 | Update master CV (local only) | `cv.docx` |
 | Update research narratives / teaching text (local only) | `site-content.docx` |
-| Update Korean site narratives / teaching text (local only) | `site-content-ko.docx` |
+| Regenerate Korean site narratives / teaching text | `npm run generate:content:ko` |
 | Refresh public generated data | `npm run refresh:content` |
-| Refresh public Korean generated data | `npm run generate:content:ko` |
 | Replace downloadable PDF CV | `public/JinaLee_CV.pdf` |
 | Update links (Scholar, ORCID) | `src/content/site.ts` |
 
