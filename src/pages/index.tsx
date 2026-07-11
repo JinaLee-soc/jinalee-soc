@@ -121,7 +121,7 @@ export default function Home() {
             <div className="hero__inner">
               <div className="hero__text">
                 <h1 className="hero__name" id="hero-name">
-                  {bio.name}
+                  Jina Lee, Ph.D.
                 </h1>
                 <p className="hero__title">{bio.title}</p>
                 <p className="hero__affiliation">{bio.affiliation}</p>
