@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import Layout from '../components/Layout'
 import LinkButton from '../components/LinkButton'
 import { useState } from 'react'
@@ -6,11 +7,16 @@ import PublicationItem from '../components/PublicationItem'
 import { bio } from '../content/bio'
 import { site, basePath } from '../content/site'
 import {
+  getLocaleFromPath,
+  localizedPath,
+  localeText,
+} from '../content/i18n'
+import {
   bookChapters,
   journalArticles,
   worksInProgress,
 } from '../content/publications'
-import { scHomeAbout, scHomeTeaching } from '../content/siteContentGenerated'
+import { getSiteContent } from '../content/siteContentGenerated'
 
 // Deterministic token layout so server and client render identical SVG markup.
 function corpusTokens() {
@@ -99,7 +105,11 @@ function CorpusMotif() {
 }
 
 export default function Home() {
+  const router = useRouter()
   const [emailCopied, setEmailCopied] = useState(false)
+  const locale = getLocaleFromPath(router.pathname)
+  const labels = localeText[locale]
+  const content = getSiteContent(locale)
 
   const copyEmail = () => {
     navigator.clipboard.writeText(site.email).then(() => {
@@ -111,7 +121,7 @@ export default function Home() {
   return (
     <Layout
       title={undefined}
-      description={site.description}
+      description={labels.homeDescription}
     >
       <div className="page page--home">
         {/* ===== Hero ===== */}
@@ -121,11 +131,11 @@ export default function Home() {
             <div className="hero__inner">
               <div className="hero__text">
                 <h1 className="hero__name" id="hero-name">
-                  Jina Lee, Ph.D.
+                  {labels.displayName}, Ph.D.
                 </h1>
-                <p className="hero__title">{bio.title}</p>
+                <p className="hero__title">{locale === 'en' ? bio.title : labels.profileTitle}</p>
                 <p className="hero__affiliation">{bio.affiliation}</p>
-                <p className="hero__statement">{bio.positioningStatement}</p>
+                <p className="hero__statement">{locale === 'en' ? bio.positioningStatement : labels.positioningStatement}</p>
                 <div className="hero__links">
                   <LinkButton href={site.cvUrl} filled>
                     CV
@@ -137,13 +147,13 @@ export default function Home() {
                     ORCID
                   </LinkButton>
                   <button onClick={copyEmail} className="link-btn" type="button">
-                    {emailCopied ? 'Copied!' : 'Email'}
+                    {emailCopied ? labels.copied : labels.email}
                   </button>
                 </div>
               </div>
               <img
                 src={`${basePath}/headshot.png`}
-                alt={bio.headshotAlt}
+                alt={locale === 'en' ? bio.headshotAlt : labels.headshotAlt}
                 className="hero__headshot"
                 width={180}
                 height={220}
@@ -155,10 +165,10 @@ export default function Home() {
         {/* ===== About ===== */}
         <section className="section" aria-labelledby="about-heading">
           <div className="container container--wide">
-            <p className="section__heading" id="about-heading" aria-label="About">
-              About
+            <p className="section__heading" id="about-heading" aria-label={labels.about}>
+              {labels.about}
             </p>
-            {scHomeAbout.map((paragraph, i) => (
+            {content.homeAbout.map((paragraph, i) => (
               <p key={i} style={{ marginTop: i > 0 ? 'var(--space-4)' : 0 }}>
                 {italicizeVenues(paragraph)}
               </p>
@@ -175,34 +185,34 @@ export default function Home() {
         >
           <div className="container container--wide">
             <p className="section__heading" id="publications-heading">
-              Publications
+              {labels.publications}
             </p>
             <p className="pub-category-label">
-              <em>Journal Articles</em>
+              <em>{labels.journalArticles}</em>
             </p>
-            <ul className="pub-list" aria-label="Journal articles">
+            <ul className="pub-list" aria-label={labels.journalArticles}>
               {journalArticles.map((pub, i) => (
-                <PublicationItem key={i} pub={pub} />
+                <PublicationItem key={i} pub={pub} locale={locale} />
               ))}
             </ul>
             {bookChapters.length > 0 && (
               <div className="pub-subsection">
                 <p className="pub-category-label">
-                  <em>Book Chapters</em>
+                  <em>{labels.bookChapters}</em>
                 </p>
-                <ul className="pub-list" aria-label="Book chapters">
+                <ul className="pub-list" aria-label={labels.bookChapters}>
                   {bookChapters.map((pub, i) => (
-                    <PublicationItem key={`book-${i}`} pub={pub} />
+                    <PublicationItem key={`book-${i}`} pub={pub} locale={locale} />
                   ))}
                 </ul>
               </div>
             )}
             {worksInProgress.length > 0 && (
               <div className="pub-subsection">
-                <h3 className="pub-subsection__title">Work in Progress</h3>
-                <ul className="pub-list" aria-label="Work in progress">
+                <h3 className="pub-subsection__title">{labels.workInProgress}</h3>
+                <ul className="pub-list" aria-label={labels.workInProgress}>
                   {worksInProgress.map((pub, i) => (
-                    <PublicationItem key={`wip-${i}`} pub={pub} />
+                    <PublicationItem key={`wip-${i}`} pub={pub} locale={locale} />
                   ))}
                 </ul>
               </div>
@@ -219,9 +229,9 @@ export default function Home() {
         >
           <div className="container container--wide">
             <p className="section__heading" id="teaching-heading">
-              Teaching
+              {labels.teachingPreview}
             </p>
-            {scHomeTeaching.map((paragraph, i) => (
+            {content.homeTeaching.map((paragraph, i) => (
               <p
                 key={i}
                 style={{
@@ -232,8 +242,8 @@ export default function Home() {
                 {paragraph}
               </p>
             ))}
-            <Link href="/teaching" className="link-btn" style={{ display: 'inline-flex' }}>
-              Teaching →
+            <Link href={localizedPath('/teaching', locale)} className="link-btn" style={{ display: 'inline-flex' }}>
+              {labels.teachingLink}
             </Link>
           </div>
         </section>

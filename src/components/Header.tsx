@@ -1,51 +1,65 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-import { bio } from '../content/bio'
+import {
+  getLocaleFromPath,
+  localizedPath,
+  localeText,
+} from '../content/i18n'
 import TextSizeControl from './TextSizeControl'
 
 const navItems = [
-  { href: '/', label: 'Home' },
-  { href: '/research', label: 'Research' },
-  { href: '/teaching', label: 'Teaching' },
-  { href: '/cv', label: 'CV' },
-]
+  { href: '/', key: 'home' },
+  { href: '/research', key: 'research' },
+  { href: '/teaching', key: 'teaching' },
+  { href: '/cv', key: 'cv' },
+] as const
 
 export default function Header() {
   const router = useRouter()
   const [menuOpen, setMenuOpen] = useState(false)
+  const locale = getLocaleFromPath(router.pathname)
+  const labels = localeText[locale]
+  const targetLocale = locale === 'en' ? 'ko' : 'en'
+  const languageHref = localizedPath(router.pathname, targetLocale)
+  const englishPath = localizedPath(router.pathname, 'en')
 
   const isActive = (href: string) => {
-    if (href === '/') return router.pathname === '/'
+    if (href === '/') return englishPath === '/'
     if (href.includes('#')) return false
-    return router.pathname.startsWith(href)
+    return englishPath.startsWith(href)
   }
 
   return (
-    <nav className="nav" role="navigation" aria-label="Main navigation">
+    <nav className="nav" aria-label={labels.mainNavigation}>
       <div className="nav__inner">
-        <Link href="/" className="nav__brand">
-          {bio.name}
+        <Link href={localizedPath('/', locale)} className="nav__brand">
+          {labels.displayName}
         </Link>
 
         <div className="nav__right">
-          <TextSizeControl />
+          <TextSizeControl locale={locale} />
+
+          <Link
+            href={languageHref}
+            className="nav__link nav__language"
+            aria-label={`${labels.language}: ${targetLocale === 'ko' ? labels.switchToKorean : labels.switchToEnglish}`}
+            title={`${labels.language}: ${targetLocale === 'ko' ? labels.switchToKorean : labels.switchToEnglish}`}
+          >
+            <span aria-hidden="true">{targetLocale === 'ko' ? 'KOR' : 'ENG'}</span>
+          </Link>
 
           {/* Desktop nav */}
-          <ul
-            className={`nav__links${menuOpen ? ' nav__links--open' : ''}`}
-            role="menubar"
-          >
+          <ul className={`nav__links${menuOpen ? ' nav__links--open' : ''}`}>
             {navItems.map((item) => (
-              <li key={item.href} role="none">
+              <li key={item.href}>
                 <Link
-                  href={item.href}
+                  href={localizedPath(item.href, locale)}
                   className={`nav__link${isActive(item.href) ? ' nav__link--active' : ''}`}
-                  role="menuitem"
                   onClick={() => setMenuOpen(false)}
                   aria-current={isActive(item.href) ? 'page' : undefined}
                 >
-                  {item.label}
+                  {labels[item.key]}
                 </Link>
               </li>
             ))}
@@ -54,7 +68,7 @@ export default function Header() {
           {/* Mobile toggle */}
           <button
             className="nav__toggle"
-            aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-label={menuOpen ? labels.closeMenu : labels.openMenu}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen(!menuOpen)}
           >

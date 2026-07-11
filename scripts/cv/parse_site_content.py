@@ -90,7 +90,7 @@ def marker_of(line: str) -> tuple[str, str] | None:
     return None
 
 
-def parse_lines(lines: list[str]) -> dict:
+def parse_lines(lines: list[str], source_name: str = "site-content.docx") -> dict:
     home_about: list[str] = []
     home_teaching: list[str] = []
     research_intro: list[str] = []
@@ -168,7 +168,7 @@ def parse_lines(lines: list[str]) -> dict:
 
     return {
         "meta": {
-            "source": "site-content.docx",
+            "source": source_name,
             "generated_at": datetime.now(timezone.utc).isoformat(),
         },
         "home": {"about": home_about, "teaching_snapshot": home_teaching},
@@ -200,9 +200,9 @@ def main() -> None:
     if not input_path.exists():
         # Keep builds working when the doc is absent: emit an empty payload and
         # let the site fall back to its built-in content.
-        payload = parse_lines([])
+        payload = parse_lines([], input_path.name)
     else:
-        payload = parse_lines(extract_docx_lines(input_path))
+        payload = parse_lines(extract_docx_lines(input_path), input_path.name)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(

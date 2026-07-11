@@ -1,4 +1,5 @@
 import { Publication, PublicationStatus } from '../content/publications'
+import { localeText, type Locale } from '../content/i18n'
 
 export function boldMyName(text: string) {
   const parts = text.split(/(Lee,\s*Jina|Jina\s+Lee)/)
@@ -10,9 +11,10 @@ export function boldMyName(text: string) {
 interface PublicationItemProps {
   pub: Publication
   showStatus?: boolean
+  locale?: Locale
 }
 
-const statusLabels: Record<PublicationStatus, string> = {
+const statusLabelsEnglish: Record<PublicationStatus, string> = {
   Published: 'Published',
   Forthcoming: 'Forthcoming',
   'Conditionally Accepted': 'Conditionally Accepted',
@@ -20,6 +22,16 @@ const statusLabels: Record<PublicationStatus, string> = {
   'Under Review': 'Under Review',
   'Working Paper': 'Working Paper',
   'In Progress': 'In Progress',
+}
+
+const statusLabelsKorean: Record<PublicationStatus, string> = {
+  Published: '출판됨',
+  Forthcoming: '출판 예정',
+  'Conditionally Accepted': '조건부 게재 승인',
+  'Revise & Resubmit': '수정 후 재심사',
+  'Under Review': '심사 중',
+  'Working Paper': '워킹 페이퍼',
+  'In Progress': '진행 중',
 }
 
 const statusClass: Record<PublicationStatus, string> = {
@@ -35,8 +47,11 @@ const statusClass: Record<PublicationStatus, string> = {
 export default function PublicationItem({
   pub,
   showStatus = true,
+  locale = 'en',
 }: PublicationItemProps) {
   const displayVenue = pub.status === 'Revise & Resubmit' ? '' : pub.venue
+  const statusLabels = locale === 'ko' ? statusLabelsKorean : statusLabelsEnglish
+  const labels = localeText[locale]
 
   // When the year field just spells out the status ("Forthcoming") and the
   // status badge is already showing, keep only the badge — otherwise the
@@ -44,7 +59,7 @@ export default function PublicationItem({
   const showsStatusBadge = showStatus && pub.status !== 'Published'
   const yearRedundantWithStatus =
     showsStatusBadge &&
-    pub.year?.trim().toLowerCase() === statusLabels[pub.status].toLowerCase()
+    pub.year?.trim().toLowerCase() === statusLabelsEnglish[pub.status].toLowerCase()
   const showYear = pub.year && !yearRedundantWithStatus
 
   return (
@@ -89,6 +104,7 @@ export default function PublicationItem({
         {showsStatusBadge && (
           <span
             className={`pub-item__status ${statusClass[pub.status]}`}
+            aria-label={`${labels.publications}: ${statusLabels[pub.status]}`}
           >
             {statusLabels[pub.status]}
           </span>

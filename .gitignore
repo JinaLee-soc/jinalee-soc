@@ -24,6 +24,7 @@ drafts/
 # Private local source material; the public site uses committed generated output.
 /cv.docx
 /site-content.docx
+/site-content-ko.docx
 /src/site-content.docx
 /public/cv.docx
 /files/links.rtf

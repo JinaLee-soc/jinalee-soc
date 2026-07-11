@@ -60,6 +60,20 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html[lang="ko"] {
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+}
+
+html[lang="ko"] body,
+html[lang="ko"] body * {
+  font-family: var(--font-sans);
+}
+
+html[lang="ko"] body {
+  word-break: keep-all;
 }
 
 /* ===== Typography ===== */
@@ -182,6 +196,31 @@ a:focus-visible {
   border-bottom-color: var(--color-accent);
 }
 
+.nav__language {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--space-8);
+  height: var(--space-8);
+  padding: var(--space-1) var(--space-2);
+  border-bottom: none;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+}
+
+.nav__language:hover {
+  color: var(--color-accent);
+  background: var(--color-accent-light);
+  border-bottom: none;
+}
+
+.nav__language:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 /* Mobile nav toggle */
 .nav__toggle {
   display: none;
@@ -247,6 +286,7 @@ a:focus-visible {
 .hero__text {
   position: relative;
   z-index: 2;
+  min-width: 0;
 }
 
 .hero__motif {
@@ -976,6 +1016,11 @@ button.footer__link {
     --nav-height: 56px;
   }
 
+  .nav__inner {
+    position: relative;
+    gap: var(--space-2);
+  }
+
   h1 { font-size: 1.75rem; }
   h2 { font-size: 1.25rem; }
 
@@ -1004,12 +1049,25 @@ button.footer__link {
     width: 100%;
   }
 
+  .nav__language {
+    width: auto;
+    min-width: var(--space-8);
+    height: var(--space-8);
+    padding: var(--space-1) var(--space-2);
+    flex: 0 0 auto;
+  }
+
   .nav__toggle {
     display: flex;
   }
 
   .nav__right {
-    gap: var(--space-4);
+    position: absolute;
+    top: 0;
+    right: var(--space-4);
+    height: 100%;
+    min-width: 0;
+    gap: var(--space-2);
   }
 
   .text-size__label {
@@ -1017,7 +1075,15 @@ button.footer__link {
   }
 
   .text-size {
-    gap: 4px;
+    gap: 2px;
+  }
+
+  .text-size__btn {
+    padding: 5px 6px;
+  }
+
+  .text-size__value {
+    min-width: 40px;
   }
 
   .hero__inner {

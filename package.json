@@ -5,6 +5,7 @@
   "scripts": {
     "generate:cv": "python3 scripts/cv/parse_docx.py --input cv.docx --output src/generated/cv-data.json",
     "generate:content": "python3 scripts/cv/parse_site_content.py --input site-content.docx --output src/generated/site-content.json",
+    "generate:content:ko": "python3 scripts/cv/parse_site_content.py --input site-content-ko.docx --output src/generated/site-content-ko.json",
     "check:content-sync": "python3 scripts/cv/check_content_sync.py",
     "refresh:content": "npm run generate:cv && npm run generate:content && npm run check:content-sync",
     "dev": "next dev",

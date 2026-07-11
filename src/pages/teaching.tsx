@@ -1,24 +1,28 @@
 import Layout from '../components/Layout'
+import { useRouter } from 'next/router'
 import { generatedTeaching } from '../content/cvGenerated'
 import {
   findCourseDescription,
-  scActivityGroups,
-  scTeachingPhilosophy,
+  getSiteContent,
 } from '../content/siteContentGenerated'
+import { getLocaleFromPath, localeText } from '../content/i18n'
 
 export default function Teaching() {
   const institutions = generatedTeaching.institutions ?? []
+  const locale = getLocaleFromPath(useRouter().pathname)
+  const labels = localeText[locale]
+  const content = getSiteContent(locale)
 
   return (
     <Layout
-      title="Teaching"
-      description="Teaching philosophy, courses, and classroom activities in sociology of culture, sociology of gender, social statistics, and technology and society."
+      title={labels.teaching}
+      description={labels.teachingDescription}
     >
       <div className="page">
         <div className="container container--wide">
 
           <div className="page-header">
-            <h1 className="page-header__title">Teaching</h1>
+            <h1 className="page-header__title">{labels.teaching}</h1>
           </div>
 
           {/* Teaching Philosophy */}
@@ -31,10 +35,10 @@ export default function Teaching() {
               id="philosophy-heading"
               style={{ marginBottom: 'var(--space-5)' }}
             >
-              Teaching Philosophy
+              {labels.teachingPhilosophy}
             </h2>
             <div className="philosophy-block">
-              {scTeachingPhilosophy.map((paragraph, i) => (
+              {content.teachingPhilosophy.map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
               ))}
             </div>
@@ -54,14 +58,14 @@ export default function Teaching() {
               id="courses-heading"
               style={{ marginBottom: 'var(--space-6)' }}
             >
-              Courses
+              {labels.courses}
             </h2>
             {institutions.map((inst, ii) => (
               <div key={ii} className="activity-group">
                 <p className="activity-group__course">{inst.institution}</p>
                 <div className="course-list">
                   {inst.courses.map((course, ci) => {
-                    const description = findCourseDescription(course.title)
+                    const description = findCourseDescription(course.title, locale)
                     return (
                       <div key={ci} className="course-item">
                         <div className="course-item__content">
@@ -98,12 +102,12 @@ export default function Teaching() {
               id="activities-heading"
               style={{ marginBottom: 'var(--space-3)' }}
             >
-              Selected Classroom Activities
+            {labels.classroomActivities}
             </h2>
-            {scActivityGroups.map((group, gi) => (
+            {content.activityGroups.map((group, gi) => (
               <div key={gi} className="activity-group">
                 <p className="activity-group__course">{group.course}</p>
-                <ul className="activity-list" aria-label={`Activities for ${group.course}`}>
+                <ul className="activity-list" aria-label={`${labels.activitiesFor} ${group.course}`}>
                   {group.items.map((activity, ai) => (
                     <li key={ai} className="activity-item">
                       <p className="activity-item__name">{activity.name}</p>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { localeText, type Locale } from '../content/i18n'
 
 const STEPS = [0.85, 1, 1.15, 1.3, 1.45]
 const STORAGE_KEY = 'jl-font-scale'
@@ -14,8 +15,13 @@ function nearestStep(value: number) {
   )
 }
 
-export default function TextSizeControl() {
+interface TextSizeControlProps {
+  locale?: Locale
+}
+
+export default function TextSizeControl({ locale = 'en' }: TextSizeControlProps) {
   const [scale, setScale] = useState(1)
+  const labels = localeText[locale]
 
   // Sync with the value the pre-hydration script already applied.
   useEffect(() => {
@@ -49,16 +55,16 @@ export default function TextSizeControl() {
   }
 
   return (
-    <div className="text-size" role="group" aria-label="Text size">
+    <div className="text-size" role="group" aria-label={labels.textSize}>
       <span className="text-size__label" aria-hidden="true">
-        Text size
+        {labels.textSize}
       </span>
       <button
         type="button"
         className="text-size__btn"
         onClick={() => step(-1)}
         disabled={idx <= 0}
-        aria-label="Decrease text size"
+        aria-label={labels.decreaseTextSize}
       >
         A−
       </button>
@@ -67,8 +73,8 @@ export default function TextSizeControl() {
         className="text-size__btn text-size__value"
         onClick={() => update(1)}
         disabled={scale === 1}
-        aria-label="Reset text size to default"
-        title="Reset text size"
+        aria-label={labels.resetTextSize}
+        title={labels.resetTextSizeTitle}
         aria-live="polite"
       >
         {Math.round(scale * 100)}%
@@ -78,7 +84,7 @@ export default function TextSizeControl() {
         className="text-size__btn"
         onClick={() => step(1)}
         disabled={idx >= STEPS.length - 1}
-        aria-label="Increase text size"
+        aria-label={labels.increaseTextSize}
       >
         A+
       </button>

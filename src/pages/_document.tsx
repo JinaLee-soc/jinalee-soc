@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import type { DocumentProps } from 'next/document'
 
 // Applies the saved text-size scale before first paint so pages never
 // flash at the default size. Must stay in sync with TextSizeControl.
@@ -11,9 +12,13 @@ try {
 } catch (e) {}
 `
 
-export default function Document() {
+export default function Document({ __NEXT_DATA__ }: DocumentProps) {
+  const lang = __NEXT_DATA__.page === '/ko' || __NEXT_DATA__.page.startsWith('/ko/')
+    ? 'ko'
+    : 'en'
+
   return (
-    <Html lang="en">
+    <Html lang={lang}>
       <Head>
         <script dangerouslySetInnerHTML={{ __html: FONT_SCALE_SCRIPT }} />
       </Head>

@@ -38,6 +38,18 @@ The Research page lists publications by title under each program; each title is
 matched against the parsed CV, so statuses/DOIs update from `cv.docx` alone.
 Course offerings on the Teaching page also come from the CV.
 
+The Korean pages use the local `site-content-ko.docx` source for translated
+overviews and explanations. Publication titles, course names, activity names,
+and CV data remain in English. After reviewing the Korean Word source, refresh
+its generated payload separately:
+
+```bash
+npm run generate:content:ko
+```
+
+The generated `src/generated/site-content-ko.json` is committed with the site;
+the Korean Word source remains local alongside the English source document.
+
 `site-content.docx` uses ALL-CAPS marker lines (`HOME ABOUT`, `HOME TEACHING`,
 `RESEARCH INTRO`, `PROGRAM:`, `KEY QUESTIONS`, `PUBLICATIONS`,
 `TEACHING PHILOSOPHY`, `COURSE:`, `ACTIVITIES:`, `ITEM:`). Everything under a
@@ -49,7 +61,9 @@ sections.
 |---|---|
 | Update master CV (local only) | `cv.docx` |
 | Update research narratives / teaching text (local only) | `site-content.docx` |
+| Update Korean site narratives / teaching text (local only) | `site-content-ko.docx` |
 | Refresh public generated data | `npm run refresh:content` |
+| Refresh public Korean generated data | `npm run generate:content:ko` |
 | Replace downloadable PDF CV | `public/JinaLee_CV.pdf` |
 | Update links (Scholar, ORCID) | `src/content/site.ts` |
 

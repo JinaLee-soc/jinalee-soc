@@ -1,12 +1,17 @@
 import { site } from '../content/site'
+import { getLocaleFromPath, localeText } from '../content/i18n'
+import { useRouter } from 'next/router'
 import CopyEmail from './CopyEmail'
 
 export default function Footer() {
+  const locale = getLocaleFromPath(useRouter().pathname)
+  const labels = localeText[locale]
+
   return (
     <footer className="footer">
       <div className="container container--wide">
         <div className="footer__inner">
-          <p className="footer__text">© Jina Lee</p>
+          <p className="footer__text">© {labels.displayName}</p>
           <ul className="footer__links">
             <li>
               <a
@@ -29,7 +34,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <CopyEmail email={site.email} className="footer__link" />
+              <CopyEmail email={site.email} className="footer__link" locale={locale} />
             </li>
           </ul>
         </div>
