@@ -24,16 +24,6 @@ const statusLabelsEnglish: Record<PublicationStatus, string> = {
   'In Progress': 'In Progress',
 }
 
-const statusLabelsKorean: Record<PublicationStatus, string> = {
-  Published: '출판됨',
-  Forthcoming: '출판 예정',
-  'Conditionally Accepted': '조건부 게재 승인',
-  'Revise & Resubmit': '수정 후 재심사',
-  'Under Review': '심사 중',
-  'Working Paper': '워킹 페이퍼',
-  'In Progress': '진행 중',
-}
-
 const statusClass: Record<PublicationStatus, string> = {
   Published: 'pub-item__status--published',
   Forthcoming: 'pub-item__status--forthcoming',
@@ -50,7 +40,6 @@ export default function PublicationItem({
   locale = 'en',
 }: PublicationItemProps) {
   const displayVenue = pub.status === 'Revise & Resubmit' ? '' : pub.venue
-  const statusLabels = locale === 'ko' ? statusLabelsKorean : statusLabelsEnglish
   const labels = localeText[locale]
 
   // When the year field just spells out the status ("Forthcoming") and the
@@ -104,9 +93,9 @@ export default function PublicationItem({
         {showsStatusBadge && (
           <span
             className={`pub-item__status ${statusClass[pub.status]}`}
-            aria-label={`${labels.publications}: ${statusLabels[pub.status]}`}
+            aria-label={`${labels.publications}: ${statusLabelsEnglish[pub.status]}`}
           >
-            {statusLabels[pub.status]}
+            {statusLabelsEnglish[pub.status]}
           </span>
         )}
       </p>
