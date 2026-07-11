@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "source": "site-content.docx",
+    "generated_at": "2026-07-11T15:27:33.411183+00:00"
+  },
+  "home": {
+    "about": [
+      "Jina Lee is a sociologist who studies how seemingly objective evaluation systems reproduce social hierarchies in science and in culture. Across these contexts, her work reveals a consistent pattern: practices that appear meritocratic often embed biases that disadvantage women and lower-status actors. Her research has been published in the American Sociological Review, Poetics, Socius, and Journal of Social Entrepreneurship, and is forthcoming in Gender & Society."
+    ],
+    "teaching_snapshot": [
+      "I teach undergraduate courses in sociology of culture, sociology of gender, social statistics, and technology and society. My courses emphasize critical thinking and the application of sociological frameworks to contemporary empirical questions."
+    ]
+  },
+  "research": {
+    "intro": [
+      "My research examines how evaluation systems that appear objective reproduce gender hierarchies across scientific and cultural fields. I ask: whose contributions are recognized as valuable, and whose are discounted? Across these programs, I trace how gender bias operates through everyday evaluation practices and accumulates into durable inequalities.",
+      "My methods include computational text analysis, bibliometric analysis, and survey experiments."
+    ],
+    "programs": [
+      {
+        "title": "Gender and Scientific Evaluation",
+        "overview": [
+          "Scientific recognition is rarely neutral. My work in this area investigates how gender shapes which knowledge claims are treated as authoritative, how novelty is attributed and rewarded, and how uncertainty is managed differently depending on who makes a claim."
+        ],
+        "key_questions": [
+          "How do gendered dynamics shape which scientific contributions get recognized, cited, and treated as authoritative?",
+          "How is novelty attributed and rewarded differently across gender lines?",
+          "How is uncertainty managed differently depending on who makes a scientific claim?"
+        ],
+        "publications": [
+          "Claiming Novelty, Claiming Authority: Gender Gaps in Scientific Impact Across Disciplines",
+          "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty",
+          "Stratified Fact-Making: How Gender and Novelty Claims Stratify the Stabilization of Scientific Facts",
+          "What Types of Novelty Are Most Disruptive?"
+        ]
+      },
+      {
+        "title": "Gender, Culture, and Recognition",
+        "overview": [
+          "Recognition unfolds across cultural fields, markets, and public arenas. My work in this area examines how gender and social hierarchies shape who is recognized, remembered, funded, protected, or able to remain publicly present."
+        ],
+        "key_questions": [
+          "How do cultural institutions determine whose work is recognized and remembered?",
+          "How do gender stereotypes shape access to recognition and resources?",
+          "How do social categories influences judgments of who deserves support or protection?",
+          "At which stages of evaluation do inequalities emerge and accumulate?"
+        ],
+        "publications": [
+          "Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon",
+          "Who Deserves Protection? How Naming Potential Beneficiaries Influences the COVID-19 Vaccine Intentions",
+          "The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing",
+          "Survivorship in Public: Differential Durability and the Conflictual Face of Korean Digital Feminism"
+        ]
+      },
+      {
+        "title": "Science and Academia",
+        "overview": [
+          "Scientific knowledge is shaped not only by what researchers study but by how scientific communities are organized. This line of work examines how structural features of academic fields, such as how audiences are structured, publication norms, and data practices, influence the production, reception, and epistemic character of scientific knowledge."
+        ],
+        "key_questions": [
+          "How does audience structure shape the impact of domain-spanning innovation?",
+          "How do editorial and data sharing requirements shape the epistemic character of scientific articles?"
+        ],
+        "publications": [
+          "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation",
+          "Humble Reflections on the Intellectual Process of Developing a Text-based Measure of Humility in Inquiry"
+        ]
+      },
+      {
+        "title": "AI and Research Practice",
+        "overview": [
+          "A newer line of my work asks how AI tools are changing research practice itself, not just its speed or volume."
+        ],
+        "key_questions": [
+          "How can AI-assisted research systems make interpretive decisions visible and auditable?",
+          "What survives, and what is lost, when human judgment is relocated into external infrastructure a researcher runs alone?"
+        ],
+        "publications": [
+          "Conceptual Divergence Analysis: Mapping a Researcher's Conceptual Vocabulary Against the Literatures They Address"
+        ]
+      }
+    ]
+  },
+  "teaching": {
+    "philosophy": [
+      "I believe in the transformative power of integrative and experiential learning to make sociological concepts tangible and relevant to students' lives. I design interactive learning environments where theory comes alive through collaborative investigation and creative application. Below are select examples from three of my undergraduate courses."
+    ],
+    "courses": [
+      {
+        "title": "Introduction to Social Statistics",
+        "description": [
+          "A survey of fundamental statistical concepts and their application in social research, with emphasis on both conceptual understanding and practical analysis skills."
+        ]
+      },
+      {
+        "title": "Sociology of Culture",
+        "description": [
+          "Key frameworks in the sociology of culture, including cultural industries, taste, status, and the boundary between popular and high culture. Students analyze everyday cultural objects through a sociological lens."
+        ]
+      },
+      {
+        "title": "Sociology of Gender",
+        "description": [
+          "How gender shapes experience across education, work, family, and relationships, and how it intersects with other dimensions of social inequality."
+        ]
+      },
+      {
+        "title": "Technology & Society",
+        "description": [
+          "How science and technology shape social life, and how social forces shape science and technology in return. Topics include recognition, inequality, AI governance, and algorithmic systems."
+        ]
+      }
+    ],
+    "activities": [
+      {
+        "course": "Sociology of Culture",
+        "items": [
+          {
+            "name": "Cultural Capital Scavenger Hunt",
+            "description": [
+              "Students map their campus environment to identify how institutional resources are distributed along class-coded lines, drawing on Anthony Jack's research on first-generation students."
+            ]
+          },
+          {
+            "name": "Subculture Balloon Debate",
+            "description": [
+              "Teams represent stigmatized subcultures and use theoretical tools to argue for their group's legitimacy, navigating between analytical rigor and rhetorical performance."
+            ]
+          },
+          {
+            "name": "Meme Creation Contest",
+            "description": [
+              "Students translate sociological concepts into visual form and analyze what makes a concept-driven meme culturally legible and shareable."
+            ]
+          }
+        ]
+      },
+      {
+        "course": "Sociology of Gender",
+        "items": [
+          {
+            "name": "Meme-Busters",
+            "description": [
+              "Students construct evidence-based counter-memes to challenge essentialist claims, practicing critical engagement with popular discourse about gender."
+            ]
+          },
+          {
+            "name": "Leadership Fashion Runway",
+            "description": [
+              "Students curate visual representations of gendered professional norms and present them analytically, surfacing the social regulation of bodies in professional contexts."
+            ]
+          },
+          {
+            "name": "Time Travelers",
+            "description": [
+              "Groups write fictional letters from 1950s time travelers confused by modern work-family arrangements; peers respond with sociologically informed analysis connecting personal experience to institutional change."
+            ]
+          }
+        ]
+      },
+      {
+        "course": "Technology & Society",
+        "items": [
+          {
+            "name": "Recognition Bingo",
+            "description": [
+              "Students use structured gameplay to examine how scientific credit accumulates unequally, mapping advantage and disadvantage onto the social conditions of knowledge production."
+            ]
+          },
+          {
+            "name": "AI in Daily Life Diaries",
+            "description": [
+              "Students document their everyday encounters with algorithmic systems, then analyze them as a class to surface patterns in how AI shapes choice and perception."
+            ]
+          },
+          {
+            "name": "Digital Divide Stackers",
+            "description": [
+              "Groups construct physical representations of differential technology access, making structural inequality in digital infrastructure materially visible."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
