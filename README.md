@@ -21,7 +21,7 @@ PDF. The two Word source documents remain local and are intentionally ignored.
 When they are available at the repository root, refresh the generated output
 before committing a content update:
 
-- `cv.docx` -> `scripts/cv/parse_docx.py` -> `src/generated/cv-data.json`
+- `public/cv.docx` -> `scripts/cv/parse_docx.py` -> `src/generated/cv-data.json`
   (publications + statuses, employment, education, teaching offerings, CV page)
 - `site-content.docx` -> `scripts/cv/parse_site_content.py` -> `src/generated/site-content.json`
   (homepage About/Teaching preview text, research program narratives, key
@@ -30,12 +30,12 @@ before committing a content update:
 Run `npm run refresh:content` to perform both parsing steps. It also runs
 `npm run check:content-sync`, which prints a non-fatal
 warning listing any publication title in `site-content.docx` that doesn't
-match a title in `cv.docx` — that reference will render without
+match a title in `public/cv.docx` — that reference will render without
 authors/venue/status/DOI on the Research page until the paper is added to
 the CV or the title text is fixed.
 
 The Research page lists publications by title under each program; each title is
-matched against the parsed CV, so statuses/DOIs update from `cv.docx` alone.
+matched against the parsed CV, so statuses/DOIs update from `public/cv.docx` alone.
 Course offerings on the Teaching page also come from the CV.
 
 The Korean pages are generated from the English `site-content.docx` source.
@@ -68,7 +68,7 @@ sections.
 
 | What to update | File |
 |---|---|
-| Update master CV (local only) | `cv.docx` |
+| Update master CV (local only) | `public/cv.docx` |
 | Update research narratives / teaching text (local only) | `site-content.docx` |
 | Regenerate Korean site narratives / teaching text | `npm run generate:content:ko` |
 | Refresh public generated data | `npm run refresh:content` |

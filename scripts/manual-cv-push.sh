@@ -17,8 +17,8 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "$0")" && pwd)"
 REPO_DIR="$(cd -- "$SCRIPT_DIR/.." && pwd)"
 cd "$REPO_DIR"
 
-if [[ ! -f "cv.docx" || ! -f "site-content.docx" ]]; then
-  echo "Missing local source documents: cv.docx and site-content.docx are required."
+if [[ ! -f "public/cv.docx" || ! -f "site-content.docx" ]]; then
+  echo "Missing local source documents: public/cv.docx and site-content.docx are required."
   exit 1
 fi
 
