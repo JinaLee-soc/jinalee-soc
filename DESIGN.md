@@ -10,10 +10,10 @@ The site is a quiet academic portfolio: editorial, spacious, and precise. Its si
 
 | Role | Token | Value | Usage |
 |---|---|---:|---|
-| Background | `--color-bg` | `#fafaf9` | Page and navigation background |
+| Background | `--color-bg` | `#f7f9fb` | Page and navigation background |
 | Surface | `--color-surface` | `#ffffff` | Cards and content surfaces |
-| Border | `--color-border` | `#e5e3df` | Navigation and control borders |
-| Border/subtle | `--color-border-light` | `#f0ede9` | Section separators |
+| Border | `--color-border` | `#e2e7eb` | Navigation and control borders |
+| Border/subtle | `--color-border-light` | `#eef2f5` | Section separators |
 | Text/primary | `--color-text` | `#1a1917` | Body and headings |
 | Text/secondary | `--color-text-secondary` | `#5a5650` | Navigation and supporting text |
 | Text/muted | `--color-text-muted` | `#8a847c` | Labels and metadata |
@@ -61,7 +61,7 @@ Spacing uses the existing 4px-based scale from `--space-1` through `--space-24`.
 - **Spacing**: `--space-8` minimum hit area with `--space-1` vertical and `--space-2` horizontal padding.
 - **States**: default, hover, focus-visible.
 - **Accessibility**: localized `aria-label` and `title`; the link remains visible in both desktop and mobile headers. English codes use the mono token; Korean pages intentionally inherit Pretendard Variable for typographic consistency.
-- **Motion**: 150ms color and background transitions only.
+- **Motion**: 150ms color and background transitions only; no blur or translucent glass treatment.
 
 ### Text size control
 
@@ -81,7 +81,7 @@ Interactive color, border, and background changes use the existing 150ms ease tr
 
 ## 7. Depth & Surface
 
-The system uses a mixed treatment: subtle borders for structure and a translucent, blurred sticky header to preserve context while scrolling. Cards and sections remain editorial and mostly border-led rather than shadow-heavy.
+The system uses subtle blue-neutral borders for structure and an opaque sticky header to preserve context while scrolling without a glass effect. Cards and sections remain editorial and mostly border-led rather than shadow-heavy.
 
 ## 8. Accessibility Constraints & Accepted Debt
 
