@@ -2,7 +2,7 @@
 
 ## 1. Atmosphere & Identity
 
-The site is a quiet academic portfolio: editorial, spacious, and precise. Its signature is a restrained sage accent applied to navigation and actions, with serif display type for the scholar's name and a clear sans-serif reading layer for the rest of the interface.
+The site is a quiet academic portfolio: editorial, spacious, and precise. Its signature is a restrained blue-gray accent applied to navigation and actions, with serif display type for the scholar's name and a clear sans-serif reading layer for the rest of the interface.
 
 ## 2. Color
 
@@ -10,16 +10,18 @@ The site is a quiet academic portfolio: editorial, spacious, and precise. Its si
 
 | Role | Token | Value | Usage |
 |---|---|---:|---|
-| Background | `--color-bg` | `#f7f9fb` | Page and navigation background |
+| Background | `--color-bg` | `#f5f7f8` | Page and navigation background |
 | Surface | `--color-surface` | `#ffffff` | Cards and content surfaces |
-| Border | `--color-border` | `#e2e7eb` | Navigation and control borders |
-| Border/subtle | `--color-border-light` | `#eef2f5` | Section separators |
-| Text/primary | `--color-text` | `#1a1917` | Body and headings |
-| Text/secondary | `--color-text-secondary` | `#5a5650` | Navigation and supporting text |
-| Text/muted | `--color-text-muted` | `#8a847c` | Labels and metadata |
-| Accent | `--color-accent` | `#5b6e5a` | Links, focus, active states |
-| Accent/hover | `--color-accent-hover` | `#47573a` | Interactive hover states |
-| Accent/light | `--color-accent-light` | `#f0f3ef` | Soft interactive hover surface |
+| Border | `--color-border` | `#dfe5e9` | Navigation and control borders |
+| Border/subtle | `--color-border-light` | `#edf1f3` | Section separators |
+| Text/primary | `--color-text` | `#252b30` | Body and headings |
+| Text/secondary | `--color-text-secondary` | `#59636b` | Navigation and supporting text |
+| Text/muted | `--color-text-muted` | `#7f8a92` | Labels and metadata |
+| Accent | `--color-accent` | `#526b7d` | Links, focus, active states |
+| Accent/hover | `--color-accent-hover` | `#3e5566` | Interactive hover states |
+| Accent/light | `--color-accent-light` | `#eef2f4` | Soft interactive hover surface |
+| Motif | `--color-motif` | `#687f8e` | Home text-analysis visualization |
+| Motif/muted | `--color-motif-muted` | `#8798a5` | Secondary visualization marks |
 
 Accent is reserved for interactive elements and status cues. New controls must use existing tokens rather than introduce a new color.
 

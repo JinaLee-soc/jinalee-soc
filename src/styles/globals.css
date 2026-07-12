@@ -13,18 +13,18 @@
   --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 
   /* Colors */
-  --color-bg: #f7f9fb;
+  --color-bg: #f5f7f8;
   --color-surface: #ffffff;
-  --color-border: #e2e7eb;
-  --color-border-light: #eef2f5;
-  --color-text: #1a1917;
-  --color-text-secondary: #5a5650;
-  --color-text-muted: #8a847c;
-  --color-accent: #5b6e5a;        /* muted sage green — academic, calm */
-  --color-accent-hover: #47573a;
-  --color-accent-light: #f0f3ef;
-  --color-motif: #6b7f91;
-  --color-motif-muted: #8e9ba6;
+  --color-border: #dfe5e9;
+  --color-border-light: #edf1f3;
+  --color-text: #252b30;
+  --color-text-secondary: #59636b;
+  --color-text-muted: #7f8a92;
+  --color-accent: #526b7d;
+  --color-accent-hover: #3e5566;
+  --color-accent-light: #eef2f4;
+  --color-motif: #687f8e;
+  --color-motif-muted: #8798a5;
 
   /* Spacing scale */
   --space-1: 0.25rem;
@@ -132,7 +132,7 @@ a:focus-visible {
   top: 0;
   z-index: 100;
   height: var(--nav-height);
-  background: rgba(247, 249, 251, 0.95);
+  background: rgba(245, 247, 248, 0.95);
   border-bottom: 1px solid var(--color-border);
   display: flex;
   align-items: center;
@@ -502,18 +502,18 @@ button.footer__link {
 }
 
 .pub-item__status--published {
-  background: #e7f0ec;
-  color: #356451;
+  background: #e6eef0;
+  color: #3f6470;
 }
 
 .pub-item__status--forthcoming {
-  background: #e8eef5;
-  color: #355b7a;
+  background: #e8eff3;
+  color: #49667a;
 }
 
 .pub-item__status--under-review {
-  background: #eceef6;
-  color: #4b5270;
+  background: #eceef4;
+  color: #555f78;
 }
 
 .pub-item__status--rnr {
@@ -523,8 +523,8 @@ button.footer__link {
 }
 
 .pub-item__status--in-progress {
-  background: #edf0f2;
-  color: #53616a;
+  background: #e9eef1;
+  color: #596b76;
 }
 
 .pub-item__doi {
