@@ -25,7 +25,7 @@ function corpusTokens() {
     seed = (seed * 1103515245 + 12345) % 2147483648
     return seed / 2147483648
   }
-  const tokens: Array<{ x: number; y: number; w: number; sage: boolean; o: number }> = []
+  const tokens: Array<{ x: number; y: number; w: number; highlighted: boolean; o: number }> = []
   let y = 26
   for (let row = 0; row < 17; row++) {
     let x = 30 + rnd() * 40
@@ -33,14 +33,14 @@ function corpusTokens() {
     while (x < rowEnd) {
       let w = 14 + rnd() * 44
       if (x + w > rowEnd) w = rowEnd - x
-      const sage = rnd() < 0.13
+      const highlighted = rnd() < 0.13
       const fade = Math.min(1, (x - 20) / 420)
       tokens.push({
         x: Number(x.toFixed(1)),
         y,
         w: Number(Math.max(w, 8).toFixed(1)),
-        sage,
-        o: Number((sage ? 0.18 + 0.3 * fade : 0.06 + 0.13 * fade).toFixed(2)),
+        highlighted,
+        o: Number((highlighted ? 0.18 + 0.3 * fade : 0.06 + 0.13 * fade).toFixed(2)),
       })
       x += w + 8 + rnd() * 6
     }
@@ -96,7 +96,7 @@ function CorpusMotif() {
           width={t.w}
           height={8}
           rx={4}
-          fill={t.sage ? 'var(--color-motif)' : 'var(--color-motif-muted)'}
+          fill={t.highlighted ? 'var(--color-plum)' : 'var(--color-motif-muted)'}
           opacity={t.o}
         />
       ))}

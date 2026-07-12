@@ -2,7 +2,7 @@
 
 ## 1. Atmosphere & Identity
 
-The site is a quiet academic portfolio: editorial, spacious, and precise. Its signature is a restrained blue-gray accent applied to navigation and actions, with serif display type for the scholar's name and a clear sans-serif reading layer for the rest of the interface.
+The site is a quiet academic portfolio: editorial, spacious, and precise. Its signature is a restrained blue-gray accent for navigation and links, with desaturated plum reserved for primary actions and sparse motif highlights. Serif display type for the scholar's name balances a clear sans-serif reading layer for the rest of the interface.
 
 ## 2. Color
 
@@ -20,7 +20,8 @@ The site is a quiet academic portfolio: editorial, spacious, and precise. Its si
 | Accent | `--color-accent` | `#526b7d` | Links, focus, active states |
 | Accent/hover | `--color-accent-hover` | `#3e5566` | Interactive hover states |
 | Accent/light | `--color-accent-light` | `#eef2f4` | Soft interactive hover surface |
-| Motif | `--color-motif` | `#687f8e` | Home text-analysis visualization |
+| Plum accent | `--color-plum` | `#786878` | Primary buttons and motif highlights |
+| Plum/hover | `--color-plum-hover` | `#624f61` | Primary button hover state |
 | Motif/muted | `--color-motif-muted` | `#8798a5` | Secondary visualization marks |
 
 Accent is reserved for interactive elements and status cues. New controls must use existing tokens rather than introduce a new color.
