@@ -25,7 +25,6 @@ fi
 allowed_files=(
   "public/JinaLee_CV.pdf"
   "src/generated/cv-data.json"
-  "src/generated/site-content.json"
 )
 
 branch="$(git branch --show-current)"
@@ -45,7 +44,8 @@ echo "Updating main before generating public content..."
 git pull --ff-only origin main
 
 echo "Refreshing generated CV data..."
-npm run refresh:content
+npm run generate:cv
+npm run check:content-sync
 npm run build
 
 git add -- "${allowed_files[@]}"
