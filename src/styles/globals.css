@@ -23,8 +23,8 @@
   --color-accent: #526b7d;
   --color-accent-hover: #3e5566;
   --color-accent-light: #eef2f4;
-  --color-plum: #786878;
-  --color-plum-hover: #624f61;
+  --color-navy: #3e536d;
+  --color-navy-hover: #2d4058;
   --color-motif-muted: #8798a5;
 
   /* Spacing scale */
@@ -402,12 +402,12 @@ button.footer__link {
 }
 
 .link-btn--filled {
-  background: var(--color-plum);
+  background: var(--color-navy);
   color: white;
 }
 
 .link-btn--filled:hover {
-  background: var(--color-plum-hover);
+  background: var(--color-navy-hover);
 }
 
 /* ===== Research Cards ===== */

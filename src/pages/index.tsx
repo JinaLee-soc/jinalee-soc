@@ -96,7 +96,7 @@ function CorpusMotif() {
           width={t.w}
           height={8}
           rx={4}
-          fill={t.highlighted ? 'var(--color-plum)' : 'var(--color-motif-muted)'}
+          fill={t.highlighted ? 'var(--color-navy)' : 'var(--color-motif-muted)'}
           opacity={t.o}
         />
       ))}
