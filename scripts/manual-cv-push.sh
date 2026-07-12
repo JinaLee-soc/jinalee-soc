@@ -13,7 +13,8 @@ if ! command -v npm >/dev/null 2>&1; then
   exit 1
 fi
 
-REPO_DIR="$(git rev-parse --show-toplevel)"
+SCRIPT_DIR="$(cd -- "$(dirname -- "$0")" && pwd)"
+REPO_DIR="$(cd -- "$SCRIPT_DIR/.." && pwd)"
 cd "$REPO_DIR"
 
 if [[ ! -f "cv.docx" || ! -f "site-content.docx" ]]; then
