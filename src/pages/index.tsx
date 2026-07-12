@@ -96,7 +96,7 @@ function CorpusMotif() {
           width={t.w}
           height={8}
           rx={4}
-          fill={t.sage ? '#5b6e5a' : '#8a847c'}
+          fill={t.sage ? 'var(--color-motif)' : 'var(--color-motif-muted)'}
           opacity={t.o}
         />
       ))}

@@ -13,16 +13,18 @@
   --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 
   /* Colors */
-  --color-bg: #fafaf9;
+  --color-bg: #f7f9fb;
   --color-surface: #ffffff;
-  --color-border: #e5e3df;
-  --color-border-light: #f0ede9;
+  --color-border: #e2e7eb;
+  --color-border-light: #eef2f5;
   --color-text: #1a1917;
   --color-text-secondary: #5a5650;
   --color-text-muted: #8a847c;
   --color-accent: #5b6e5a;        /* muted sage green — academic, calm */
   --color-accent-hover: #47573a;
   --color-accent-light: #f0f3ef;
+  --color-motif: #6b7f91;
+  --color-motif-muted: #8e9ba6;
 
   /* Spacing scale */
   --space-1: 0.25rem;
@@ -130,7 +132,7 @@ a:focus-visible {
   top: 0;
   z-index: 100;
   height: var(--nav-height);
-  background: rgba(250, 250, 249, 0.95);
+  background: rgba(247, 249, 251, 0.95);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--color-border);
   display: flex;
@@ -501,18 +503,18 @@ button.footer__link {
 }
 
 .pub-item__status--published {
-  background: #e8f0e8;
-  color: #3a6b38;
+  background: #e7f0ec;
+  color: #356451;
 }
 
 .pub-item__status--forthcoming {
   background: #e8eef5;
-  color: #2c5282;
+  color: #355b7a;
 }
 
 .pub-item__status--under-review {
-  background: #fef3e2;
-  color: #7b5a1a;
+  background: #eceef6;
+  color: #4b5270;
 }
 
 .pub-item__status--rnr {
@@ -522,8 +524,8 @@ button.footer__link {
 }
 
 .pub-item__status--in-progress {
-  background: #f3f0ec;
-  color: #6b6058;
+  background: #edf0f2;
+  color: #53616a;
 }
 
 .pub-item__doi {
