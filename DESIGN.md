@@ -22,7 +22,6 @@ The site is a quiet academic portfolio: editorial, spacious, and precise. Its si
 | Accent/light | `--color-accent-light` | `#eef2f4` | Soft interactive hover surface |
 | Plum accent | `--color-plum` | `#786878` | Primary buttons and motif highlights |
 | Plum/hover | `--color-plum-hover` | `#624f61` | Primary button hover state |
-| Plum/light | `--color-plum-light` | `#f0ebf0` | Teaching Philosophy emphasis surface |
 | Motif/muted | `--color-motif-muted` | `#8798a5` | Secondary visualization marks |
 
 Accent is reserved for interactive elements and status cues. New controls must use existing tokens rather than introduce a new color.

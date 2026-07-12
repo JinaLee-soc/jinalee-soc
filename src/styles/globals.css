@@ -25,7 +25,6 @@
   --color-accent-light: #eef2f4;
   --color-plum: #786878;
   --color-plum-hover: #624f61;
-  --color-plum-light: #f0ebf0;
   --color-motif-muted: #8798a5;
 
   /* Spacing scale */
@@ -568,8 +567,8 @@ button.footer__link {
 
 /* ===== Teaching ===== */
 .philosophy-block {
-  background: var(--color-plum-light);
-  border-left: 3px solid var(--color-plum);
+  background: var(--color-accent-light);
+  border-left: 3px solid var(--color-accent);
   padding: var(--space-6) var(--space-8);
   border-radius: 0 4px 4px 0;
 }
