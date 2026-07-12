@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "site-content.docx",
-    "generated_at": "2026-07-11T15:27:33.411183+00:00"
+    "generated_at": "2026-07-12T00:06:15.930028+00:00"
   },
   "home": {
     "about": [
@@ -71,10 +71,7 @@
         "overview": [
           "A newer line of my work asks how AI tools are changing research practice itself, not just its speed or volume."
         ],
-        "key_questions": [
-          "How can AI-assisted research systems make interpretive decisions visible and auditable?",
-          "What survives, and what is lost, when human judgment is relocated into external infrastructure a researcher runs alone?"
-        ],
+        "key_questions": [],
         "publications": [
           "Conceptual Divergence Analysis: Mapping a Researcher's Conceptual Vocabulary Against the Literatures They Address"
         ]

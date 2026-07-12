@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "site-content-ko.docx",
-    "generated_at": "2026-07-11T20:37:24.246357+00:00"
+    "generated_at": "2026-07-12T00:06:16.718862+00:00"
   },
   "home": {
     "about": [
@@ -71,10 +71,7 @@
         "overview": [
           "저의 최근 연구는 AI 도구가 연구의 속도나 규모를 넘어 연구 관행 자체를 어떻게 변화시키는지 묻습니다."
         ],
-        "key_questions": [
-          "AI 지원 연구 시스템은 해석적 결정을 어떻게 가시화하고 검증·감사할 수 있게 만들 수 있는가?",
-          "연구자가 혼자 실행하는 외부 인프라로 인간의 판단이 이전될 때, 무엇이 남고 무엇이 사라지는가?"
-        ],
+        "key_questions": [],
         "publications": [
           "Conceptual Divergence Analysis: Mapping a Researcher's Conceptual Vocabulary Against the Literatures They Address"
         ]
