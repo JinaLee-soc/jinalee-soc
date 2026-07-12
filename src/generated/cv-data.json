@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-07-11T15:27:33.149881+00:00"
+    "generated_at": "2026-07-12T18:51:02.744481+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -110,9 +110,10 @@
         "venue": "Scientometrics"
       },
       {
-        "status": "Under Review",
+        "status": "Revise & Resubmit",
         "authors": "Lee, Jina",
-        "title": "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty"
+        "title": "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty",
+        "venue": "Social Forces"
       },
       {
         "status": "Working Paper",
