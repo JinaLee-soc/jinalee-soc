@@ -109,6 +109,11 @@ PRESERVED_TITLES = {
 }
 
 
+def normalize_korean_translation(text: str) -> str:
+    """Keep the author's established Korean name in translated site prose."""
+    return text.replace("Jina Lee", "이진아")
+
+
 def should_preserve(text: str) -> bool:
     return text in PRESERVED_TITLES or text.startswith((
         "HOME ",
@@ -159,7 +164,10 @@ def create_korean_document(
             new_paragraphs.append(text)
 
     if new_paragraphs:
-        generated = translate_prose(new_paragraphs, model)
+        generated = {
+            source: normalize_korean_translation(translation)
+            for source, translation in translate_prose(new_paragraphs, model).items()
+        }
         auto_translations.update(generated)
         save_auto_translations(auto_translations_path, auto_translations)
         print(
@@ -175,7 +183,7 @@ def create_korean_document(
             continue
         replacement = TRANSLATIONS.get(text) or auto_translations.get(text)
         if replacement is not None:
-            replace_paragraph_text(paragraph, replacement)
+            replace_paragraph_text(paragraph, normalize_korean_translation(replacement))
             translated += 1
         elif should_preserve(text):
             continue
