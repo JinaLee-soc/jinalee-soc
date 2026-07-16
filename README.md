@@ -24,7 +24,7 @@ before committing a content update:
 - `public/cv.docx` -> `scripts/cv/parse_docx.py` -> `src/generated/cv-data.json`
   (publications + statuses, employment, education, teaching offerings, CV page)
 - `site-content.docx` -> `scripts/cv/parse_site_content.py` -> `src/generated/site-content.json`
-  (homepage About/Teaching preview text, research program narratives, key
+  (homepage hero/About/Teaching preview text, research program narratives, key
   questions, teaching philosophy, course descriptions, classroom activities)
 
 Run `npm run refresh:content` to perform both parsing steps. It also runs
@@ -59,12 +59,12 @@ override it. Review or edit newly generated translations directly in the JSON
 cache when desired. The Korean Word source remains local alongside the English
 source document.
 
-`site-content.docx` uses ALL-CAPS marker lines (`HOME ABOUT`, `HOME TEACHING`,
+`site-content.docx` uses ALL-CAPS marker lines (`HOME HERO`, `HOME ABOUT`, `HOME TEACHING`,
 `RESEARCH INTRO`, `PROGRAM:`, `KEY QUESTIONS`, `PUBLICATIONS`,
 `TEACHING PHILOSOPHY`, `COURSE:`, `ACTIVITIES:`, `ITEM:`). Everything under a
-marker is body text for it. `HOME ABOUT` and `HOME TEACHING` render as plain
-paragraphs (no inline links) in the homepage About and Teaching preview
-sections.
+marker is body text for it. `HOME HERO`, `HOME ABOUT`, and `HOME TEACHING` render
+as plain paragraphs (no inline links) in the homepage hero, About, and Teaching
+preview sections.
 
 | What to update | File |
 |---|---|

@@ -1,7 +1,8 @@
-"""Parse site-content.docx into structured JSON for the Research and Teaching pages.
+"""Parse site-content.docx into structured JSON for the public site.
 
 The document uses ALL-CAPS marker lines to delimit sections:
 
+  HOME HERO               paragraphs for the homepage hero statement
   HOME ABOUT              paragraphs for the homepage About section
   HOME TEACHING           paragraph(s) for the homepage Teaching preview
   RESEARCH INTRO          paragraphs introducing the research page
@@ -68,6 +69,7 @@ def marker_of(line: str) -> tuple[str, str] | None:
     """Return (marker, argument) when the line is a section marker."""
     upper = line.upper()
     plain_markers = {
+        "HOME HERO": "home_hero",
         "HOME ABOUT": "home_about",
         "HOME TEACHING": "home_teaching",
         "RESEARCH INTRO": "research_intro",
@@ -91,6 +93,7 @@ def marker_of(line: str) -> tuple[str, str] | None:
 
 
 def parse_lines(lines: list[str], source_name: str = "site-content.docx") -> dict:
+    home_hero: list[str] = []
     home_about: list[str] = []
     home_teaching: list[str] = []
     research_intro: list[str] = []
@@ -109,7 +112,9 @@ def parse_lines(lines: list[str], source_name: str = "site-content.docx") -> dic
         marked = marker_of(line)
         if marked:
             marker, arg = marked
-            if marker == "home_about":
+            if marker == "home_hero":
+                mode = "home_hero"
+            elif marker == "home_about":
                 mode = "home_about"
             elif marker == "home_teaching":
                 mode = "home_teaching"
@@ -146,7 +151,9 @@ def parse_lines(lines: list[str], source_name: str = "site-content.docx") -> dic
                 mode = "item"
             continue
 
-        if mode == "home_about":
+        if mode == "home_hero":
+            home_hero.append(line)
+        elif mode == "home_about":
             home_about.append(line)
         elif mode == "home_teaching":
             home_teaching.append(line)
@@ -171,7 +178,11 @@ def parse_lines(lines: list[str], source_name: str = "site-content.docx") -> dic
             "source": source_name,
             "generated_at": datetime.now(timezone.utc).isoformat(),
         },
-        "home": {"about": home_about, "teaching_snapshot": home_teaching},
+        "home": {
+            "hero": home_hero,
+            "about": home_about,
+            "teaching_snapshot": home_teaching,
+        },
         "research": {"intro": research_intro, "programs": programs},
         "teaching": {
             "philosophy": philosophy,

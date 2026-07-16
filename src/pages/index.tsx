@@ -135,7 +135,7 @@ export default function Home() {
                 </h1>
                 <p className="hero__title">{locale === 'en' ? bio.title : labels.profileTitle}</p>
                 <p className="hero__affiliation">{bio.affiliation}</p>
-                <p className="hero__statement">{locale === 'en' ? bio.positioningStatement : labels.positioningStatement}</p>
+                <p className="hero__statement">{content.homeHero.join(' ')}</p>
                 <div className="hero__links">
                   <LinkButton href={site.cvUrl} filled>
                     CV

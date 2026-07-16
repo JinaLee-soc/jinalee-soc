@@ -34,7 +34,11 @@ export interface ScActivityGroup {
 }
 
 interface SiteContent {
-  home?: { about?: string[]; teaching_snapshot?: string[] }
+  home?: {
+    hero?: string[]
+    about?: string[]
+    teaching_snapshot?: string[]
+  }
   research?: { intro?: string[]; programs?: ScProgram[] }
   teaching?: {
     philosophy?: string[]
@@ -53,6 +57,7 @@ const fallbackPrograms: ScProgram[] = researchPrograms.map((program) => ({
 }))
 
 export interface LocalizedSiteContent {
+  homeHero: string[]
   homeAbout: string[]
   homeTeaching: string[]
   researchIntro: string[]
@@ -62,10 +67,15 @@ export interface LocalizedSiteContent {
   activityGroups: ScActivityGroup[]
 }
 
-function buildSiteContent(rawContent: unknown): LocalizedSiteContent {
+function buildSiteContent(rawContent: unknown, locale: Locale): LocalizedSiteContent {
   const sc = rawContent as SiteContent
+  const fallbackHomeHero =
+    locale === 'ko'
+      ? '평가 체계가 누구의 연구를 독창적이고 권위 있으며 신뢰할 만한 것으로 인정하는지, 그리고 평가 기준이 가장 덜 표준화된 영역에서 왜 불평등이 집중되는지 연구합니다.'
+      : bio.positioningStatement
 
   return {
+    homeHero: sc.home?.hero?.length ? sc.home.hero : [fallbackHomeHero],
     homeAbout: sc.home?.about?.length ? sc.home.about : [bio.about],
     homeTeaching: sc.home?.teaching_snapshot?.length
       ? sc.home.teaching_snapshot
@@ -96,8 +106,8 @@ function buildSiteContent(rawContent: unknown): LocalizedSiteContent {
 }
 
 export const siteContentByLocale: Record<Locale, LocalizedSiteContent> = {
-  en: buildSiteContent(rawSiteContent),
-  ko: buildSiteContent(rawSiteContentKo),
+  en: buildSiteContent(rawSiteContent, 'en'),
+  ko: buildSiteContent(rawSiteContentKo, 'ko'),
 }
 
 export function getSiteContent(locale: Locale): LocalizedSiteContent {
