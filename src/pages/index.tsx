@@ -61,7 +61,7 @@ function escapeRegExp(value: string) {
 const KNOWN_VENUES = Array.from(
   new Set(
     [...journalArticles, ...bookChapters, ...worksInProgress]
-      .map((pub) => pub.venue?.trim())
+      .map((pub) => pub.venue?.split(',')[0].trim())
       .filter((venue): venue is string => !!venue)
   )
 ).sort((a, b) => b.length - a.length)
@@ -135,7 +135,7 @@ export default function Home() {
                 </h1>
                 <p className="hero__title">{locale === 'en' ? bio.title : labels.profileTitle}</p>
                 <p className="hero__affiliation">{bio.affiliation}</p>
-                <p className="hero__statement">{content.homeHero.join(' ')}</p>
+                <p className="hero__statement">{italicizeVenues(content.homeHero.join(' '))}</p>
                 <div className="hero__links">
                   <LinkButton href={site.cvUrl} filled>
                     CV
