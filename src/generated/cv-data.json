@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-07-16T05:34:05.678518+00:00"
+    "generated_at": "2026-07-17T20:51:38.578163+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -52,11 +52,12 @@
         "venue": ""
       },
       {
-        "year": "Forthcoming",
-        "status": "Forthcoming",
+        "year": "2026",
+        "status": "Published",
         "authors": "Lee, Jina",
         "title": "Claiming Novelty, Claiming Authority: Gender Gaps in Scientific Impact Across Disciplines",
-        "venue": "Gender & Society"
+        "venue": "Gender & Society, (online first)",
+        "doi": "https://doi.org/10.1177/08912432261462166"
       },
       {
         "year": "2025",
