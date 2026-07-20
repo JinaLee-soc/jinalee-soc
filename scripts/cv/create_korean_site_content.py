@@ -32,7 +32,7 @@ TRANSLATIONS: dict[str, str] = {
     "Jina Lee is a sociologist who studies how seemingly objective evaluation systems reproduce social hierarchies in science and in culture. Across these contexts, her work reveals a consistent pattern: practices that appear meritocratic often embed biases that disadvantage women and lower-status actors. Her research has been published in the American Sociological Review, Poetics, Socius, and Journal of Social Entrepreneurship, and is forthcoming in Gender & Society.":
         "저는 사회학자로서 과학과 문화 영역에서 겉보기에는 객관적인 평가 체계가 사회적 위계를 어떻게 재생산하는지 연구합니다. 서로 다른 맥락을 가로질러 살펴보면, 일관된 패턴이 드러납니다. 능력에 기반한 것처럼 보이는 평가나 보상에도 여성과 지위가 낮은 행위자에게 불리하게 작용하는 편향이 내재되어 있습니다. 연구 결과는 American Sociological Review, Poetics, Socius, Journal of Social Entrepreneurship에 게재되었으며, Gender & Society에 게재 예정입니다.",
     "I teach undergraduate courses in sociology of culture, sociology of gender, social statistics, and technology and society. My courses emphasize critical thinking and the application of sociological frameworks to contemporary empirical questions.":
-        "문화사회학, 젠더사회학, 사회통계학, 과학기술과 사회를 아우르는 학부 과목을 가르칩니다. 수업에서는 비판적 사고와 사회학적 분석 틀을 동시대의 경험적 질문에 적용하는 능력을 강조합니다.",
+        "문화사회학, 젠더사회학, 사회통계학, 과학기술과 사회 등 다양한 학부 과목을 가르칩니다. 수업에서는 비판적으로 사고하고 사회학적 분석 틀을 오늘날의 경험적 질문에 적용하는 능력을 강조합니다.",
     "My research examines how evaluation systems that appear objective reproduce gender hierarchies across scientific and cultural fields. I ask: whose contributions are recognized as valuable, and whose are discounted? Across these programs, I trace how gender bias operates through everyday evaluation practices and accumulates into durable inequalities.":
         "객관적으로 보이는 평가 체계가 과학과 문화의 여러 영역에서 젠더 위계를 어떻게 재생산하는지 분석합니다. 어떤 기여가 가치 있는 것으로 인정되고, 어떤 기여가 평가절하되는지 질문합니다. 일상적인 평가 관행 속에서 젠더 편향이 작동하고 지속적인 불평등으로 축적되는 과정도 추적합니다.",
     "My methods include computational text analysis, bibliometric analysis, and survey experiments.":
@@ -72,33 +72,33 @@ TRANSLATIONS: dict[str, str] = {
     "What survives, and what is lost, when human judgment is relocated into external infrastructure a researcher runs alone?":
         "연구자가 혼자 실행하는 외부 인프라로 인간의 판단이 이전될 때, 무엇이 남고 무엇이 사라지는가?",
     "I believe in the transformative power of integrative and experiential learning to make sociological concepts tangible and relevant to students' lives. I design interactive learning environments where theory comes alive through collaborative investigation and creative application. Below are select examples from three of my undergraduate courses.":
-        "통합적이고 경험적인 학습은 사회학적 개념을 학생들의 삶과 연결하고, 그 개념을 구체적으로 이해하게 하는 변혁적인 힘을 지닙니다. 협력적 탐구와 창의적 적용을 통해 이론을 살아 있는 경험으로 만드는 상호작용적 학습 환경을 설계합니다. 아래에는 학부 세 과목에서 활용한 몇 가지 사례를 소개합니다.",
+        "통합적·경험적 학습은 사회학적 개념을 학생들의 삶과 연결해 구체적으로 이해하도록 돕습니다. 저는 협력적 탐구와 창의적 적용을 통해 이론을 실제 문제에 활용하는 참여형 학습 환경을 설계합니다. 아래에는 제가 학부 세 과목에서 활용한 대표 활동을 소개합니다.",
     "A survey of fundamental statistical concepts and their application in social research, with emphasis on both conceptual understanding and practical analysis skills.":
-        "사회 연구에서 사용하는 기초 통계 개념과 그 적용을 다루며, 개념적 이해와 실제 분석 능력을 함께 강조합니다.",
+        "사회 연구에 필요한 기초 통계 개념과 활용법을 다루며, 개념적 이해와 실제 자료 분석 능력을 함께 기릅니다.",
     "Key frameworks in the sociology of culture, including cultural industries, taste, status, and the boundary between popular and high culture. Students analyze everyday cultural objects through a sociological lens.":
-        "문화산업, 취향, 지위, 대중문화와 고급문화의 경계를 포함한 문화사회학의 핵심 이론을 다룹니다. 일상의 문화적 대상을 사회학적 관점에서 분석합니다.",
+        "문화산업, 취향, 지위, 대중문화와 고급문화의 경계 등 문화사회학의 주요 분석 틀을 다룹니다. 학생들은 일상에서 접하는 문화적 대상을 사회학적 관점으로 분석합니다.",
     "How gender shapes experience across education, work, family, and relationships, and how it intersects with other dimensions of social inequality.":
-        "교육, 노동, 가족, 관계에서 젠더가 경험을 어떻게 형성하는지, 그리고 젠더가 사회 불평등의 다른 차원과 어떻게 교차하는지를 다룹니다.",
+        "젠더가 교육, 일, 가족, 관계에서의 경험을 어떻게 형성하는지, 그리고 사회 불평등의 다른 차원과 어떻게 교차하는지를 다룹니다.",
     "How science and technology shape social life, and how social forces shape science and technology in return. Topics include recognition, inequality, AI governance, and algorithmic systems.":
-        "과학과 기술이 사회생활을 어떻게 형성하는지, 그리고 사회적 힘이 과학과 기술을 어떻게 다시 형성하는지를 분석합니다. 주요 주제는 인정, 불평등, AI 거버넌스, 알고리즘 시스템입니다.",
+        "과학과 기술이 사회적 삶을 어떻게 형성하는지, 반대로 사회적 힘은 과학과 기술을 어떻게 형성하는지를 살펴봅니다. 인정, 불평등, AI 거버넌스, 알고리즘 시스템 등을 주요 주제로 다룹니다.",
     "Students map their campus environment to identify how institutional resources are distributed along class-coded lines, drawing on Anthony Jack's research on first-generation students.":
-        "캠퍼스 환경을 지도화하여 계층적 구분을 따라 제도적 자원이 어떻게 분배되는지 파악하고, Anthony Jack의 1세대 대학생 연구를 바탕으로 분석합니다.",
+        "학생들은 캠퍼스를 직접 살펴보며 계층적 신호에 따라 제도적 자원이 어떻게 배분되는지 찾아내고, Anthony Jack의 가족 중 처음으로 대학에 진학한 학생들에 관한 연구를 바탕으로 그 패턴을 분석합니다.",
     "Teams represent stigmatized subcultures and use theoretical tools to argue for their group's legitimacy, navigating between analytical rigor and rhetorical performance.":
-        "낙인찍힌 하위문화의 대표자로서 그 정당성을 이론적으로 주장하고, 분석적 엄밀성과 수사적 수행 사이의 관계를 탐색합니다.",
+        "각 팀은 낙인찍힌 하위문화 집단을 맡아 이론적 도구를 활용해 해당 집단의 정당성을 주장합니다. 이 과정에서 분석적 엄밀성과 설득력 있는 표현 사이의 균형을 익힙니다.",
     "Students translate sociological concepts into visual form and analyze what makes a concept-driven meme culturally legible and shareable.":
-        "사회학적 개념을 시각적 형태로 옮긴 뒤, 개념 중심의 밈이 어떻게 문화적으로 이해되고 공유되는지를 분석합니다.",
+        "학생들은 사회학적 개념을 시각적으로 표현하고, 개념 중심의 밈이 문화적으로 쉽게 읽히고 공유될 수 있는 조건을 분석합니다.",
     "Students construct evidence-based counter-memes to challenge essentialist claims, practicing critical engagement with popular discourse about gender.":
-        "본질주의적 주장을 반박하는 근거 기반의 카운터 밈을 제작하며, 젠더에 관한 대중 담론을 비판적으로 분석합니다.",
+        "학생들은 본질주의적 주장을 반박하는 근거 기반의 밈을 만들며, 젠더에 관한 대중 담론을 비판적으로 검토하는 법을 연습합니다.",
     "Students curate visual representations of gendered professional norms and present them analytically, surfacing the social regulation of bodies in professional contexts.":
-        "젠더화된 전문직 규범을 보여주는 시각 자료를 선별·구성해 분석적으로 발표하고, 전문적 맥락에서 신체가 사회적으로 규율되는 방식을 드러냅니다.",
+        "학생들은 직업 세계의 젠더 규범을 보여주는 시각 자료를 선별·구성해 분석적으로 발표하고, 직업적 맥락에서 신체가 사회적으로 규율되는 방식을 드러냅니다.",
     "Groups write fictional letters from 1950s time travelers confused by modern work-family arrangements; peers respond with sociologically informed analysis connecting personal experience to institutional change.":
-        "1950년대의 시간 여행자가 현대의 일·가족 배치를 이해하지 못한다는 설정으로 허구의 편지를 작성합니다. 이에 대해 동료들은 개인적 경험과 제도적 변화를 연결하는 사회학적 분석으로 답합니다.",
+        "각 조는 오늘날의 일과 가족생활 방식을 낯설어하는 1950년대 시간 여행자의 가상 편지를 작성합니다. 동료 학생들은 개인적 경험과 제도적 변화를 연결하는 사회학적 분석으로 답합니다.",
     "Students use structured gameplay to examine how scientific credit accumulates unequally, mapping advantage and disadvantage onto the social conditions of knowledge production.":
-        "구조화된 게임을 활용해 과학적 공로가 불평등하게 축적되는 방식을 분석하고, 지식 생산의 사회적 조건에 따라 이익과 불이익이 어떻게 배분되는지 지도화합니다.",
+        "학생들은 구조화된 게임을 통해 과학적 공로가 불평등하게 축적되는 방식을 살펴보고, 지식 생산의 사회적 조건이 누구에게 유리하거나 불리하게 작용하는지를 파악합니다.",
     "Students document their everyday encounters with algorithmic systems, then analyze them as a class to surface patterns in how AI shapes choice and perception.":
-        "알고리즘 시스템과 일상에서 마주한 경험을 기록한 뒤, 이를 수업에서 함께 분석하여 AI가 선택과 인식을 형성하는 방식의 패턴을 드러냅니다.",
+        "학생들은 일상에서 알고리즘 시스템을 접한 경험을 기록하고, 이를 수업에서 함께 분석해 AI가 선택과 인식을 형성하는 공통된 양상을 찾아냅니다.",
     "Groups construct physical representations of differential technology access, making structural inequality in digital infrastructure materially visible.":
-        "기술 접근성의 차이를 물리적 모형으로 구성하여 디지털 인프라에 내재한 구조적 불평등을 가시화합니다.",
+        "학생들은 기술 접근성의 차이를 물리적 모형으로 표현해 디지털 인프라에 내재한 구조적 불평등을 눈에 보이게 만듭니다.",
 }
 
 KOREAN_FONT: Final = "Apple SD Gothic Neo"

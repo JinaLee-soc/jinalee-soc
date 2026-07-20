@@ -73,15 +73,15 @@ export const localeText = {
     teachingLink: '강의 보기 →',
     keyQuestions: '핵심 질문',
     relatedWork: '관련 연구',
-    teachingPhilosophy: '강의 철학',
+    teachingPhilosophy: '교육 철학',
     courses: '과목',
-    classroomActivities: '수업 활동 사례',
+    classroomActivities: '주요 수업 활동',
     activitiesFor: '수업 활동:',
     cvTitle: 'Curriculum Vitae',
     cvDescription:
-      'Jina Lee의 영문 이력서입니다. 일리노이대학교 어배너-섐페인 사회학과 조교수입니다.',
+      '이진아(일리노이대학교 어배너-섐페인 사회학과 조교수)의 영문 이력서입니다.',
     cvDownload: '영문 CV 다운로드 (PDF)',
-    cvOpenPdf: '영문 PDF 새 탭에서 열기',
+    cvOpenPdf: '영문 PDF를 새 탭에서 열기',
     lastUpdated: '최근 업데이트',
     employment: '경력',
     education: '학력',
@@ -97,7 +97,7 @@ export const localeText = {
     workshops: '워크숍',
     dissertation: '학위논문',
     email: '이메일',
-    copied: '복사됨!',
+    copied: '복사했습니다',
     copyEmail: '이메일 주소 복사',
     textSize: '글자 크기',
     decreaseTextSize: '글자 크기 줄이기',
@@ -111,15 +111,15 @@ export const localeText = {
     openMenu: '메뉴 열기',
     closeMenu: '메뉴 닫기',
     homeDescription:
-      '일리노이대학교 어배너-섐페인 사회학과 조교수. 과학과 문화의 평가 체계에서 나타나는 젠더 불평등을 연구합니다.',
+      '일리노이대학교 어배너-섐페인 사회학과 조교수. 과학과 문화 영역의 평가 체계에서 나타나는 젠더 불평등을 연구합니다.',
     profileTitle: '사회학과 조교수',
     positioningStatement:
       '저는 과학과 문화의 평가 체계가 젠더 불평등을 어떻게 재생산하는지 연구합니다.',
     headshotAlt: '사회학과 조교수 이진아',
     researchDescription:
-      '평가의 모호성, 지속적 인정, 그리고 판단을 조직하는 사회적·기술적 구조에 관한 연구입니다.',
+      '평가의 모호성, 지속적 인정, 그리고 판단을 조직하는 사회적·기술적 구조를 연구합니다.',
     teachingDescription:
-      '문화사회학, 젠더사회학, 사회통계학, 기술과 사회를 다루는 강의 철학과 과목 및 수업 활동입니다.',
+      '문화사회학, 젠더사회학, 사회통계학, 과학기술과 사회를 아우르는 교육 철학과 과목 및 수업 활동입니다.',
   },
 } as const
 
