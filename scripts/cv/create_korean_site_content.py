@@ -3,8 +3,11 @@ from __future__ import annotations
 import argparse
 import os
 from pathlib import Path
+from typing import Final
 
 from docx import Document
+from docx.oxml.ns import qn
+from docx.text.paragraph import Paragraph
 
 from korean_auto_translation import (
     DEFAULT_AUTO_TRANSLATIONS_PATH,
@@ -98,6 +101,13 @@ TRANSLATIONS: dict[str, str] = {
         "기술 접근성의 차이를 물리적 모형으로 구성하여 디지털 인프라에 내재한 구조적 불평등을 가시화합니다.",
 }
 
+KOREAN_FONT: Final = "Apple SD Gothic Neo"
+
+
+class MissingKoreanTranslationError(RuntimeError):
+    """Raised when source prose has no reviewed Korean translation."""
+
+
 PRESERVED_TITLES = {
     "Claiming Novelty, Claiming Authority: Gender Gaps in Scientific Impact Across Disciplines",
     "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty",
@@ -136,14 +146,19 @@ def should_preserve(text: str) -> bool:
     }
 
 
-def replace_paragraph_text(paragraph, replacement: str) -> None:
+def replace_paragraph_text(paragraph: Paragraph, replacement: str) -> None:
     if not paragraph.runs:
         paragraph.add_run(replacement)
-        return
+    else:
+        paragraph.runs[0].text = replacement
+        for run in paragraph.runs[1:]:
+            run.text = ""
 
-    paragraph.runs[0].text = replacement
-    for run in paragraph.runs[1:]:
-        run.text = ""
+    for run in paragraph.runs:
+        run.font.name = KOREAN_FONT
+        run._element.get_or_add_rPr().get_or_add_rFonts().set(
+            qn("w:eastAsia"), KOREAN_FONT
+        )
 
 
 def create_korean_document(
@@ -192,7 +207,9 @@ def create_korean_document(
         elif should_preserve(text):
             continue
         else:
-            raise RuntimeError(f"No Korean translation generated for: {text}")
+            raise MissingKoreanTranslationError(
+                f"No Korean translation generated for: {text}"
+            )
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     document.save(output_path)

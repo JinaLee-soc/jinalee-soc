@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "site-content.docx",
-    "generated_at": "2026-07-17T22:26:53.294686+00:00"
+    "generated_at": "2026-07-20T01:33:11.832425+00:00"
   },
   "home": {
     "hero": [
@@ -16,66 +16,54 @@
   },
   "research": {
     "intro": [
-      "My research asks how evaluation confers authority on some contributions but not others, and why inequality is greatest where judgments are least standardized. For instance, a paper may be widely cited without being treated as original, credible, or field-defining; status inequality accumulates in these harder-to-standardize forms of recognition. I pursue this question across three sites: science, culture, and AI."
+      "My research examines how contributions are evaluated when their value cannot be determined by clear or settled standards. I study how judgments of originality, authority, and credibility are formed; why gender and status become especially consequential under evaluative ambiguity; and how initial differences in recognition accumulate into durable inequalities. Across scientific and cultural fields, I follow this process from claims of novelty through reception, stabilization, and long-term recognition. I also examine how audience structures and AI systems increasingly organize these judgments."
     ],
     "programs": [
       {
-        "title": "Gender and Scientific Evaluation",
+        "title": "Evaluating Novel Contributions",
         "overview": [
-          "Scientific recognition is rarely neutral. My work in this area investigates how gender shapes which knowledge claims are treated as authoritative, how novelty is attributed and rewarded, and how uncertainty is managed differently depending on who makes a claim."
+          "New contributions must be classified before they can be claimed and recognized. My earlier work distinguishes forms of scientific novelty. My subsequent research examines whether those forms are equally available for researchers to claim and whether claims receive equal recognition across gender and disciplinary contexts."
         ],
         "key_questions": [
-          "How do gendered dynamics shape which scientific contributions get recognized, cited, and treated as authoritative?",
-          "How is novelty attributed and rewarded differently across gender lines?",
-          "How is uncertainty managed differently depending on who makes a scientific claim?"
+          "How are different forms of novelty classified and valued?",
+          "How do gender and disciplinary context shape who can claim novelty and whose claims receive recognition?"
         ],
         "publications": [
+          "What Types of Novelty Are Most Disruptive?",
           "Claiming Novelty, Claiming Authority: Gender Gaps in Scientific Impact Across Disciplines",
-          "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty",
-          "Stratified Fact-Making: How Gender and Novelty Claims Stratify the Stabilization of Scientific Facts",
-          "What Types of Novelty Are Most Disruptive?"
+          "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty"
         ]
       },
       {
-        "title": "Gender, Culture, and Recognition",
+        "title": "From Evaluation to Durable Recognition",
         "overview": [
-          "Recognition unfolds across cultural fields, markets, and public arenas. My work in this area examines how gender and social hierarchies shape who is recognized, remembered, funded, protected, or able to remain publicly present."
+          "This line of work follows evaluation over time, asking how repeated acts of selection and recognition determine which claims become accepted facts, which creators enter cultural canons, and which actors remain publicly visible."
         ],
         "key_questions": [
-          "How do cultural institutions determine whose work is recognized and remembered?",
-          "How do gender stereotypes shape access to recognition and resources?",
-          "How do social categories influence judgments of who deserves support or protection?",
-          "At which stages of evaluation do inequalities emerge and accumulate?"
+          "How do repeated acts of selection transform initial evaluations into durable recognition?",
+          "At what stages do gender and status inequalities emerge and accumulate?"
         ],
         "publications": [
+          "Stratified Fact-Making: How Gender and Novelty Claims Stratify the Stabilization of Scientific Facts",
           "Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon",
-          "Who Deserves Protection? How Naming Potential Beneficiaries Influences the COVID-19 Vaccine Intentions",
+          "Survivorship in Public: Differential Durability and the Conflictual Face of Korean Digital Feminism",
           "The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing",
-          "Survivorship in Public: Differential Durability and the Conflictual Face of Korean Digital Feminism"
+          "Who Deserves Protection? How Naming Potential Beneficiaries Influences the COVID-19 Vaccine Intentions"
         ]
       },
       {
-        "title": "Science and Academia",
+        "title": "The Organization and Infrastructure of Evaluation",
         "overview": [
-          "Scientific knowledge is shaped not only by what researchers study but by how scientific communities are organized. This line of work examines how structural features of academic fields, such as how audiences are structured, publication norms, and data practices, influence the production, reception, and epistemic character of scientific knowledge."
+          "Evaluation does not occur in isolation. It is organized through disciplinary audiences, publication systems, data practices, and increasingly AI tools that select relevant literatures and formulate judgments about originality and fit."
         ],
         "key_questions": [
-          "How does audience structure shape the impact of domain-spanning innovation?",
-          "How do editorial and data sharing requirements shape the epistemic character of scientific articles?"
+          "How do audience structures and publication practices shape judgments of novelty, fit, and epistemic value?",
+          "How do AI tools select relevant literatures and formulate judgments about originality and fit?"
         ],
         "publications": [
           "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation",
+          "Conceptual Divergence Analysis: Mapping a Researcher's Conceptual Vocabulary Against the Literatures They Address",
           "Humble Reflections on the Intellectual Process of Developing a Text-based Measure of Humility in Inquiry"
-        ]
-      },
-      {
-        "title": "AI and Research Practice",
-        "overview": [
-          "A newer line of my work asks how AI tools are changing research practice itself, not just its speed or volume."
-        ],
-        "key_questions": [],
-        "publications": [
-          "Conceptual Divergence Analysis: Mapping a Researcher's Conceptual Vocabulary Against the Literatures They Address"
         ]
       }
     ]

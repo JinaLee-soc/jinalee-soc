@@ -57,7 +57,7 @@ export const localeText = {
       'I study how evaluation systems reproduce gender inequality in science and in cultural fields.',
     headshotAlt: 'Jina Lee, Assistant Professor of Sociology',
     researchDescription:
-      'Research programs on gender inequality in evaluation systems across scientific and cultural fields.',
+      'Research on evaluative ambiguity, durable recognition, and the social and technical organization of judgment.',
     teachingDescription:
       'Teaching philosophy, courses, and classroom activities in sociology of culture, sociology of gender, social statistics, and technology and society.',
   },
@@ -117,7 +117,7 @@ export const localeText = {
       '저는 과학과 문화의 평가 체계가 젠더 불평등을 어떻게 재생산하는지 연구합니다.',
     headshotAlt: '사회학과 조교수 이진아',
     researchDescription:
-      '과학과 문화의 평가 체계에서 나타나는 젠더 불평등에 관한 연구입니다.',
+      '평가의 모호성, 지속적 인정, 그리고 판단을 조직하는 사회적·기술적 구조에 관한 연구입니다.',
     teachingDescription:
       '문화사회학, 젠더사회학, 사회통계학, 기술과 사회를 다루는 강의 철학과 과목 및 수업 활동입니다.',
   },
