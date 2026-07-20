@@ -52,7 +52,7 @@ export const researchPrograms: ResearchProgram[] = [
   {
     id: 'durable-recognition',
     title: 'From Evaluation to Durable Recognition',
-    overview: `This line of work follows evaluation over time, asking how repeated acts of selection and recognition determine which claims become accepted facts, which creators enter cultural canons, and which actors remain publicly visible.`,
+    overview: `This line of work examines how repeated acts of selection, classification, and recognition determine which claims become accepted facts, which creators enter cultural canons, which actors remain publicly visible, and which groups are treated as worthy of support or protection.`,
     keyQuestions: [
       'How do repeated acts of selection transform initial evaluations into durable recognition?',
       'At what stages do gender and status inequalities emerge and accumulate?',
@@ -96,7 +96,7 @@ export const researchPrograms: ResearchProgram[] = [
     overview: `Evaluation does not occur in isolation. It is organized through disciplinary audiences, publication systems, data practices, and increasingly AI tools that select relevant literatures and formulate judgments about originality and fit.`,
     keyQuestions: [
       'How do audience structures and publication practices shape judgments of novelty, fit, and epistemic value?',
-      'How do AI tools select relevant literatures and formulate judgments about originality and fit?',
+      'How do AI tools and research infrastructures determine which literatures become visible, relevant, and available for scholarly judgment?',
     ],
     publications: [
       {

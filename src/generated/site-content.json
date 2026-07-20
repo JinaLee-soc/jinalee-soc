@@ -1,14 +1,14 @@
 {
   "meta": {
     "source": "site-content.docx",
-    "generated_at": "2026-07-20T01:33:11.832425+00:00"
+    "generated_at": "2026-07-20T03:21:38.293046+00:00"
   },
   "home": {
     "hero": [
       "I study how evaluations of originality, authority, and credibility are formed, and whose work those judgments elevate."
     ],
     "about": [
-      "Jina Lee is a sociologist of evaluation, knowledge, and inequality. Her work asks: how do systems of evaluation determine whose contributions are recognized as original, authoritative, and credible? And how does inequality concentrate in the judgments least governed by clear standards? She pursues these questions across three arenas: the sciences; cultural canonization; and the AI systems now absorbing parts of scholarly judgment itself, using computational text analysis, bibliometric analysis, and experiments. Her research appears in the American Sociological Review, Gender & Society, and Poetics, among other venues."
+      "Jina Lee is a sociologist of evaluation, knowledge, and inequality. Her work asks: how do systems of evaluation determine whose contributions are recognized as original, authoritative, and credible? And how does inequality concentrate in the judgments least governed by clear standards? She traces evaluation from the classification of novel contributions, through their reception and stabilization, to the organizational and AI infrastructures that structure scholarly judgment. She studies these processes across science, cultural fields, and AI-mediated knowledge systems, using computational text analysis, bibliometric analysis, and experiments. Her research appears in the American Sociological Review, Gender & Society, and Poetics, among other venues."
     ],
     "teaching_snapshot": [
       "I teach undergraduate courses in sociology of culture, sociology of gender, social statistics, and technology and society. My courses emphasize critical thinking and the application of sociological frameworks to contemporary empirical questions."
@@ -37,7 +37,7 @@
       {
         "title": "From Evaluation to Durable Recognition",
         "overview": [
-          "This line of work follows evaluation over time, asking how repeated acts of selection and recognition determine which claims become accepted facts, which creators enter cultural canons, and which actors remain publicly visible."
+          "This line of work examines how repeated acts of selection, classification, and recognition determine which claims become accepted facts, which creators enter cultural canons, which actors remain publicly visible, and which groups are treated as worthy of support or protection."
         ],
         "key_questions": [
           "How do repeated acts of selection transform initial evaluations into durable recognition?",
@@ -58,7 +58,7 @@
         ],
         "key_questions": [
           "How do audience structures and publication practices shape judgments of novelty, fit, and epistemic value?",
-          "How do AI tools select relevant literatures and formulate judgments about originality and fit?"
+          "How do AI tools and research infrastructures determine which literatures become visible, relevant, and available for scholarly judgment?"
         ],
         "publications": [
           "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation",
