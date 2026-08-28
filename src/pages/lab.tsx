@@ -32,16 +32,6 @@ const members = [
     },
     profile: 'https://sociology.illinois.edu/directory/profile/sohees2',
   },
-  {
-    name: 'Sukhoon Park',
-    membership: 'guest',
-    role: { en: 'PhD Student', ko: '박사과정' },
-    interests: {
-      en: 'Sociology of knowledge, science and technology, computational social science, open science, global inequality in knowledge production',
-      ko: '지식사회학, 과학기술사회학, 계산사회과학, 오픈 사이언스, 지식 생산의 글로벌 불평등',
-    },
-    profile: 'https://sociology.arizona.edu/person/sukhoon-park',
-  },
 ] as const
 
 const copy = {
@@ -140,7 +130,7 @@ export default function Lab() {
                 {text.guests}
               </p>
               <span className="lab-members__count" aria-hidden="true">
-                02
+                01
               </span>
             </div>
 
