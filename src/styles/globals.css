@@ -1039,10 +1039,6 @@ button.footer__link {
 .lab-hero__inner {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 13rem;
-  gap: var(--space-16);
-  align-items: end;
 }
 
 .lab-hero__eyebrow {
@@ -1077,40 +1073,6 @@ button.footer__link {
   margin-top: var(--space-4);
   font-size: 0.88rem;
   color: var(--color-text-muted);
-}
-
-.lab-mark {
-  width: 100%;
-  aspect-ratio: 1;
-  padding: var(--space-6);
-  border: 1px solid var(--color-accent);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background: var(--color-accent-light);
-  color: var(--color-navy);
-}
-
-.lab-mark__letters {
-  font-family: var(--font-serif);
-  font-size: 2.8rem;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.06em;
-}
-
-.lab-mark__rule {
-  width: 100%;
-  height: 1px;
-  margin: var(--space-4) 0 var(--space-3);
-  background: currentColor;
-  opacity: 0.55;
-}
-
-.lab-mark__label {
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.24em;
 }
 
 .lab-members {
@@ -1321,15 +1283,6 @@ button.footer__link {
 
   .lab-hero {
     padding: var(--space-12) 0;
-  }
-
-  .lab-hero__inner {
-    grid-template-columns: 1fr;
-    gap: var(--space-10);
-  }
-
-  .lab-mark {
-    width: 9rem;
   }
 
   .member-grid {

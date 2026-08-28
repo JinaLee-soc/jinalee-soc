@@ -49,7 +49,7 @@ const copy = {
     eyebrow: 'University of Illinois Urbana-Champaign',
     name: 'Science, Technology & Evaluation Lab',
     intro:
-      'We study how scientific knowledge is produced, evaluated, and recognized—and how digital technologies and institutional arrangements shape inequality in these processes. Led by Jina Lee, the lab brings together computational, quantitative, qualitative, and mixed-methods research on science and technology.',
+      'We study how scientific knowledge is produced, evaluated, and recognized, and how digital technologies and institutional arrangements shape inequality in these processes. Led by Jina Lee, the lab brings together computational, quantitative, and mixed-methods research on science and technology.',
     methods: 'Current projects focus on evaluation systems, digital research infrastructures, and technology-mediated judgment.',
     members: 'Lab Members',
     guests: 'Guest Members',
@@ -60,7 +60,7 @@ const copy = {
     eyebrow: 'University of Illinois Urbana-Champaign',
     name: 'Science, Technology & Evaluation Lab',
     intro:
-      '과학 지식이 어떻게 생산·평가·인정되는지, 그리고 디지털 기술과 제도적 장치가 이 과정의 불평등을 어떻게 형성하는지 연구합니다. 이진아 교수가 이끄는 연구실로, 과학기술을 중심으로 계산사회과학과 양적·질적 방법론, 혼합방법론을 연결합니다.',
+      '과학 지식이 어떻게 생산·평가·인정되는지, 그리고 디지털 기술과 제도적 장치가 이 과정의 불평등을 어떻게 형성하는지 연구합니다. 이진아 교수가 이끄는 연구실로, 과학기술을 중심으로 계산사회과학과 양적 방법론, 혼합방법론을 연결합니다.',
     methods: '현재 평가 시스템, 디지털 연구 인프라, 기술이 매개하는 판단에 초점을 맞추고 있습니다.',
     members: '연구실 구성원',
     guests: '게스트 멤버',
@@ -109,11 +109,6 @@ export default function Lab() {
               </h1>
               <p className="lab-hero__intro">{text.intro}</p>
               <p className="lab-hero__methods">{text.methods}</p>
-            </div>
-            <div className="lab-mark" aria-hidden="true">
-              <span className="lab-mark__letters">STE</span>
-              <span className="lab-mark__rule" />
-              <span className="lab-mark__label">LAB</span>
             </div>
           </div>
         </section>
