@@ -5,6 +5,7 @@ export const localeText = {
     displayName: 'Jina Lee',
     home: 'Home',
     research: 'Research',
+    lab: 'Lab',
     teaching: 'Teaching',
     cv: 'CV',
     about: 'About',
@@ -58,6 +59,8 @@ export const localeText = {
     headshotAlt: 'Jina Lee, Assistant Professor of Sociology',
     researchDescription:
       'Research on evaluative ambiguity, durable recognition, and the social and technical organization of judgment.',
+    labDescription:
+      'The Science, Technology & Evaluation Lab studies how scientific knowledge is produced, evaluated, and recognized.',
     teachingDescription:
       'Teaching philosophy, courses, and classroom activities in sociology of culture, sociology of gender, social statistics, and technology and society.',
   },
@@ -65,6 +68,7 @@ export const localeText = {
     displayName: '이진아',
     home: '홈',
     research: '연구',
+    lab: '연구실',
     teaching: '강의',
     cv: 'CV',
     about: '소개',
@@ -118,6 +122,8 @@ export const localeText = {
     headshotAlt: '사회학과 조교수 이진아',
     researchDescription:
       '평가의 모호성, 지속적 인정, 그리고 판단을 조직하는 사회적·기술적 구조를 연구합니다.',
+    labDescription:
+      'Science, Technology & Evaluation Lab은 과학 지식이 생산되고 평가받으며 인정되는 방식을 연구합니다.',
     teachingDescription:
       '문화사회학, 젠더사회학, 사회통계학, 과학기술과 사회를 아우르는 교육 철학과 과목 및 수업 활동입니다.',
   },

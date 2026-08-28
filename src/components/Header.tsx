@@ -11,6 +11,7 @@ import TextSizeControl from './TextSizeControl'
 const navItems = [
   { href: '/', key: 'home' },
   { href: '/research', key: 'research' },
+  { href: '/lab', key: 'lab' },
   { href: '/teaching', key: 'teaching' },
   { href: '/cv', key: 'cv' },
 ] as const

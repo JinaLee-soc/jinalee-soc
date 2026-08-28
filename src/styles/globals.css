@@ -1012,6 +1012,209 @@ button.footer__link {
   max-width: 62ch;
 }
 
+/* ===== Science, Technology & Evaluation Lab ===== */
+.lab-page {
+  padding-top: 0;
+}
+
+.lab-hero {
+  position: relative;
+  overflow: hidden;
+  padding: var(--space-20) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lab-hero::after {
+  content: '';
+  position: absolute;
+  right: -8rem;
+  bottom: -11rem;
+  width: 25rem;
+  height: 25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.lab-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 13rem;
+  gap: var(--space-16);
+  align-items: end;
+}
+
+.lab-hero__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-6);
+}
+
+.lab-hero__title {
+  max-width: 9em;
+  margin-bottom: var(--space-6);
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 7vw, 5.4rem);
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.lab-hero__intro {
+  max-width: 59ch;
+  font-size: 1.08rem;
+  line-height: 1.72;
+  color: var(--color-text-secondary);
+}
+
+.lab-hero__methods {
+  max-width: 59ch;
+  margin-top: var(--space-4);
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+}
+
+.lab-mark {
+  width: 100%;
+  aspect-ratio: 1;
+  padding: var(--space-6);
+  border: 1px solid var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: var(--color-accent-light);
+  color: var(--color-navy);
+}
+
+.lab-mark__letters {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.lab-mark__rule {
+  width: 100%;
+  height: 1px;
+  margin: var(--space-4) 0 var(--space-3);
+  background: currentColor;
+  opacity: 0.55;
+}
+
+.lab-mark__label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.24em;
+}
+
+.lab-members {
+  padding: var(--space-16) 0 0;
+}
+
+.lab-members--guest {
+  padding-top: var(--space-12);
+}
+
+.lab-members__heading-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lab-members__heading-row .section__heading {
+  margin-bottom: 0;
+}
+
+.lab-members__count {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.1em;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5);
+  list-style: none;
+}
+
+.member-card {
+  min-height: 17rem;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.member-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.member-card--guest {
+  background: transparent;
+}
+
+.member-card__top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--space-5);
+}
+
+.member-card__role {
+  padding-top: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--color-text-muted);
+}
+
+.member-card__name {
+  margin-bottom: var(--space-6);
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  letter-spacing: -0.025em;
+}
+
+.member-card__label {
+  margin-bottom: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.61rem;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.member-card__interests {
+  font-size: 0.84rem;
+  line-height: 1.62;
+  color: var(--color-text-secondary);
+}
+
+.member-card__link {
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: var(--space-6);
+  font-size: 0.76rem;
+  font-weight: 500;
+}
+
 /* ===== Mobile Responsive ===== */
 @media (max-width: 768px) {
   :root {
@@ -1114,6 +1317,27 @@ button.footer__link {
 
   .research-grid {
     grid-template-columns: 1fr;
+  }
+
+  .lab-hero {
+    padding: var(--space-12) 0;
+  }
+
+  .lab-hero__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .lab-mark {
+    width: 9rem;
+  }
+
+  .member-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .member-card {
+    min-height: 15rem;
   }
 
   .course-item {
