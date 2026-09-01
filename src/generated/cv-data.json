@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-09-01T09:58:08.565530+00:00"
+    "generated_at": "2026-09-01T10:00:32.042230+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -240,11 +240,11 @@
         "courses": [
           {
             "title": "Technology & Society",
-            "offering": "In-Person, Spring 2026"
+            "offering": "In-Person, Spring 2026; Fall 2026"
           },
           {
             "title": "Sociology of Gender",
-            "offering": "In-Person, Fall 2025"
+            "offering": "In-Person, Fall 2025; Fall 2026"
           },
           {
             "title": "Introduction to Social Statistics",
