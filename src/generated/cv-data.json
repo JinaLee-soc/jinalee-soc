@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-07-17T22:26:53.039358+00:00"
+    "generated_at": "2026-09-01T09:58:08.565530+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -36,11 +36,10 @@
     }
   ],
   "research_areas": [
-    "Gender and Inequality",
     "Sociology of Science and Technology",
+    "Sociology of Gender",
     "Sociology of Culture",
-    "Computational Social Science",
-    "Experimental Methods"
+    "Computational Social Science"
   ],
   "publications": {
     "published": [
@@ -289,7 +288,7 @@
     },
     {
       "period": "2023 – Current",
-      "text": "Ad Hoc Reviewer, reviewed manuscripts for the following journals: American Sociological Review, Gender & Society, Social Science Research, Proceedings of the National Academy of Sciences (PNAS), Poetics, Socius, International Sociology"
+      "text": "Ad Hoc Reviewer, reviewed manuscripts for the following journals: American Sociological Review, American Journal of Sociology, Gender & Society, Social Science Research, Proceedings of the National Academy of Sciences (PNAS), Science Advances, Poetics, Socius, International Sociology"
     }
   ],
   "other_professional_service": [
