@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-09-01T10:00:32.042230+00:00"
+    "generated_at": "2026-09-07T16:24:56.267285+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -44,13 +44,6 @@
   "publications": {
     "published": [
       {
-        "year": "",
-        "status": "Published",
-        "authors": "Journal Articles",
-        "title": "",
-        "venue": ""
-      },
-      {
         "year": "2026",
         "status": "Published",
         "authors": "Lee, Jina",
@@ -92,7 +85,7 @@
         "title": "The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing",
         "venue": "Journal of Social Entrepreneurship",
         "doi": "https://doi.org/10.1080/19420676.2021.2004206",
-        "volume_issue_pages": "15(3): 811-832. Book Chapters"
+        "volume_issue_pages": "15(3): 811-832"
       },
       {
         "year": "Forthcoming",
