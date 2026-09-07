@@ -21,9 +21,9 @@ export const site = {
   // Stable page for external links (hero, contact links, Scholar profile, etc.)
   // — always fresh on rebuild, unlike a cached PDF byte-for-byte at a fixed URL.
   cvUrl: `${basePath}/cv/`,
-  // The actual PDF file — only used for the real download/open-in-new-tab
-  // actions on the /cv/ page itself.
-  cvPdfUrl: `${basePath}/JinaLee_CV.pdf`,
+  // Both PDF actions share a versioned URL so a new CV bypasses the old
+  // browser/CDN cache, including when opened in the browser's PDF viewer.
+  cvPdfUrl: `${basePath}/JinaLee_CV.pdf${generatedMeta.generated_at ? `?v=${encodeURIComponent(generatedMeta.generated_at)}` : ''}`,
   cvDownloadName: versionedCvFilename(),
   googleScholar:
     'https://scholar.google.com/citations?user=LoJXhdgAAAAJ',
