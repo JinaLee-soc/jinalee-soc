@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-09-15T16:42:43.323102+00:00"
+    "generated_at": "2026-09-15T16:46:57.179991+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -111,8 +111,17 @@
       {
         "status": "Working Paper",
         "authors": "Ryu, Dahyun, Jina Lee",
-        "title": "Survivorship in Public: Differential Durability and the Conflictual Face of Korean Digital Feminism",
-        "venue": "Lee, Jina. “Claiming Novelty and the Epistemic Afterlife of Scientific Work.” Paik, Eugene T., Jina Lee, Russell Funk, Erin Leahey. “Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation.”"
+        "title": "Survivorship in Public: Differential Durability and the Conflictual Face of Korean Digital Feminism"
+      },
+      {
+        "status": "Working Paper",
+        "authors": "Lee, Jina",
+        "title": "Claiming Novelty and the Epistemic Afterlife of Scientific Work"
+      },
+      {
+        "status": "Working Paper",
+        "authors": "Paik, Eugene T., Jina Lee, Russell Funk, Erin Leahey",
+        "title": "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation"
       }
     ]
   },
