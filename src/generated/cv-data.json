@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-09-15T16:49:21.576106+00:00"
+    "generated_at": "2026-09-25T00:19:04.347828+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -310,6 +310,10 @@
     {
       "group": "Service to the University of Illinois at Urbana-Champaign",
       "items": [
+        {
+          "period": "2026 – 2027",
+          "text": "Awards Committee in the Department of Sociology."
+        },
         {
           "period": "2025 – 2026",
           "text": "Colloquium Committee in the Department of Sociology."
