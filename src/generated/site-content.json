@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "site-content.docx",
-    "generated_at": "2026-07-20T03:21:38.293046+00:00"
+    "generated_at": "2026-10-02T18:57:22.629413+00:00"
   },
   "home": {
     "hero": [
@@ -31,7 +31,8 @@
         "publications": [
           "What Types of Novelty Are Most Disruptive?",
           "Claiming Novelty, Claiming Authority: Gender Gaps in Scientific Impact Across Disciplines",
-          "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty"
+          "The Theory Penalty: Gender and the Selective Recognition of Novelty in Science",
+          "Gendered Returns to Claiming Novelty"
         ]
       },
       {
@@ -44,7 +45,7 @@
           "At what stages do gender and status inequalities emerge and accumulate?"
         ],
         "publications": [
-          "Stratified Fact-Making: How Gender and Novelty Claims Stratify the Stabilization of Scientific Facts",
+          "Claiming Novelty and the Epistemic Afterlife of Scientific Work",
           "Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon",
           "Survivorship in Public: Differential Durability and the Conflictual Face of Korean Digital Feminism",
           "The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing",
@@ -62,7 +63,8 @@
         ],
         "publications": [
           "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation",
-          "Conceptual Divergence Analysis: Mapping a Researcher's Conceptual Vocabulary Against the Literatures They Address",
+          "Conceptual Divergence Analysis: Mapping a Researcher’s Conceptual Vocabulary Against the Literatures They Address",
+          "International Hierarchies and the Recognition of Scientific Expertise",
           "Humble Reflections on the Intellectual Process of Developing a Text-based Measure of Humility in Inquiry"
         ]
       }

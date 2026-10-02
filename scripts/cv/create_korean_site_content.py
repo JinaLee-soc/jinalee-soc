@@ -109,9 +109,12 @@ class MissingKoreanTranslationError(RuntimeError):
 
 
 PRESERVED_TITLES = {
+    "Conceptual Divergence Analysis: Mapping a Researcher’s Conceptual Vocabulary Against the Literatures They Address",
+    "Gendered Returns to Claiming Novelty",
+    "International Hierarchies and the Recognition of Scientific Expertise",
     "Claiming Novelty, Claiming Authority: Gender Gaps in Scientific Impact Across Disciplines",
-    "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty",
-    "Stratified Fact-Making: How Gender and Novelty Claims Stratify the Stabilization of Scientific Facts",
+    "The Theory Penalty: Gender and the Selective Recognition of Novelty in Science",
+    "Claiming Novelty and the Epistemic Afterlife of Scientific Work",
     "What Types of Novelty Are Most Disruptive?",
     "Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon",
     "Who Deserves Protection? How Naming Potential Beneficiaries Influences the COVID-19 Vaccine Intentions",

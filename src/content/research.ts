@@ -43,9 +43,13 @@ export const researchPrograms: ResearchProgram[] = [
       },
       {
         citation:
-          'Lee, Jina. "The Theory Penalty: Gender Bias in Recognition of Scientific Novelty."',
+          'Lee, Jina. "The Theory Penalty: Gender and the Selective Recognition of Novelty in Science."',
         status: 'Revise & Resubmit',
         note: 'Manuscript available.',
+      },
+      {
+        citation: 'Lee, Jina, Sohee Shin, Ziying Yang. "Gendered Returns to Claiming Novelty."',
+        status: 'Working Paper',
       },
     ],
   },
@@ -60,7 +64,7 @@ export const researchPrograms: ResearchProgram[] = [
     publications: [
       {
         citation:
-          'Lee, Jina. "Stratified Fact-Making: How Gender and Novelty Claims Stratify the Stabilization of Scientific Facts."',
+          'Lee, Jina. "Claiming Novelty and the Epistemic Afterlife of Scientific Work."',
         status: 'Working Paper',
         note: 'Manuscript available.',
       },
@@ -101,7 +105,7 @@ export const researchPrograms: ResearchProgram[] = [
     publications: [
       {
         citation:
-          'Paik, Eugene T., Jina Lee, Erin Leahey, Russell Funk. "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation."',
+          'Paik, Eugene T., Jina Lee, Russell Funk, Erin Leahey. "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation."',
         status: 'Working Paper',
         note: 'Manuscript available.',
       },
@@ -109,6 +113,10 @@ export const researchPrograms: ResearchProgram[] = [
         citation:
           'Lee, Jina, Zhuofan Li. "Conceptual Divergence Analysis: Mapping a Researcher’s Conceptual Vocabulary Against the Literatures They Address."',
         status: 'Revise & Resubmit',
+      },
+      {
+        citation: 'Gomez*, Charles, Minjae Seo*, Yiwen Zheng, Jina Lee. "International Hierarchies and the Recognition of Scientific Expertise."',
+        status: 'Working Paper',
       },
       {
         citation:
