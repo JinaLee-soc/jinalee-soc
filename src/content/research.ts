@@ -15,7 +15,7 @@ export interface ResearchPublication {
 }
 
 export const researchIntro = {
-  summary: `My research examines how contributions are evaluated when their value cannot be determined by clear or settled standards. I study how judgments of novelty, authority, and credibility are formed; why gender and status become especially consequential under evaluative ambiguity; and how initial differences in recognition accumulate into durable inequalities. Across scientific and cultural fields, I follow this process from claims of novelty through reception, stabilization, and long-term recognition. I also examine how audience structures and AI systems increasingly organize these judgments.`,
+  summary: `My research examines how contributions are evaluated when their value cannot be determined by clear or settled standards. I study how judgments of novelty, authority, and credibility are formed, why gender and status become especially consequential under evaluative ambiguity, and how initial differences in recognition accumulate into durable inequalities. Across scientific and cultural fields, I follow this process from claims of novelty through reception, stabilization, and long-term recognition. I also examine how audience structures and AI systems increasingly organize these judgments.`,
   methods: `My methods include computational text analysis, bibliometric analysis, and survey experiments.`,
 }
 

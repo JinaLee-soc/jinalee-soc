@@ -86,7 +86,7 @@ export const classroomActivities: CourseActivities[] = [
       {
         name: 'Time Travelers',
         description:
-          'Groups write fictional letters from 1950s time travelers confused by modern work-family arrangements; peers respond with sociologically informed analysis connecting personal experience to institutional change.',
+          'Groups write fictional letters from 1950s time travelers confused by modern work-family arrangements, peers respond with sociologically informed analysis connecting personal experience to institutional change.',
       },
     ],
   },
