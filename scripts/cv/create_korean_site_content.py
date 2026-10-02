@@ -19,7 +19,7 @@ from korean_auto_translation import (
 
 
 TRANSLATIONS: dict[str, str] = {
-    "I study how evaluations of originality, authority, and credibility are formed, whose work those judgments elevate, and why inequality is greatest where standards are least clear.":
+    "I study how evaluations of novelty, authority, and credibility are formed, whose work those judgments elevate, and why inequality is greatest where standards are least clear.":
         "저는 독창성, 권위, 신뢰성에 대한 평가가 어떻게 형성되는지, 그 판단이 누구의 작업에 권위와 인정을 부여하는지, 그리고 기준이 가장 불명확한 곳에서 왜 불평등이 가장 크게 나타나는지 연구합니다.",
     "I study how evaluation determines whose work is recognized as original, authoritative, and credible, and why inequality concentrates most where evaluation is least standardized.":
         "평가 체계가 누구의 연구를 독창적이고 권위 있으며 신뢰할 만한 것으로 인정하는지, 그리고 평가 기준이 가장 덜 표준화된 영역에서 왜 불평등이 집중되는지 연구합니다.",
