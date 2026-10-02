@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-10-02T00:36:46.710489+00:00"
+    "generated_at": "2026-10-02T18:46:25.600922+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -9,8 +9,13 @@
   },
   "employment": [
     {
+      "period": "2026 – Current",
+      "title": "Faculty Affiliate, Center for the Study of Global Gender Equity",
+      "institution": "University of Illinois at Urbana-Champaign"
+    },
+    {
       "period": "2024 – Current",
-      "title": "Assistant Professor of Sociology",
+      "title": "Assistant Professor, Department of Sociology",
       "institution": "University of Illinois at Urbana-Champaign"
     }
   ],
@@ -122,6 +127,11 @@
         "status": "Working Paper",
         "authors": "Paik, Eugene T., Jina Lee, Russell Funk, Erin Leahey",
         "title": "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation"
+      },
+      {
+        "status": "Working Paper",
+        "authors": "Gomez*, Charles, Minjae Seo*, Yiwen Zheng, Jina Lee",
+        "title": "International Hierarchies and the Recognition of Scientific Expertise"
       },
       {
         "status": "Working Paper",
@@ -339,10 +349,6 @@
         {
           "period": "2022 – 2023",
           "text": "Student Representative, Recruitment Committee in the School of Sociology."
-        },
-        {
-          "period": "2021",
-          "text": "Climate Survey Initiative in the School of Sociology."
         },
         {
           "period": "2019 – 2021",
