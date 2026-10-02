@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "site-content.docx",
-    "generated_at": "2026-10-02T18:57:22.629413+00:00"
+    "generated_at": "2026-10-02T19:03:39.817297+00:00"
   },
   "home": {
     "hero": [
@@ -45,11 +45,11 @@
           "At what stages do gender and status inequalities emerge and accumulate?"
         ],
         "publications": [
-          "Claiming Novelty and the Epistemic Afterlife of Scientific Work",
           "Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon",
-          "Survivorship in Public: Differential Durability and the Conflictual Face of Korean Digital Feminism",
           "The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing",
-          "Who Deserves Protection? How Naming Potential Beneficiaries Influences the COVID-19 Vaccine Intentions"
+          "Who Deserves Protection? How Naming Potential Beneficiaries Influences the COVID-19 Vaccine Intentions",
+          "Claiming Novelty and the Epistemic Afterlife of Scientific Work",
+          "Survivorship in Public: Differential Durability and the Conflictual Face of Korean Digital Feminism"
         ]
       },
       {
@@ -62,10 +62,10 @@
           "How do AI tools and research infrastructures determine which literatures become visible, relevant, and available for scholarly judgment?"
         ],
         "publications": [
-          "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation",
+          "Humble Reflections on the Intellectual Process of Developing a Text-based Measure of Humility in Inquiry",
           "Conceptual Divergence Analysis: Mapping a Researcher’s Conceptual Vocabulary Against the Literatures They Address",
-          "International Hierarchies and the Recognition of Scientific Expertise",
-          "Humble Reflections on the Intellectual Process of Developing a Text-based Measure of Humility in Inquiry"
+          "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation",
+          "International Hierarchies and the Recognition of Scientific Expertise"
         ]
       }
     ]

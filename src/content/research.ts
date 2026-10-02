@@ -64,21 +64,9 @@ export const researchPrograms: ResearchProgram[] = [
     publications: [
       {
         citation:
-          'Lee, Jina. "Claiming Novelty and the Epistemic Afterlife of Scientific Work."',
-        status: 'Working Paper',
-        note: 'Manuscript available.',
-      },
-      {
-        citation:
           'Lee, Jina. (2025). Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon. Poetics, 112.',
         status: 'Published',
         doi: '10.1016/j.poetic.2025.102024',
-      },
-      {
-        citation:
-          'Ryu, Dahyun, Jina Lee. "Survivorship in Public: Differential Durability and the Conflictual Face of Korean Digital Feminism."',
-        status: 'Working Paper',
-        note: 'Manuscript available.',
       },
       {
         citation:
@@ -91,6 +79,18 @@ export const researchPrograms: ResearchProgram[] = [
           'Lee, Jina, Minjae Seo, Erin Leahey. (2022). Who Deserves Protection? How Naming Potential Beneficiaries Influences the COVID-19 Vaccine Intentions. Socius, 8.',
         status: 'Published',
         doi: '10.1177/23780231221082422',
+      },
+      {
+        citation:
+          'Lee, Jina. "Claiming Novelty and the Epistemic Afterlife of Scientific Work."',
+        status: 'Working Paper',
+        note: 'Manuscript available.',
+      },
+      {
+        citation:
+          'Ryu, Dahyun, Jina Lee. "Survivorship in Public: Differential Durability and the Conflictual Face of Korean Digital Feminism."',
+        status: 'Working Paper',
+        note: 'Manuscript available.',
       },
     ],
   },
@@ -105,9 +105,8 @@ export const researchPrograms: ResearchProgram[] = [
     publications: [
       {
         citation:
-          'Paik, Eugene T., Jina Lee, Russell Funk, Erin Leahey. "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation."',
-        status: 'Working Paper',
-        note: 'Manuscript available.',
+          'Lassiter, Charles, Sarah Bratt, Erin Leahey, Charlie Gomez, Jina Lee, Yea-Eun Kwon. "Humble Reflections on the Intellectual Process of Developing a Text-based Measure of Humility in Inquiry."',
+        status: 'Forthcoming',
       },
       {
         citation:
@@ -115,13 +114,14 @@ export const researchPrograms: ResearchProgram[] = [
         status: 'Revise & Resubmit',
       },
       {
-        citation: 'Gomez*, Charles, Minjae Seo*, Yiwen Zheng, Jina Lee. "International Hierarchies and the Recognition of Scientific Expertise."',
+        citation:
+          'Paik, Eugene T., Jina Lee, Russell Funk, Erin Leahey. "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation."',
         status: 'Working Paper',
+        note: 'Manuscript available.',
       },
       {
-        citation:
-          'Lassiter, Charles, Sarah Bratt, Erin Leahey, Charlie Gomez, Jina Lee, Yea-Eun Kwon. "Humble Reflections on the Intellectual Process of Developing a Text-based Measure of Humility in Inquiry."',
-        status: 'Forthcoming',
+        citation: 'Gomez*, Charles, Minjae Seo*, Yiwen Zheng, Jina Lee. "International Hierarchies and the Recognition of Scientific Expertise."',
+        status: 'Working Paper',
       },
     ],
   },
