@@ -52,7 +52,7 @@ export const localeText = {
     openMenu: 'Open navigation menu',
     closeMenu: 'Close navigation menu',
     homeDescription:
-      'Assistant Professor of Sociology at the University of Illinois at Urbana-Champaign. Research on gender inequality in evaluation systems across scientific and cultural fields.',
+      'Assistant Professor of Sociology at the University of Illinois at Urbana-Champaign. Research on how contributions are recognized as novel, authoritative, and credible across scientific and cultural fields.',
     profileTitle: 'Assistant Professor of Sociology',
     positioningStatement:
       'I study how evaluation systems reproduce gender inequality in science and in cultural fields.',
@@ -115,7 +115,7 @@ export const localeText = {
     openMenu: '메뉴 열기',
     closeMenu: '메뉴 닫기',
     homeDescription:
-      '일리노이대학교 어배너-섐페인 사회학과 조교수. 과학과 문화 영역의 평가 체계에서 나타나는 젠더 불평등을 연구합니다.',
+      '일리노이대학교 어배너-섐페인 사회학과 조교수. 과학과 문화 영역에서 기여가 새롭고 권위 있으며 신뢰할 만한 것으로 인정되는 과정을 연구합니다.',
     profileTitle: '사회학과 조교수',
     positioningStatement:
       '저는 과학과 문화의 평가 체계가 젠더 불평등을 어떻게 재생산하는지 연구합니다.',

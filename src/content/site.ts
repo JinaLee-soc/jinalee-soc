@@ -15,7 +15,7 @@ export const site = {
   name: 'Jina Lee',
   title: 'Jina Lee | Sociologist',
   description:
-    'Assistant Professor of Sociology at the University of Illinois at Urbana-Champaign. Research on gender inequality in evaluation systems across scientific and cultural fields.',
+    'Assistant Professor of Sociology at the University of Illinois at Urbana-Champaign. Research on how contributions are recognized as novel, authoritative, and credible across scientific and cultural fields.',
   url: generatedContact.website || 'https://jinalee.org',
   email: generatedContact.email || 'jina@illinois.edu',
   // Stable page for external links (hero, contact links, Scholar profile, etc.)
