@@ -137,7 +137,7 @@ export default function Home() {
                 <p className="hero__affiliation">{bio.affiliation}</p>
                 <p className="hero__statement">{italicizeVenues(content.homeHero.join(' '))}</p>
                 <div className="hero__links">
-                  <LinkButton href={site.cvUrl} filled>
+                  <LinkButton href={localizedPath(site.cvUrl, locale)} filled>
                     CV
                   </LinkButton>
                   <LinkButton href={site.googleScholar} external>
@@ -165,9 +165,9 @@ export default function Home() {
         {/* ===== About ===== */}
         <section className="section" aria-labelledby="about-heading">
           <div className="container container--wide">
-            <p className="section__heading" id="about-heading" aria-label={labels.about}>
+            <h2 className="section__heading" id="about-heading">
               {labels.about}
-            </p>
+            </h2>
             {content.homeAbout.map((paragraph, i) => (
               <p key={i} style={{ marginTop: i > 0 ? 'var(--space-4)' : 0 }}>
                 {italicizeVenues(paragraph)}
@@ -184,12 +184,12 @@ export default function Home() {
           style={{ borderTop: '1px solid var(--color-border-light)', paddingTop: 'var(--space-16)' }}
         >
           <div className="container container--wide">
-            <p className="section__heading" id="publications-heading">
+            <h2 className="section__heading" id="publications-heading">
               {labels.publications}
-            </p>
-            <p className="pub-category-label">
+            </h2>
+            <h3 className="pub-category-label">
               <em>{labels.journalArticles}</em>
-            </p>
+            </h3>
             <ul className="pub-list" aria-label={labels.journalArticles}>
               {journalArticles.map((pub, i) => (
                 <PublicationItem key={i} pub={pub} locale={locale} />
@@ -197,9 +197,9 @@ export default function Home() {
             </ul>
             {bookChapters.length > 0 && (
               <div className="pub-subsection">
-                <p className="pub-category-label">
+                <h3 className="pub-category-label">
                   <em>{labels.bookChapters}</em>
-                </p>
+                </h3>
                 <ul className="pub-list" aria-label={labels.bookChapters}>
                   {bookChapters.map((pub, i) => (
                     <PublicationItem key={`book-${i}`} pub={pub} locale={locale} />
@@ -228,9 +228,9 @@ export default function Home() {
           style={{ borderTop: '1px solid var(--color-border-light)', paddingTop: 'var(--space-16)' }}
         >
           <div className="container container--wide">
-            <p className="section__heading" id="teaching-heading">
+            <h2 className="section__heading" id="teaching-heading">
               {labels.teachingPreview}
-            </p>
+            </h2>
             {content.homeTeaching.map((paragraph, i) => (
               <p
                 key={i}

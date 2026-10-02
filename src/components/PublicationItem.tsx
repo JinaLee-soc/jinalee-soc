@@ -99,6 +99,9 @@ export default function PublicationItem({
           </span>
         )}
       </p>
+      {pub.coFirstAuthors && (
+        <p className="pub-item__note">{labels.coFirstAuthors}</p>
+      )}
     </li>
   )
 }

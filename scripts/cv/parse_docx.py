@@ -38,6 +38,8 @@ RR_STATUS_RE = re.compile(
     flags=re.IGNORECASE,
 )
 
+CO_FIRST_AUTHORS_NOTE = '* These authors contributed equally as co-first authors.'
+
 
 def normalize_space(text: str) -> str:
     text = (
@@ -340,7 +342,7 @@ def parse_publications(lines: list[str]) -> list[dict[str, str]]:
             year = "Forthcoming"
             body = item[len("Forthcoming") :].strip()
         else:
-            year_match = re.match(r"^(\d{4})\s+(.+)$", item)
+            year_match = re.match(r"^(\d{4}(?:\s+\(online\))?)\s+(.+)$", item, flags=re.IGNORECASE)
             if year_match:
                 year = year_match.group(1)
                 body = year_match.group(2)
@@ -385,6 +387,8 @@ def map_work_status(raw: str) -> tuple[str, bool, str | None]:
 
 
 def parse_work_in_progress(lines: list[str]) -> list[dict[str, object]]:
+    co_first_authors = CO_FIRST_AUTHORS_NOTE in lines
+    lines = [line for line in lines if line != CO_FIRST_AUTHORS_NOTE]
     items: list[str] = []
     buffer: list[str] = []
 
@@ -419,6 +423,8 @@ def parse_work_in_progress(lines: list[str]) -> list[dict[str, object]]:
             record["venue"] = core["venue"]
         if manuscript_available:
             record["manuscript_available"] = True
+        if co_first_authors and "*" in str(record["authors"]):
+            record["co_first_authors"] = True
 
         records.append(record)
 

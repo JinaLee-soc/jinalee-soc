@@ -56,8 +56,8 @@ function CvSection({
   children: React.ReactNode
 }) {
   return (
-    <section id={id} className="cv-section" aria-label={label}>
-      <p className="cv-section__label">{label}</p>
+    <section id={id} className="cv-section" aria-labelledby={`${id}-heading`}>
+      <h2 id={`${id}-heading`} className="cv-section__label">{label}</h2>
       {children}
     </section>
   )
@@ -162,7 +162,7 @@ export default function CV() {
           )}
 
           <CvSection id="publications" label={labels.publications}>
-            <p className="cv-sub__label">{labels.journalArticles}</p>
+            <h3 className="cv-sub__label">{labels.journalArticles}</h3>
             <ul className="pub-list" aria-label={labels.journalArticles}>
               {journalArticles.map((pub, i) => (
                 <PublicationItem key={i} pub={pub} locale={locale} />
@@ -170,9 +170,9 @@ export default function CV() {
             </ul>
             {bookChapters.length > 0 && (
               <>
-                <p className="cv-sub__label" style={{ marginTop: 'var(--space-8)' }}>
+                <h3 className="cv-sub__label" style={{ marginTop: 'var(--space-8)' }}>
                   {labels.bookChapters}
-                </p>
+                </h3>
                 <ul className="pub-list" aria-label={labels.bookChapters}>
                   {bookChapters.map((pub, i) => (
                     <PublicationItem key={i} pub={pub} locale={locale} />
@@ -182,9 +182,9 @@ export default function CV() {
             )}
             {worksInProgress.length > 0 && (
               <>
-                <p className="cv-sub__label" style={{ marginTop: 'var(--space-8)' }}>
+                <h3 className="cv-sub__label" style={{ marginTop: 'var(--space-8)' }}>
                   {labels.workInProgress}
-                </p>
+                </h3>
                 <ul className="pub-list" aria-label={labels.workInProgress}>
                   {worksInProgress.map((pub, i) => (
                     <PublicationItem key={i} pub={pub} locale={locale} />
@@ -209,7 +209,7 @@ export default function CV() {
           <CvSection id="teaching" label={labels.teaching}>
             {generatedTeaching.institutions?.map((inst, i) => (
               <div key={i} className="cv-group">
-                <p className="cv-group__title">{inst.institution}</p>
+                <h3 className="cv-group__title">{inst.institution}</h3>
                 {inst.courses.map((course, j) => (
                   <div key={j} className="cv-course">
                     <p className="cv-item__title">{course.title}</p>
@@ -223,7 +223,7 @@ export default function CV() {
             {generatedTeaching.workshops &&
               generatedTeaching.workshops.length > 0 && (
                 <div className="cv-group">
-                  <p className="cv-group__title">{labels.workshops}</p>
+                  <h3 className="cv-group__title">{labels.workshops}</h3>
                   <DatedList items={generatedTeaching.workshops} />
                 </div>
               )}
@@ -237,7 +237,7 @@ export default function CV() {
             <CvSection id="other-service" label={labels.otherService}>
               {generatedOtherService.map((group, i) => (
                 <div key={i} className="cv-group">
-                  <p className="cv-group__title">{group.group}</p>
+                  <h3 className="cv-group__title">{group.group}</h3>
                   <DatedList items={group.items} />
                 </div>
               ))}

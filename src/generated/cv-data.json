@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-10-02T19:18:39.974780+00:00"
+    "generated_at": "2026-10-02T22:47:07.759447+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -53,17 +53,18 @@
         "status": "Published",
         "authors": "Lee, Jina",
         "title": "Claiming Novelty, Claiming Authority: Gender Gaps in Scientific Impact Across Disciplines",
-        "venue": "Gender & Society, Online First",
-        "doi": "https://doi.org/10.1177/08912432261462166"
+        "venue": "Gender & Society",
+        "doi": "https://doi.org/10.1177/08912432261462166",
+        "volume_issue_pages": "40(4): 479-507"
       },
       {
         "year": "2025",
         "status": "Published",
         "authors": "Lee, Jina",
-        "title": "Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon",
+        "title": "Gendered Pathways to Perpetual Fame: The Selection of Elite Korean Novelists into the Literary Canon",
         "venue": "Poetics",
         "doi": "https://doi.org/10.1016/j.poetic.2025.102024",
-        "volume_issue_pages": "112"
+        "volume_issue_pages": "112: 102024"
       },
       {
         "year": "2023",
@@ -78,13 +79,13 @@
         "year": "2022",
         "status": "Published",
         "authors": "Lee, Jina, Minjae Seo, and Erin Leahey",
-        "title": "Who Deserves Protection? How Naming Potential Beneficiaries Influences the COVID-19 Vaccine Intentions",
+        "title": "Who Deserves Protection? How Naming Potential Beneficiaries Influences COVID-19 Vaccine Intentions",
         "venue": "Socius",
         "doi": "https://doi.org/10.1177/23780231221082422",
         "volume_issue_pages": "8"
       },
       {
-        "year": "2021",
+        "year": "2021 (online)",
         "status": "Published",
         "authors": "Zhao, Yi, Jina Lee, and Cheryl Ellenwood",
         "title": "The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing",
@@ -97,7 +98,7 @@
         "status": "Forthcoming",
         "authors": "Lassiter, Charles, Sarah Bratt, Erin Leahey, Charlie Gomez, Jina Lee, and Yeaeun Kwon",
         "title": "Humble Reflections on the Intellectual Process of Developing a Text-based Measure of Humility in Inquiry",
-        "venue": "In Humble Inquiry: New Perspectives on Intellectual Humility edited by Nathan Ballantyne, Jared Celniker, and Norbert Schwartz. Cambridge University Press"
+        "venue": "In Humble Inquiry: New Perspectives on Intellectual Humility edited by Nathan Ballantyne, Jared Celniker, and Norbert Schwarz. Cambridge University Press"
       }
     ],
     "work_in_progress": [
@@ -131,7 +132,8 @@
       {
         "status": "Working Paper",
         "authors": "Gomez*, Charles, Minjae Seo*, Yiwen Zheng, Jina Lee",
-        "title": "International Hierarchies and the Recognition of Scientific Expertise"
+        "title": "International Hierarchies and the Recognition of Scientific Expertise",
+        "co_first_authors": true
       },
       {
         "status": "Working Paper",

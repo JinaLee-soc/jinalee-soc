@@ -14,6 +14,7 @@ export interface CvPublication {
   doi?: string
   volume_issue_pages?: string
   manuscript_available?: boolean
+  co_first_authors?: boolean
 }
 
 export interface CvEmployment {

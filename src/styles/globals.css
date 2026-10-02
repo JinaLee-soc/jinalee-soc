@@ -551,6 +551,9 @@ button.footer__link {
 
 .pub-category-label {
   font-size: 0.95rem;
+  font-weight: 400;
+  line-height: inherit;
+  letter-spacing: normal;
   color: var(--color-text-secondary);
   margin-bottom: var(--space-4);
 }
@@ -768,6 +771,9 @@ button.footer__link {
 
 .cv-sub__label {
   font-size: 0.95rem;
+  font-weight: 400;
+  line-height: inherit;
+  letter-spacing: normal;
   font-style: italic;
   color: var(--color-text-secondary);
   margin-bottom: var(--space-4);
@@ -784,6 +790,8 @@ button.footer__link {
 .cv-group__title {
   font-size: 0.95rem;
   font-weight: 600;
+  line-height: inherit;
+  letter-spacing: normal;
   color: var(--color-text);
   margin-bottom: var(--space-3);
   padding-bottom: var(--space-2);

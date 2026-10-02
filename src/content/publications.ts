@@ -20,24 +20,27 @@ export interface Publication {
   url?: string
   status: PublicationStatus
   manuscriptAvailable?: boolean
+  coFirstAuthors?: boolean
 }
 
 const fallbackJournalArticles: Publication[] = [
   {
     authors: 'Lee, Jina.',
-    year: 'Forthcoming',
+    year: '2026',
     title:
-      'The Gender of Scientific Authority: Novelty Claims and Gender Gaps in Scientific Impact Across Disciplines.',
+      'Claiming Novelty, Claiming Authority: Gender Gaps in Scientific Impact Across Disciplines.',
     venue: 'Gender & Society',
-    status: 'Forthcoming',
+    volumeIssuePages: '40(4): 479-507',
+    doi: 'https://doi.org/10.1177/08912432261462166',
+    status: 'Published',
   },
   {
     authors: 'Lee, Jina.',
     year: '2025',
     title:
-      'Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon.',
+      'Gendered Pathways to Perpetual Fame: The Selection of Elite Korean Novelists into the Literary Canon.',
     venue: 'Poetics',
-    volumeIssuePages: '112',
+    volumeIssuePages: '112: 102024',
     doi: 'https://doi.org/10.1016/j.poetic.2025.102024',
     status: 'Published',
   },
@@ -62,7 +65,7 @@ const fallbackJournalArticles: Publication[] = [
   },
   {
     authors: 'Zhao, Yi, Jina Lee, Cheryl Ellenwood.',
-    year: '2021',
+    year: '2021 (online)',
     title:
       'The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing.',
     venue: 'Journal of Social Entrepreneurship',
@@ -122,7 +125,7 @@ const fallbackBookChapters: Publication[] = [
       'Humble Reflections on the Intellectual Process of Developing a Text-based Measure of Humility in Inquiry.',
     venue: 'in Humble Inquiry: New Perspectives on Intellectual Humility',
     volumeIssuePages:
-      'edited by Nathan Ballantyne, Jared Celniker, and Norbert Schwartz. Cambridge University Press',
+      'edited by Nathan Ballantyne, Jared Celniker, and Norbert Schwarz. Cambridge University Press',
     status: 'Forthcoming',
   },
 ]
@@ -138,7 +141,7 @@ const publicationStatuses: PublicationStatus[] = [
 ]
 
 function ensureTrailingPeriod(text: string) {
-  return text.endsWith('.') ? text : `${text}.`
+  return /[.!?]$/.test(text) ? text : `${text}.`
 }
 
 function cleanText(value: string | undefined) {
@@ -282,6 +285,7 @@ const generatedWip: Publication[] = generatedWorkInProgress
     venue: pub.venue ?? '',
     status: normalizeStatus(pub.status, 'Working Paper'),
     manuscriptAvailable: pub.manuscript_available,
+    coFirstAuthors: pub.co_first_authors,
   }))
   .filter((pub) => pub.title && pub.authors)
 

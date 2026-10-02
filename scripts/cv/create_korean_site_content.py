@@ -91,7 +91,7 @@ TRANSLATIONS: dict[str, str] = {
         "학생들은 본질주의적 주장을 반박하는 근거 기반의 밈을 만들며, 젠더에 관한 대중 담론을 비판적으로 검토하는 법을 연습합니다.",
     "Students curate visual representations of gendered professional norms and present them analytically, surfacing the social regulation of bodies in professional contexts.":
         "학생들은 직업 세계의 젠더 규범을 보여주는 시각 자료를 선별·구성해 분석적으로 발표하고, 직업적 맥락에서 신체가 사회적으로 규율되는 방식을 드러냅니다.",
-    "Groups write fictional letters from 1950s time travelers confused by modern work-family arrangements, peers respond with sociologically informed analysis connecting personal experience to institutional change.":
+    "Groups write fictional letters from 1950s time travelers confused by modern work-family arrangements. Peers respond with sociologically informed analysis connecting personal experience to institutional change.":
         "각 조는 오늘날의 일과 가족생활 방식을 낯설어하는 1950년대 시간 여행자의 가상 편지를 작성합니다. 동료 학생들은 개인적 경험과 제도적 변화를 연결하는 사회학적 분석으로 답합니다.",
     "Students use structured gameplay to examine how scientific credit accumulates unequally, mapping advantage and disadvantage onto the social conditions of knowledge production.":
         "학생들은 구조화된 게임을 통해 과학적 공로가 불평등하게 축적되는 방식을 살펴보고, 지식 생산의 사회적 조건이 누구에게 유리하거나 불리하게 작용하는지를 파악합니다.",
@@ -116,8 +116,8 @@ PRESERVED_TITLES = {
     "The Theory Penalty: Gender and the Selective Recognition of Novelty in Science",
     "Claiming Novelty and the Epistemic Afterlife of Scientific Work",
     "What Types of Novelty Are Most Disruptive?",
-    "Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon",
-    "Who Deserves Protection? How Naming Potential Beneficiaries Influences the COVID-19 Vaccine Intentions",
+    "Gendered Pathways to Perpetual Fame: The Selection of Elite Korean Novelists into the Literary Canon",
+    "Who Deserves Protection? How Naming Potential Beneficiaries Influences COVID-19 Vaccine Intentions",
     "The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing",
     "Survivorship in Public: Differential Durability and the Conflictual Face of Korean Digital Feminism",
     "Divide and Conquer? How Partitioned Audiences Shape the Impact of Domain-Spanning Innovation",

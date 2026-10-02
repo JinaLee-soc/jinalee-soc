@@ -37,7 +37,7 @@ export const researchPrograms: ResearchProgram[] = [
       },
       {
         citation:
-          'Lee, Jina. (2026). "Claiming Novelty, Claiming Authority: Gender Gaps in Scientific Impact Across Disciplines."',
+          'Lee, Jina. (2026). "Claiming Novelty, Claiming Authority: Gender Gaps in Scientific Impact Across Disciplines." Gender & Society, 40(4): 479–507.',
         status: 'Published',
         journal: 'Gender & Society',
       },
@@ -64,19 +64,19 @@ export const researchPrograms: ResearchProgram[] = [
     publications: [
       {
         citation:
-          'Lee, Jina. (2025). Gendered Pathways to Perpetual Fame: The Selection of Elite Novelists into the Korean Literary Canon. Poetics, 112.',
+          'Lee, Jina. (2025). Gendered Pathways to Perpetual Fame: The Selection of Elite Korean Novelists into the Literary Canon. Poetics, 112: 102024.',
         status: 'Published',
         doi: '10.1016/j.poetic.2025.102024',
       },
       {
         citation:
-          'Zhao, Yi, Jina Lee, Cheryl Ellenwood. (2021). The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing. Journal of Social Entrepreneurship, 15(3): 811–832.',
+          'Zhao, Yi, Jina Lee, Cheryl Ellenwood. (2021, online). The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing. Journal of Social Entrepreneurship, 15(3): 811–832.',
         status: 'Published',
         doi: '10.1080/19420676.2021.2004206',
       },
       {
         citation:
-          'Lee, Jina, Minjae Seo, Erin Leahey. (2022). Who Deserves Protection? How Naming Potential Beneficiaries Influences the COVID-19 Vaccine Intentions. Socius, 8.',
+          'Lee, Jina, Minjae Seo, Erin Leahey. (2022). Who Deserves Protection? How Naming Potential Beneficiaries Influences COVID-19 Vaccine Intentions. Socius, 8.',
         status: 'Published',
         doi: '10.1177/23780231221082422',
       },
