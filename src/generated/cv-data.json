@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-10-02T22:47:07.759447+00:00"
+    "generated_at": "2026-10-03T12:42:59.444124+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -14,8 +14,13 @@
       "institution": "University of Illinois at Urbana-Champaign"
     },
     {
+      "period": "2024 – Current",
+      "title": "Affiliated Faculty, The Global Knowledge Lab and Observatory",
+      "institution": "University of Arizona"
+    },
+    {
       "period": "2026 – Current",
-      "title": "Faculty Affiliate, Center for the Study of Global Gender Equity",
+      "title": "Affiliated Faculty, The Center for the Study of Global Gender Equity",
       "institution": "University of Illinois at Urbana-Champaign"
     }
   ],
@@ -225,7 +230,7 @@
     },
     {
       "period": "2019",
-      "text": "Participant, 11th Medici Summer School in Management Studies, HEC Paris."
+      "text": "Invited Participant, 11th Medici Summer School in Management Studies, HEC Paris."
     },
     {
       "period": "2017 – 2018",
