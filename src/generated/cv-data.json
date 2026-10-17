@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-10-17T15:08:16.076585+00:00"
+    "generated_at": "2026-10-17T16:12:43.748802+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -57,7 +57,7 @@
         "year": "Forthcoming",
         "status": "Forthcoming",
         "authors": "Lee, Jina, Zhuofan Li",
-        "title": "Conceptual Divergence Analysis: LLM-Assisted Mapping of a Researcher’s Conceptual Vocabulary Against Their Curated Literature",
+        "title": "Conceptual Divergence Analysis: LLM-Assisted Positioning of a Researcher’s Use of Theoretical Terms within Their Curated Literature",
         "venue": "Scientometrics"
       },
       {
