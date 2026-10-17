@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "cv.docx",
-    "generated_at": "2026-10-13T22:00:31.143739+00:00"
+    "generated_at": "2026-10-17T15:08:16.076585+00:00"
   },
   "contact": {
     "email": "jina@illinois.edu",
@@ -54,6 +54,13 @@
   "publications": {
     "published": [
       {
+        "year": "Forthcoming",
+        "status": "Forthcoming",
+        "authors": "Lee, Jina, Zhuofan Li",
+        "title": "Conceptual Divergence Analysis: LLM-Assisted Mapping of a Researcher’s Conceptual Vocabulary Against Their Curated Literature",
+        "venue": "Scientometrics"
+      },
+      {
         "year": "2026",
         "status": "Published",
         "authors": "Lee, Jina",
@@ -90,7 +97,7 @@
         "volume_issue_pages": "8"
       },
       {
-        "year": "2021 (online)",
+        "year": "2021",
         "status": "Published",
         "authors": "Zhao, Yi, Jina Lee, and Cheryl Ellenwood",
         "title": "The Persistent Influence of Gender Stereotypes in Social Entrepreneurial Financing",
@@ -112,12 +119,6 @@
         "authors": "Lee, Jina",
         "title": "The Theory Penalty: Gender and the Selective Recognition of Novelty in Science",
         "venue": "Social Forces"
-      },
-      {
-        "status": "Revise & Resubmit",
-        "authors": "Lee, Jina, Zhuofan Li",
-        "title": "Conceptual Divergence Analysis: Mapping a Researcher’s Conceptual Vocabulary Against the Literatures They Address",
-        "venue": "Scientometrics"
       },
       {
         "status": "Working Paper",
