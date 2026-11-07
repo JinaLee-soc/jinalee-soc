@@ -110,8 +110,9 @@ export const researchPrograms: ResearchProgram[] = [
       },
       {
         citation:
-          'Lee, Jina, Zhuofan Li. "Conceptual Divergence Analysis: Mapping a Researcher’s Conceptual Vocabulary Against the Literatures They Address."',
-        status: 'Revise & Resubmit',
+          'Lee, Jina, Zhuofan Li. "Conceptual Divergence Analysis: LLM-Assisted Mapping of a Researcher’s Conceptual Vocabulary against Their Curated Literature."',
+        status: 'Published',
+        doi: '10.1007/s11192-026-05883-9',
       },
       {
         citation:

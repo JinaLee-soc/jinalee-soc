@@ -109,6 +109,7 @@ class MissingKoreanTranslationError(RuntimeError):
 
 
 PRESERVED_TITLES = {
+    "Conceptual Divergence Analysis: LLM-Assisted Mapping of a Researcher’s Conceptual Vocabulary against Their Curated Literature",
     "Conceptual Divergence Analysis: Mapping a Researcher’s Conceptual Vocabulary Against the Literatures They Address",
     "Gendered Returns to Claiming Novelty",
     "International Hierarchies and the Recognition of Scientific Expertise",
