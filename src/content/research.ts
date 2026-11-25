@@ -121,7 +121,7 @@ export const researchPrograms: ResearchProgram[] = [
         note: 'Manuscript available.',
       },
       {
-        citation: 'Gomez*, Charles, Minjae Seo*, Yiwen Zeng, Jina Lee. "International Hierarchies and the Recognition of Scientific Expertise."',
+        citation: 'Gomez*, Charles, Minjae Seo*, Yiwen Zeng*, Jina Lee. "International Hierarchies and the Recognition of Scientific Expertise."',
         status: 'Working Paper',
       },
     ],
