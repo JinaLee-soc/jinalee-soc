@@ -50,15 +50,9 @@ export default function PublicationItem({
     showsStatusBadge &&
     pub.year?.trim().toLowerCase() === statusLabelsEnglish[pub.status].toLowerCase()
   const showYear = pub.year && !yearRedundantWithStatus
-  const rowYearLabel = pub.year?.match(/\d{4}/)?.[0] || ''
 
   return (
-    <li className={`pub-item${rowYearLabel ? '' : ' pub-item--no-year'}`}>
-      {rowYearLabel && (
-        <span className="pub-item__year" aria-hidden="true">
-          {rowYearLabel}
-        </span>
-      )}
+    <li className="pub-item">
       <div className="pub-item__body">
         <p className="pub-item__citation">
           <span>{boldMyName(pub.authors)} </span>

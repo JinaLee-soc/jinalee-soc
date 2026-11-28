@@ -485,22 +485,8 @@ button.footer__link {
 }
 
 .pub-item {
-  display: grid;
-  grid-template-columns: 76px 1fr;
-  gap: 16px;
-  align-items: baseline;
+  display: block;
   padding: 0;
-}
-
-.pub-item--no-year {
-  grid-template-columns: 1fr;
-}
-
-.pub-item__year {
-  font-size: 0.82rem;
-  color: var(--color-text-muted);
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
 }
 
 .pub-item__body {
@@ -1335,11 +1321,6 @@ button.footer__link {
 
   .page {
     padding: var(--space-10) 0 var(--space-16);
-  }
-
-  .pub-item {
-    grid-template-columns: 1fr;
-    gap: 2px;
   }
 
   .philosophy-block {
