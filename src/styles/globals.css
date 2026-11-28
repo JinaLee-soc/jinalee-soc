@@ -43,21 +43,21 @@
 
   /* Layout */
   --max-width: 760px;
-  --max-width-wide: 820px;
+  --max-width-wide: 920px;
   --nav-height: 64px;
   --nav-bg: #ffffff;
   --body-font-size: 1rem;
-  --section-gap: 32px;
+  --section-gap: 40px;
   --control-radius: 2px;
-  --hero-name-size: 1.75rem;
-  --hero-headshot-width: 160px;
+  --hero-name-size: 2.2rem;
+  --hero-headshot-width: 200px;
   --hero-headshot-grayscale: 0%;
 }
 
 /* ===== HTML & Body ===== */
 html {
-  /* 93.75% of the 16px browser default = 15px, while respecting user font settings */
-  font-size: 93.75%;
+  /* 125% of the 16px browser default = 20px, while respecting user font settings */
+  font-size: 125%;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

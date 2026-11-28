@@ -6,7 +6,7 @@ const STORAGE_KEY = 'jl-font-scale'
 
 function applyScale(scale: number) {
   document.documentElement.style.fontSize =
-    scale === 1 ? '' : `${93.75 * scale}%`
+    scale === 1 ? '' : `${125 * scale}%`
 }
 
 function nearestStep(value: number) {
