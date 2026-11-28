@@ -181,7 +181,6 @@ export default function Home() {
           id="publications"
           className="section"
           aria-labelledby="publications-heading"
-          style={{ borderTop: '1px solid var(--color-border-light)', paddingTop: 'var(--space-16)' }}
         >
           <div className="container container--wide">
             <h2 className="section__heading" id="publications-heading">
@@ -225,7 +224,6 @@ export default function Home() {
           id="teaching"
           className="section"
           aria-labelledby="teaching-heading"
-          style={{ borderTop: '1px solid var(--color-border-light)', paddingTop: 'var(--space-16)' }}
         >
           <div className="container container--wide">
             <h2 className="section__heading" id="teaching-heading">

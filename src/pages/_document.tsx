@@ -7,7 +7,7 @@ const FONT_SCALE_SCRIPT = `
 try {
   var s = parseFloat(localStorage.getItem('jl-font-scale'));
   if (s && s > 0.5 && s < 2 && s !== 1) {
-    document.documentElement.style.fontSize = (125 * s) + '%';
+    document.documentElement.style.fontSize = (93.75 * s) + '%';
   }
 } catch (e) {}
 `

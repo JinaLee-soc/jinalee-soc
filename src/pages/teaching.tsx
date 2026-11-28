@@ -48,9 +48,7 @@ export default function Teaching() {
           <section
             aria-labelledby="courses-heading"
             style={{
-              marginBottom: 'var(--space-16)',
-              paddingTop: 'var(--space-16)',
-              borderTop: '1px solid var(--color-border-light)',
+              marginBottom: 'var(--space-12)',
             }}
           >
             <h2
@@ -92,10 +90,6 @@ export default function Teaching() {
           {/* Classroom Activities */}
           <section
             aria-labelledby="activities-heading"
-            style={{
-              paddingTop: 'var(--space-16)',
-              borderTop: '1px solid var(--color-border-light)',
-            }}
           >
             <h2
               className="section__title"

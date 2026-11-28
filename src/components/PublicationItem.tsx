@@ -50,58 +50,63 @@ export default function PublicationItem({
     showsStatusBadge &&
     pub.year?.trim().toLowerCase() === statusLabelsEnglish[pub.status].toLowerCase()
   const showYear = pub.year && !yearRedundantWithStatus
+  const rowYearLabel = pub.year?.match(/\d{4}/)?.[0] || ''
 
   return (
-    <li className="pub-item">
-      <p className="pub-item__citation">
-        <span>{boldMyName(pub.authors)} </span>
-        {showYear && <span>{pub.year}. </span>}
-        {pub.doi ? (
-          <a
-            href={pub.doi}
-            className="pub-item__title"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {pub.title}
-          </a>
-        ) : (
-          <em className="pub-item__title">{pub.title}</em>
-        )}{' '}
-        {displayVenue && <em className="pub-item__venue">{displayVenue}</em>}
-        {pub.volumeIssuePages ? (
-          <span>, {pub.volumeIssuePages}</span>
-        ) : displayVenue ? (
-          <span>.</span>
-        ) : null}
-        {pub.doi && (
-          <>
-            {' '}
+    <li className={`pub-item${rowYearLabel ? '' : ' pub-item--no-year'}`}>
+      {rowYearLabel && (
+        <span className="pub-item__year" aria-hidden="true">
+          {rowYearLabel}
+        </span>
+      )}
+      <div className="pub-item__body">
+        <p className="pub-item__citation">
+          <span>{boldMyName(pub.authors)} </span>
+          {showYear && <span>{pub.year}. </span>}
+          {pub.doi ? (
             <a
               href={pub.doi}
+              className="pub-item__title"
               target="_blank"
               rel="noopener noreferrer"
-              style={{
-                fontSize: '0.825rem',
-                color: 'var(--color-text-muted)',
-              }}
             >
-              DOI ↗
+              {pub.title}
             </a>
-          </>
+          ) : (
+            <span className="pub-item__title">{pub.title}</span>
+          )}{' '}
+          {displayVenue && <em className="pub-item__venue">{displayVenue}</em>}
+          {pub.volumeIssuePages ? (
+            <span>, {pub.volumeIssuePages}</span>
+          ) : displayVenue ? (
+            <span>.</span>
+          ) : null}
+          {pub.doi && (
+            <>
+              {' '}
+              <a
+                href={pub.doi}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pub-item__doi"
+              >
+                DOI ↗
+              </a>
+            </>
+          )}
+          {showsStatusBadge && (
+            <span
+              className={`pub-item__status ${statusClass[pub.status]}`}
+              aria-label={`${labels.publications}: ${statusLabelsEnglish[pub.status]}`}
+            >
+              {statusLabelsEnglish[pub.status]}
+            </span>
+          )}
+        </p>
+        {pub.coFirstAuthors && (
+          <p className="pub-item__note">{labels.coFirstAuthors}</p>
         )}
-        {showsStatusBadge && (
-          <span
-            className={`pub-item__status ${statusClass[pub.status]}`}
-            aria-label={`${labels.publications}: ${statusLabelsEnglish[pub.status]}`}
-          >
-            {statusLabelsEnglish[pub.status]}
-          </span>
-        )}
-      </p>
-      {pub.coFirstAuthors && (
-        <p className="pub-item__note">{labels.coFirstAuthors}</p>
-      )}
+      </div>
     </li>
   )
 }
