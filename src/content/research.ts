@@ -51,6 +51,10 @@ export const researchPrograms: ResearchProgram[] = [
         citation: 'Lee, Jina, Sohee Shin, Ziying Yang. "Gendered Returns to Claiming Novelty."',
         status: 'Working Paper',
       },
+      {
+        citation: 'Lee, Jina. "Beyond Disruption: The Epistemic Role of Scientific Consolidation."',
+        status: 'Working Paper',
+      },
     ],
   },
   {
@@ -82,9 +86,8 @@ export const researchPrograms: ResearchProgram[] = [
       },
       {
         citation:
-          'Lee, Jina. "Claiming Novelty and the Epistemic Afterlife of Scientific Work."',
+          'Lee, Jina. "Gender and the Making of Scientific Facts."',
         status: 'Working Paper',
-        note: 'Manuscript available.',
       },
       {
         citation:
